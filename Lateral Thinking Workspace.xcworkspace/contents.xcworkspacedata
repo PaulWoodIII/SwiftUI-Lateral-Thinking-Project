@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking Core">
+   </FileRef>
+   <FileRef
+      location = "group:Lateral Thinking/Lateral Thinking.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Lateral Thinking macOS/Lateral Thinking macOS.xcodeproj">
+   </FileRef>
+</Workspace>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14877.5" systemVersion="19A512f" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="LateralListMO" representedClassName="LateralListMO" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="items" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LateralMO" inverseName="lateralList" inverseEntity="LateralMO"/>
+    </entity>
+    <entity name="LateralMO" representedClassName="LateralMO" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String"/>
+        <relationship name="lateralList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LateralListMO" inverseName="items" inverseEntity="LateralListMO"/>
+    </entity>
+    <elements>
+        <element name="LateralListMO" positionX="-54" positionY="0" width="128" height="88"/>
+        <element name="LateralMO" positionX="-227.640625" positionY="7.91796875" width="128" height="73"/>
+    </elements>
+</model>

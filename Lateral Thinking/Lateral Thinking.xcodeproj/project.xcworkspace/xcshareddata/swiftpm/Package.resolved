@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CombineFeedback",
+        "repositoryURL": "https://github.com/PaulWoodIII/CombineFeedback.git",
+        "state": {
+          "branch": "add_tvos_watchos",
+          "revision": "bcfbfbd1923500dfe1dfd586a5b1576e1b888ff8",
+          "version": null
+        }
+      },
+      {
+        "package": "Entwine",
+        "repositoryURL": "git@github.com:tcldr/Entwine.git",
+        "state": {
+          "branch": null,
+          "revision": "414b359732dd5bb8461c01e372b9d3662426e85f",
+          "version": "0.6.0"
+        }
+      },
+      {
+        "package": "Reachability",
+        "repositoryURL": "git@github.com:ashleymills/Reachability.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "6c8652a8ea35a64cf36367d07b3d6e5e6a24b272",
+          "version": "4.3.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
