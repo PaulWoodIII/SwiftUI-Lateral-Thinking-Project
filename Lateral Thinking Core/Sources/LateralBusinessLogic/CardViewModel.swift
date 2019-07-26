@@ -56,7 +56,6 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
   
   private static func nextDisplay(state: State) -> Int {
     #if !os(watchOS)
-    var shuffler = GKShuffledDistribution()
     return state.shuffler.nextInt()
     #else
     let high = UInt32(state.displayLaterals.count - 1)

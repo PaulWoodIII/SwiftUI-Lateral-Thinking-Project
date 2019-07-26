@@ -36,6 +36,15 @@
 		DA52204D22EBA3CC00E0AF27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA52204C22EBA3CC00E0AF27 /* Preview Assets.xcassets */; };
 		DA52205C22EBA7FE00E0AF27 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52205B22EBA7FE00E0AF27 /* CardView.swift */; };
 		DA52205E22EBA84400E0AF27 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA52205D22EBA84400E0AF27 /* LateralThinking */; };
+		DA52207022EBBE4A00E0AF27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52206F22EBBE4A00E0AF27 /* AppDelegate.swift */; };
+		DA52207222EBBE4A00E0AF27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52207122EBBE4A00E0AF27 /* ContentView.swift */; };
+		DA52207522EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA52207322EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodeld */; };
+		DA52207722EBBE4C00E0AF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA52207622EBBE4C00E0AF27 /* Assets.xcassets */; };
+		DA52207A22EBBE4C00E0AF27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA52207922EBBE4C00E0AF27 /* Preview Assets.xcassets */; };
+		DA52207D22EBBE4C00E0AF27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA52207B22EBBE4C00E0AF27 /* Main.storyboard */; };
+		DA52208922EBBE4C00E0AF27 /* Lateral_Thinking_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52208822EBBE4C00E0AF27 /* Lateral_Thinking_macOSTests.swift */; };
+		DA52209422EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52209322EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift */; };
+		DA5220A222EBBFA700E0AF27 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5220A122EBBFA700E0AF27 /* CardView.swift */; };
 		DA88459022EB82B600A32E36 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88458F22EB82B600A32E36 /* CardView.swift */; };
 		DA88459222EB832000A32E36 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA88459122EB832000A32E36 /* LateralThinking */; };
 		DAB7B77722E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77222E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf */; };
@@ -82,6 +91,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = DA52203D22EBA3CB00E0AF27;
 			remoteInfo = "Lateral Thinking watchOS WatchKit Extension";
+		};
+		DA52208522EBBE4C00E0AF27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA52206C22EBBE4A00E0AF27;
+			remoteInfo = "Lateral Thinking macOS";
+		};
+		DA52209022EBBE4C00E0AF27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA52206C22EBBE4A00E0AF27;
+			remoteInfo = "Lateral Thinking macOS";
 		};
 		DAFB17DB22E4E379004C78E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -167,6 +190,22 @@
 		DA52205B22EBA7FE00E0AF27 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking watchOS WatchKit Extension/Features/CardView.swift"; sourceTree = "<group>"; };
 		DA52206322EBB0FE00E0AF27 /* Lateral Thinking watchOS WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lateral Thinking watchOS WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		DA52206522EBBD7D00E0AF27 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		DA52206D22EBBE4A00E0AF27 /* Lateral Thinking macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral Thinking macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA52206F22EBBE4A00E0AF27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DA52207122EBBE4A00E0AF27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DA52207422EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lateral_Thinking_macOS.xcdatamodel; sourceTree = "<group>"; };
+		DA52207622EBBE4C00E0AF27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA52207922EBBE4C00E0AF27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA52207C22EBBE4C00E0AF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA52207E22EBBE4C00E0AF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA52207F22EBBE4C00E0AF27 /* Lateral_Thinking_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lateral_Thinking_macOS.entitlements; sourceTree = "<group>"; };
+		DA52208422EBBE4C00E0AF27 /* Lateral Thinking macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lateral Thinking macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA52208822EBBE4C00E0AF27 /* Lateral_Thinking_macOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lateral_Thinking_macOSTests.swift; sourceTree = "<group>"; };
+		DA52208A22EBBE4C00E0AF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA52208F22EBBE4C00E0AF27 /* Lateral Thinking macOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lateral Thinking macOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA52209322EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lateral_Thinking_macOSUITests.swift; sourceTree = "<group>"; };
+		DA52209522EBBE4C00E0AF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA5220A122EBBFA700E0AF27 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../Lateral Thinking macOS/Lateral Thinking macOS/Features/CardView.swift"; sourceTree = "<group>"; };
 		DA57C5C222E88F9D006C8F22 /* Lateral Thinking Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Lateral Thinking Core"; path = "/Users/paul/projects/Lateral Thinking Project/Lateral Thinking Core"; sourceTree = "<absolute>"; };
 		DA88458F22EB82B600A32E36 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DAB7B77222E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -225,6 +264,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA52205E22EBA84400E0AF27 /* LateralThinking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52206A22EBBE4A00E0AF27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52208122EBBE4C00E0AF27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52208C22EBBE4C00E0AF27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +435,64 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
+		DA52206E22EBBE4A00E0AF27 /* Lateral Thinking macOS */ = {
+			isa = PBXGroup;
+			children = (
+				DA52209F22EBBF8000E0AF27 /* App */,
+				DA5220A022EBBF8A00E0AF27 /* Features */,
+				DA52207622EBBE4C00E0AF27 /* Assets.xcassets */,
+				DA52207B22EBBE4C00E0AF27 /* Main.storyboard */,
+				DA52207E22EBBE4C00E0AF27 /* Info.plist */,
+				DA52207F22EBBE4C00E0AF27 /* Lateral_Thinking_macOS.entitlements */,
+				DA52207322EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodeld */,
+				DA52207822EBBE4C00E0AF27 /* Preview Content */,
+			);
+			path = "Lateral Thinking macOS";
+			sourceTree = "<group>";
+		};
+		DA52207822EBBE4C00E0AF27 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA52207922EBBE4C00E0AF27 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA52208722EBBE4C00E0AF27 /* Lateral Thinking macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA52208822EBBE4C00E0AF27 /* Lateral_Thinking_macOSTests.swift */,
+				DA52208A22EBBE4C00E0AF27 /* Info.plist */,
+			);
+			path = "Lateral Thinking macOSTests";
+			sourceTree = "<group>";
+		};
+		DA52209222EBBE4C00E0AF27 /* Lateral Thinking macOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA52209322EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift */,
+				DA52209522EBBE4C00E0AF27 /* Info.plist */,
+			);
+			path = "Lateral Thinking macOSUITests";
+			sourceTree = "<group>";
+		};
+		DA52209F22EBBF8000E0AF27 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DA52206F22EBBE4A00E0AF27 /* AppDelegate.swift */,
+				DA52207122EBBE4A00E0AF27 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DA5220A022EBBF8A00E0AF27 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DA5220A122EBBFA700E0AF27 /* CardView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		DAB7B77122E4F00A0091EEF3 /* Noto_Serif */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +524,9 @@
 				DA2EB2DA22E78EF9006CF023 /* Lateral Thinking tvOSUITests */,
 				DA52203322EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App */,
 				DA52204222EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension */,
+				DA52206E22EBBE4A00E0AF27 /* Lateral Thinking macOS */,
+				DA52208722EBBE4C00E0AF27 /* Lateral Thinking macOSTests */,
+				DA52209222EBBE4C00E0AF27 /* Lateral Thinking macOSUITests */,
 				DAFB17C222E4E376004C78E4 /* Products */,
 				DA36853922E65CAF00EE2819 /* Frameworks */,
 			);
@@ -423,6 +544,9 @@
 				DA52202C22EBA3C900E0AF27 /* Lateral Thinking watchOS.app */,
 				DA52202F22EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App.app */,
 				DA52203E22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension.appex */,
+				DA52206D22EBBE4A00E0AF27 /* Lateral Thinking macOS.app */,
+				DA52208422EBBE4C00E0AF27 /* Lateral Thinking macOSTests.xctest */,
+				DA52208F22EBBE4C00E0AF27 /* Lateral Thinking macOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -596,6 +720,59 @@
 			productReference = DA52203E22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		DA52206C22EBBE4A00E0AF27 /* Lateral Thinking macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA52209622EBBE4C00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking macOS" */;
+			buildPhases = (
+				DA52206922EBBE4A00E0AF27 /* Sources */,
+				DA52206A22EBBE4A00E0AF27 /* Frameworks */,
+				DA52206B22EBBE4A00E0AF27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lateral Thinking macOS";
+			productName = "Lateral Thinking macOS";
+			productReference = DA52206D22EBBE4A00E0AF27 /* Lateral Thinking macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA52208322EBBE4C00E0AF27 /* Lateral Thinking macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA52209922EBBE4C00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking macOSTests" */;
+			buildPhases = (
+				DA52208022EBBE4C00E0AF27 /* Sources */,
+				DA52208122EBBE4C00E0AF27 /* Frameworks */,
+				DA52208222EBBE4C00E0AF27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA52208622EBBE4C00E0AF27 /* PBXTargetDependency */,
+			);
+			name = "Lateral Thinking macOSTests";
+			productName = "Lateral Thinking macOSTests";
+			productReference = DA52208422EBBE4C00E0AF27 /* Lateral Thinking macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA52208E22EBBE4C00E0AF27 /* Lateral Thinking macOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA52209C22EBBE4C00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking macOSUITests" */;
+			buildPhases = (
+				DA52208B22EBBE4C00E0AF27 /* Sources */,
+				DA52208C22EBBE4C00E0AF27 /* Frameworks */,
+				DA52208D22EBBE4C00E0AF27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA52209122EBBE4C00E0AF27 /* PBXTargetDependency */,
+			);
+			name = "Lateral Thinking macOSUITests";
+			productName = "Lateral Thinking macOSUITests";
+			productReference = DA52208F22EBBE4C00E0AF27 /* Lateral Thinking macOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		DAFB17C022E4E376004C78E4 /* Lateral Thinking */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAFB17EE22E4E379004C78E4 /* Build configuration list for PBXNativeTarget "Lateral Thinking" */;
@@ -690,6 +867,17 @@
 					DA52203D22EBA3CB00E0AF27 = {
 						CreatedOnToolsVersion = 11.0;
 					};
+					DA52206C22EBBE4A00E0AF27 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					DA52208322EBBE4C00E0AF27 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = DA52206C22EBBE4A00E0AF27;
+					};
+					DA52208E22EBBE4C00E0AF27 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = DA52206C22EBBE4A00E0AF27;
+					};
 					DAFB17C022E4E376004C78E4 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -729,6 +917,9 @@
 				DA52202B22EBA3C900E0AF27 /* Lateral Thinking watchOS */,
 				DA52202E22EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App */,
 				DA52203D22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension */,
+				DA52206C22EBBE4A00E0AF27 /* Lateral Thinking macOS */,
+				DA52208322EBBE4C00E0AF27 /* Lateral Thinking macOSTests */,
+				DA52208E22EBBE4C00E0AF27 /* Lateral Thinking macOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -779,6 +970,30 @@
 			files = (
 				DA52204D22EBA3CC00E0AF27 /* Preview Assets.xcassets in Resources */,
 				DA52204A22EBA3CC00E0AF27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52206B22EBBE4A00E0AF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA52207D22EBBE4C00E0AF27 /* Main.storyboard in Resources */,
+				DA52207A22EBBE4C00E0AF27 /* Preview Assets.xcassets in Resources */,
+				DA52207722EBBE4C00E0AF27 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52208222EBBE4C00E0AF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52208D22EBBE4C00E0AF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,6 +1064,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA52206922EBBE4A00E0AF27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA52207222EBBE4A00E0AF27 /* ContentView.swift in Sources */,
+				DA52207522EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodeld in Sources */,
+				DA5220A222EBBFA700E0AF27 /* CardView.swift in Sources */,
+				DA52207022EBBE4A00E0AF27 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52208022EBBE4C00E0AF27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA52208922EBBE4C00E0AF27 /* Lateral_Thinking_macOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52208B22EBBE4C00E0AF27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA52209422EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAFB17BD22E4E376004C78E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -901,6 +1143,16 @@
 			target = DA52203D22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension */;
 			targetProxy = DA52204022EBA3CB00E0AF27 /* PBXContainerItemProxy */;
 		};
+		DA52208622EBBE4C00E0AF27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA52206C22EBBE4A00E0AF27 /* Lateral Thinking macOS */;
+			targetProxy = DA52208522EBBE4C00E0AF27 /* PBXContainerItemProxy */;
+		};
+		DA52209122EBBE4C00E0AF27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA52206C22EBBE4A00E0AF27 /* Lateral Thinking macOS */;
+			targetProxy = DA52209022EBBE4C00E0AF27 /* PBXContainerItemProxy */;
+		};
 		DAFB17DC22E4E379004C78E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DAFB17C022E4E376004C78E4 /* Lateral Thinking */;
@@ -920,6 +1172,14 @@
 				DA52203522EBA3C900E0AF27 /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		DA52207B22EBBE4C00E0AF27 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA52207C22EBBE4C00E0AF27 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		DAFB17D222E4E379004C78E4 /* LaunchScreen.storyboard */ = {
@@ -1186,6 +1446,144 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DA52209722EBBE4C00E0AF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Lateral Thinking macOS/Lateral_Thinking_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Lateral Thinking macOS\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lateral Thinking macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DA52209822EBBE4C00E0AF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Lateral Thinking macOS/Lateral_Thinking_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Lateral Thinking macOS\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lateral Thinking macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DA52209A22EBBE4C00E0AF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				INFOPLIST_FILE = "Lateral Thinking macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lateral Thinking macOS.app/Contents/MacOS/Lateral Thinking macOS";
+			};
+			name = Debug;
+		};
+		DA52209B22EBBE4C00E0AF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				INFOPLIST_FILE = "Lateral Thinking macOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lateral Thinking macOS.app/Contents/MacOS/Lateral Thinking macOS";
+			};
+			name = Release;
+		};
+		DA52209D22EBBE4C00E0AF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				INFOPLIST_FILE = "Lateral Thinking macOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-macOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Lateral Thinking macOS";
+			};
+			name = Debug;
+		};
+		DA52209E22EBBE4C00E0AF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				INFOPLIST_FILE = "Lateral Thinking macOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-macOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Lateral Thinking macOS";
 			};
 			name = Release;
 		};
@@ -1484,6 +1882,33 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DA52209622EBBE4C00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA52209722EBBE4C00E0AF27 /* Debug */,
+				DA52209822EBBE4C00E0AF27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA52209922EBBE4C00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA52209A22EBBE4C00E0AF27 /* Debug */,
+				DA52209B22EBBE4C00E0AF27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA52209C22EBBE4C00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking macOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA52209D22EBBE4C00E0AF27 /* Debug */,
+				DA52209E22EBBE4C00E0AF27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DAFB17BC22E4E376004C78E4 /* Build configuration list for PBXProject "Lateral Thinking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1597,6 +2022,16 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
+		DA52207322EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DA52207422EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodel */,
+			);
+			currentVersion = DA52207422EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodel */;
+			path = Lateral_Thinking_macOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		DAFB17C822E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
