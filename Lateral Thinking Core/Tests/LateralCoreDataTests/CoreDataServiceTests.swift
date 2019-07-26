@@ -155,14 +155,17 @@ class CoreDataServiceTests: XCTestCase {
     
     let results = testScheduler.start {
       self.sut.startup()
-        .flatMap { _ in
-          self.sut.create(lateralType: testLateral).map(\.body)
-      }
+        .flatMap({ _ -> AnyPublisher<Bool, CoreDataService.Error> in
+          self.sut.create(lateralType: testLateral)
+          return Just(true)
+            .setFailureType(to: CoreDataService.Error.self)
+            .eraseToAnyPublisher()
+        })
     }
     
-    let expected: TestSequence<String, CoreDataService.Error> = [
+    let expected: TestSequence<Bool, CoreDataService.Error> = [
       (200, .subscription),
-      (200, .input(testLateral.body)),
+      (200, .input(true)),
       (200, .completion(.finished)),
     ]
     XCTAssertEqual(results.recordedOutput, expected)

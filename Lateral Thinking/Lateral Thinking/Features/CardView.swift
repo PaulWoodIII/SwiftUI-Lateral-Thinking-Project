@@ -25,19 +25,16 @@ public struct CardView : View {
   
   public var body: some View {
     ZStack {
-      RoundedRectangle(cornerRadius: 20)
-        .foregroundColor(Color(hex:context.backgroundPairing.background))
-        .padding()
-        .aspectRatio(contentMode: ContentMode.fit)
-      VStack {
-        Text(context.displayText)
-          .font(.headline)
-          .foregroundColor(Color(hex:context.backgroundPairing.accent))
-          .lineLimit(nil)
-          .padding().padding()
-      }
-    }.tapAction {
-      self.context.send(event: .onTap)
+      Rectangle()
+        .foregroundColor(Color.clear)
+        .tapAction {
+            self.context.send(event: .onTap)
+        }
+      Text(context.displayText)
+        .lineLimit(nil)
+        .font(.headline)
+        .foregroundColor(Color(hex:context.backgroundPairing.accent))
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
     }
   }
 }

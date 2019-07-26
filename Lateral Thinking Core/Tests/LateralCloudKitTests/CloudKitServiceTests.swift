@@ -19,7 +19,8 @@ class CloudKitServiceTests: XCTestCase {
     let results = scheduler.start {
       return CloudKitService().retrieveAllLaterals()
     }
-    XCTAssertEqual(results, nil, "Fail and Print output")
+    XCTFail()
+//    XCTAssertEqual(results, nil, "Fail and Print output")
   }
   
   static var allTests = [
