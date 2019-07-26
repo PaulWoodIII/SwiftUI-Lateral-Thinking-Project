@@ -28,7 +28,6 @@
 		DA2EB37B22E7A086006CF023 /* Entwine in Frameworks */ = {isa = PBXBuildFile; productRef = DA2EB37A22E7A086006CF023 /* Entwine */; };
 		DA2EB37D22E7A086006CF023 /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = DA2EB37C22E7A086006CF023 /* CombineFeedback */; };
 		DA2EB37F22E7A086006CF023 /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA2EB37E22E7A086006CF023 /* CombineFeedbackUI */; };
-		DA2EB38822E7A2F0006CF023 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EB38722E7A2F0006CF023 /* CardView.swift */; };
 		DA2EB38D22E7A404006CF023 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EB38C22E7A404006CF023 /* CardView.swift */; };
 		DA337E4A22E8F3BB00A3DD3E /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA337E4922E8F3BB00A3DD3E /* LateralThinking */; };
 		DA3684D322E65A4200EE2819 /* Lateral Thinking Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA3684D222E65A4200EE2819 /* Lateral Thinking Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -44,6 +43,8 @@
 		DA3684F422E65A4600EE2819 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3684F322E65A4600EE2819 /* Preview Assets.xcassets */; };
 		DA36855322E73D1900EE2819 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36855222E73D1900EE2819 /* TestingAppDelegate.swift */; };
 		DA36856022E7411100EE2819 /* Entwine in Frameworks */ = {isa = PBXBuildFile; productRef = DA36855F22E7411100EE2819 /* Entwine */; };
+		DA88459022EB82B600A32E36 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88458F22EB82B600A32E36 /* CardView.swift */; };
+		DA88459222EB832000A32E36 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA88459122EB832000A32E36 /* LateralThinking */; };
 		DAB7B77722E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77222E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf */; };
 		DAB7B77822E4F00A0091EEF3 /* NotoSerif-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77322E4F00A0091EEF3 /* NotoSerif-Regular.ttf */; };
 		DAB7B77922E4F00A0091EEF3 /* NotoSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77422E4F00A0091EEF3 /* NotoSerif-Italic.ttf */; };
@@ -180,7 +181,6 @@
 		DA2EB2F222E7903D006CF023 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		DA2EB2F422E7904F006CF023 /* Lateral Thinking Watch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lateral Thinking Watch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		DA2EB2F522E79051006CF023 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
-		DA2EB38722E7A2F0006CF023 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking/Lateral Thinking tvOS/Features/CardView.swift"; sourceTree = "<group>"; };
 		DA2EB38C22E7A404006CF023 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DA3684CF22E65A4200EE2819 /* Lateral Thinking Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral Thinking Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3684D222E65A4200EE2819 /* Lateral Thinking Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral Thinking Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +199,7 @@
 		DA3684F622E65A4600EE2819 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		DA36855222E73D1900EE2819 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
 		DA57C5C222E88F9D006C8F22 /* Lateral Thinking Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Lateral Thinking Core"; path = "/Users/paul/projects/Lateral Thinking Project/Lateral Thinking Core"; sourceTree = "<absolute>"; };
+		DA88458F22EB82B600A32E36 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DAB7B77222E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-BoldItalic.ttf"; sourceTree = "<group>"; };
 		DAB7B77322E4F00A0091EEF3 /* NotoSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Regular.ttf"; sourceTree = "<group>"; };
 		DAB7B77422E4F00A0091EEF3 /* NotoSerif-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Italic.ttf"; sourceTree = "<group>"; };
@@ -228,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2EB2F022E79029006CF023 /* CloudKit.framework in Frameworks */,
+				DA88459222EB832000A32E36 /* LateralThinking in Frameworks */,
 				DA2EB2FD22E79454006CF023 /* CombineFeedback in Frameworks */,
 				DA2EB2EC22E78F6D006CF023 /* Entwine in Frameworks */,
 				DA2EB2FF22E79454006CF023 /* CombineFeedbackUI in Frameworks */,
@@ -350,7 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2EB2C022E78EF7006CF023 /* ContentView.swift */,
-				DA2EB38722E7A2F0006CF023 /* CardView.swift */,
+				DA88458F22EB82B600A32E36 /* CardView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -536,6 +538,7 @@
 				DA2EB2EB22E78F6D006CF023 /* Entwine */,
 				DA2EB2FC22E79454006CF023 /* CombineFeedback */,
 				DA2EB2FE22E79454006CF023 /* CombineFeedbackUI */,
+				DA88459122EB832000A32E36 /* LateralThinking */,
 			);
 			productName = "Lateral Thinking tvOS";
 			productReference = DA2EB2B922E78EF7006CF023 /* Lateral Thinking tvOS.app */;
@@ -777,7 +780,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2EB2C622E78EF9006CF023 /* Preview Assets.xcassets in Resources */,
-				DA2EB2C322E78EF9006CF023 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -858,7 +860,7 @@
 			files = (
 				DA2EB2BC22E78EF7006CF023 /* AppDelegate.swift in Sources */,
 				DA2EB2BF22E78EF7006CF023 /* Lateral_Thinking_tvOS.xcdatamodeld in Sources */,
-				DA2EB38822E7A2F0006CF023 /* CardView.swift in Sources */,
+				DA88459022EB82B600A32E36 /* CardView.swift in Sources */,
 				DA2EB2C122E78EF7006CF023 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1643,6 +1645,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */;
 			productName = Entwine;
+		};
+		DA88459122EB832000A32E36 /* LateralThinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LateralThinking;
 		};
 /* End XCSwiftPackageProductDependency section */
 

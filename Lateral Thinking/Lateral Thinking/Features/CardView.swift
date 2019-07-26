@@ -26,16 +26,37 @@ public struct CardView : View {
   public var body: some View {
     ZStack {
       Rectangle()
-        .foregroundColor(Color.clear)
-        .tapAction {
-            self.context.send(event: .onTap)
-        }
+        .foregroundColor(Color("Background"))
+        .frame(minWidth: 0,
+                   idealWidth:UIScreen.main.bounds.width,
+                   maxWidth: .infinity,
+                   minHeight: 0,
+                   idealHeight: UIScreen.main.bounds.height,
+                   maxHeight: .infinity,
+                   alignment: .center)
+      .tapAction { self.context.send(event: .onTap) }
+
       Text(context.displayText)
         .lineLimit(nil)
         .font(.headline)
-        .foregroundColor(Color(hex:context.backgroundPairing.accent))
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-    }
+        .foregroundColor(Color("TextColor"))
+      .tapAction { self.context.send(event: .onTap) }
+
+    }.frame(minWidth: 0,
+           idealWidth:UIScreen.main.bounds.width,
+           maxWidth: .infinity,
+           minHeight: 0,
+           idealHeight: UIScreen.main.bounds.height,
+           maxHeight: .infinity,
+           alignment: .center)
+      .tapAction {
+          self.context.send(event: .onTap)
+      }.gesture(
+        DragGesture().onEnded({ _ in
+          self.context.send(event: .onTap)
+        })
+    )
+    .edgesIgnoringSafeArea(.all)
   }
 }
 

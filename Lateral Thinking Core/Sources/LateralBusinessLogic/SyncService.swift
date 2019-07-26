@@ -42,20 +42,19 @@ public class SyncService {
     _ = fetchCloudLaterals()
   }
   
-  // MARK: - Sync To Cloud
   private  var coreDataLaterals: AnyPublisher<[LateralType], Never> {
     didSet {
       monitorServices()
     }
   }
   
-  // MARK: - Sync from Cloud
   private var cloudLaterals: AnyPublisher<[LateralType], Never> {
     didSet {
       monitorServices()
     }
   }
   
+  // MARK: - Sync from Cloud
   func monitorServices() {
     guard monitor == nil else {
       return

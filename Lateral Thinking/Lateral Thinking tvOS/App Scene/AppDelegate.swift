@@ -8,8 +8,9 @@
 
 import UIKit
 import SwiftUI
+import CombineFeedback
 import CombineFeedbackUI
-import LateralThinking
+import LateralBusinessLogic
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

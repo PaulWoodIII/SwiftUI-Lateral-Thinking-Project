@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-import Lateral_Thinking_Core_tvOS
+import LateralBusinessLogic
 import CombineFeedbackUI
 
 public struct CardView : View {
@@ -25,14 +25,9 @@ public struct CardView : View {
   
   public var body: some View {
     ZStack {
-      RoundedRectangle(cornerRadius: 20)
-        .foregroundColor(Color(hex:context.backgroundPairing.background))
-        .padding()
-        .aspectRatio(contentMode: ContentMode.fit)
+      Rectangle()
       VStack {
         Text(context.displayText)
-          .customFont(.title1, font:.Noteworthy)
-          .foregroundColor(Color(hex:context.backgroundPairing.accent))
           .lineLimit(nil)
           .padding().padding()
       }

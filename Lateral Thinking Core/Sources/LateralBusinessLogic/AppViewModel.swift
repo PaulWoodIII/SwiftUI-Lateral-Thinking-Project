@@ -12,6 +12,7 @@ import CombineFeedbackUI
 import LateralCoreData
 import LateralCloudKit
 
+// TODO: Use this
 public class AppViewModel: ViewModel<AppViewModel.State, AppViewModel.Event> {
   
   var coreDataService: CoreDataService

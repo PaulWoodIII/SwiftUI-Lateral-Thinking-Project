@@ -36,7 +36,7 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
     
     public var onAppear: Bool = false
     public var displayText: String = InitialLateralTypes.obliques[1].body
-    public var displayLaterals: [LateralType] = InitialLateralTypes.obliques
+    public var displayLaterals: [LateralType] = []
     public var backgroundPairing: ColorTypes.ColorPairing = ColorTypes.DarkThemes.allCases[0]
     public var serviceCancelable: Cancellable?
     public var shuffler = GKShuffledDistribution()
