@@ -25,11 +25,12 @@ public struct CardView : View {
   
   public var body: some View {
     ZStack {
-      Rectangle()
+      Rectangle().foregroundColor(.black)
       VStack {
         Text(context.displayText)
+          .font(.title)
+          .foregroundColor(.white)
           .lineLimit(nil)
-          .padding().padding()
       }
     }.tapAction {
       self.context.send(event: .onTap)
