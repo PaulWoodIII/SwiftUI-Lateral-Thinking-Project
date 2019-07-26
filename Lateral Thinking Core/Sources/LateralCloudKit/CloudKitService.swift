@@ -11,48 +11,9 @@ import Combine
 import CloudKit
 import LateralThinkingCore
 
-extension CKContainer {
-  static let lateralThinkingShared = CKContainer(identifier: "com.paulwoodiii.lateralthinking")
-}
 
-public class CloudKitService {
-  
-  public static let shared = CloudKitService()
-  
-  public enum Error: Swift.Error {
-    case error
-  }
-  
-  let container: CKContainer = CKContainer.lateralThinkingShared
-  
-  public func cloudKitAvailable() -> Bool {
-    //TODO check for connectivity and cloudkit access
-    return true
-  }
-  
-  public func retrieveAllLaterals() -> AnyPublisher<[LateralType], Error> {
-    return Future { promise in
-      let query = CKQuery(recordType: LateralCloud, predicate: NSPredicate(value: true))
-      self.container.publicCloudDatabase
-        .perform(query,
-                 inZoneWith: nil) { (records: [CKRecord]?, err: Swift.Error?) in
-                  guard err == nil else {
-                     return promise(.failure(.error))
-                  }
-                  if let records = records as? [CKRecord] {
-                    let types = records.compactMap { (record: CKRecord) -> LateralType? in
-                      if let body = record[LateralTypeKeys.body] as? String {
-                        return LateralType(stringLiteral: body)
-                      }
-                      return nil
-                    }
-                    return promise(.success(types))
-                  }
-                  return promise(.success([]))
-      }
-    }.eraseToAnyPublisher()
-  }
-  
+extension CKContainer {
+  static let lateralThinkingShared = CKContainer(identifier: "iCloud.com.paulwoodiii.lateralthinking")
 }
 
 let LateralListCloud = "LateralListCloud"
@@ -86,4 +47,48 @@ extension CKRecord {
     }
   }
   
+}
+
+public class CloudKitService {
+  
+  public static let shared = CloudKitService()
+  
+  public enum Error: Swift.Error {
+    case error
+  }
+  
+  static let container: CKContainer = CKContainer.lateralThinkingShared
+  
+  @Published public var cloudLaterals: [LateralType] = []
+  
+  public func cloudKitAvailable() -> Bool {
+    //TODO check for connectivity and cloudkit access
+    return true
+  }
+  
+  public func retrieveAllLaterals() -> AnyPublisher<[LateralType], Error> {
+    return Deferred { () -> AnyPublisher<[LateralType], Error> in
+      return Future { promise in
+        let query = CKQuery(recordType: LateralCloud, predicate: NSPredicate(value: true))
+        CloudKitService.container.publicCloudDatabase
+          .perform(query,
+                   inZoneWith: nil) { (records: [CKRecord]?, err: Swift.Error?) in
+                    guard err == nil else {
+                      return promise(.failure(.error))
+                    }
+                    if let records = records {
+                      let types = records.compactMap { (record: CKRecord) -> LateralType? in
+                        if let body = record[LateralTypeKeys.body] as? String {
+                          return LateralType(stringLiteral: body)
+                        }
+                        return nil
+                      }
+                      self.cloudLaterals = types
+                      return promise(.success(types))
+                    }
+                    return promise(.success([]))
+        }
+      }.eraseToAnyPublisher()
+    }.eraseToAnyPublisher()
+  }
 }

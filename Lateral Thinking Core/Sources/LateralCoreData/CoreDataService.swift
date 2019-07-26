@@ -29,7 +29,8 @@ public class CoreDataService: NSObject {
      application to it. This property is optional since there are legitimate
      error conditions that could cause the creation of the store to fail.
      */
-    let container = NSPersistentContainer(name: "LateralModel")
+    let container = NSPersistentContainer(name: "LateralModel",
+                                          managedObjectModel: LateralManagedObjectModel)
     container.loadPersistentStores(completionHandler: { (storeDescription, error) in
       if let error = error as NSError? {
         // Replace this implementation with code to handle the error appropriately.
@@ -112,13 +113,11 @@ public class CoreDataService: NSObject {
   
   // MARK: - Create
   
-  public func create(lateralType: LateralType) -> AnyPublisher<LateralType, Error> {
-    let lateralMO = LateralMO.create(self.persistentContainer.viewContext,
-                                     lateralType: lateralType)
-    let lateralType = LateralType(stringLiteral: lateralMO.body!)
-    return Just(lateralType)
-      .setFailureType(to: Error.self)
-      .eraseToAnyPublisher()
+  public func create(lateralType: LateralType) {
+    let mom = self.persistentContainer.viewContext
+    let entity = LateralMO.entity(in: mom)!
+    let lateralMO = LateralMO(entity: entity, insertInto: mom)
+    lateralMO.body = lateralType.body
   }
   
   // MARK: - Delete
@@ -141,7 +140,7 @@ public class CoreDataService: NSObject {
   }
   
   // MARK: - Core Data Saving support
-  func saveContext () -> AnyPublisher<Void, Error> {
+  public func saveContext () -> AnyPublisher<Void, Error> {
     return Future<Void, Error>.init { promise in
       let context = self.persistentContainer.viewContext
       if context.hasChanges {

@@ -33,6 +33,7 @@ internal class LateralListMO: NSManagedObject {
 // MARK: - LateralMO
 
 internal class LateralMO: NSManagedObject {
+  
   internal class func entityName() -> String {
     return "LateralMO"
   }

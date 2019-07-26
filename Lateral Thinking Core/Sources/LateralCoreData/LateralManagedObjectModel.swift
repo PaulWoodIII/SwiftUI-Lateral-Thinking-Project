@@ -8,9 +8,12 @@
 import Foundation
 import CoreData
 
+/// Swift Packages cannot load files which means our .xcdatamodel file will not load into the static library
+/// and therefore we need to describe our Data Model in code, this is that work that describes a Lateral
+/// and a list of Laterals, Each Lateral has a relationship to a List
 let LateralManagedObjectModel: NSManagedObjectModel = {
   let lateral = NSEntityDescription ()
-  lateral.name = "LateralMO"
+  lateral.name = "LateralMO" //MO means Managed Object
   lateral.managedObjectClassName = "LateralCoreData.LateralMO"
 
   let lateralBodyAttribute = NSAttributeDescription()
@@ -18,7 +21,7 @@ let LateralManagedObjectModel: NSManagedObjectModel = {
   lateralBodyAttribute.attributeType = .stringAttributeType;
 
   let lateralList = NSEntityDescription()
-  lateralList.name = "LateralListMO"
+  lateralList.name = "LateralListMO" //MO means Managed Object
   lateralList.managedObjectClassName = "LateralCoreData.LateralListMO"
 
   let listBodyAttribute =  NSAttributeDescription()

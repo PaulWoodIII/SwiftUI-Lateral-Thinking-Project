@@ -25,3 +25,7 @@ public struct LateralType: ExpressibleByStringLiteral, Identifiable, Comparable 
     self.body = value
   }
 }
+
+extension LateralType: Hashable {
+  
+}

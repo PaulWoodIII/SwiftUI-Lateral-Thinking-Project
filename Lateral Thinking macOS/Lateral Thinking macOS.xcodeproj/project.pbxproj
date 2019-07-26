@@ -12,7 +12,9 @@
 		DA57C5AE22E88572006C8F22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA57C5AD22E88572006C8F22 /* Assets.xcassets */; };
 		DA57C5B122E88572006C8F22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA57C5B022E88572006C8F22 /* Preview Assets.xcassets */; };
 		DA57C5B422E88572006C8F22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA57C5B222E88572006C8F22 /* Main.storyboard */; };
-		DA9E908A22E8A6EB00299C15 /* Lateral Thinking Core in Frameworks */ = {isa = PBXBuildFile; productRef = DA9E908922E8A6EB00299C15 /* Lateral Thinking Core */; };
+		DA8ECF1D22EB5E5D00820428 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA8ECF1C22EB5E5D00820428 /* LateralThinking */; };
+		DA8ECF1F22EB5EC100820428 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8ECF1E22EB5EC100820428 /* CloudKit.framework */; };
+		DA8ECF2322EB5F1300820428 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8ECF2222EB5F1300820428 /* CardView.swift */; };
 		DA9E908D22E8A71B00299C15 /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = DA9E908C22E8A71B00299C15 /* CombineFeedback */; };
 		DA9E908F22E8A71B00299C15 /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA9E908E22E8A71B00299C15 /* CombineFeedbackUI */; };
 		DA9E909222E8A75300299C15 /* Entwine in Frameworks */ = {isa = PBXBuildFile; productRef = DA9E909122E8A75300299C15 /* Entwine */; };
@@ -27,6 +29,8 @@
 		DA57C5B322E88572006C8F22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA57C5B522E88572006C8F22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA57C5B622E88572006C8F22 /* Lateral_Thinking_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Lateral_Thinking_macOS.entitlements; sourceTree = "<group>"; };
+		DA8ECF1E22EB5EC100820428 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		DA8ECF2222EB5F1300820428 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking macOS/Lateral Thinking macOS/Features/CardView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +38,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA9E908A22E8A6EB00299C15 /* Lateral Thinking Core in Frameworks */,
+				DA8ECF1F22EB5EC100820428 /* CloudKit.framework in Frameworks */,
+				DA8ECF1D22EB5E5D00820428 /* LateralThinking in Frameworks */,
 				DA9E909222E8A75300299C15 /* Entwine in Frameworks */,
 				DA9E908F22E8A71B00299C15 /* CombineFeedbackUI in Frameworks */,
 				DA9E908D22E8A71B00299C15 /* CombineFeedback in Frameworks */,
@@ -64,7 +69,8 @@
 		DA57C5A822E88571006C8F22 /* Lateral Thinking macOS */ = {
 			isa = PBXGroup;
 			children = (
-				DA57C5A922E88571006C8F22 /* AppDelegate.swift */,
+				DA8ECF2122EB5F0300820428 /* App */,
+				DA8ECF2022EB5EFB00820428 /* Features */,
 				DA57C5AB22E88571006C8F22 /* ContentView.swift */,
 				DA57C5AD22E88572006C8F22 /* Assets.xcassets */,
 				DA57C5B222E88572006C8F22 /* Main.storyboard */,
@@ -83,9 +89,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DA8ECF2022EB5EFB00820428 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DA8ECF2222EB5F1300820428 /* CardView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		DA8ECF2122EB5F0300820428 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DA57C5A922E88571006C8F22 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		DA9E908822E8A6EB00299C15 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA8ECF1E22EB5EC100820428 /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,10 +130,10 @@
 			);
 			name = "Lateral Thinking macOS";
 			packageProductDependencies = (
-				DA9E908922E8A6EB00299C15 /* Lateral Thinking Core */,
 				DA9E908C22E8A71B00299C15 /* CombineFeedback */,
 				DA9E908E22E8A71B00299C15 /* CombineFeedbackUI */,
 				DA9E909122E8A75300299C15 /* Entwine */,
+				DA8ECF1C22EB5E5D00820428 /* LateralThinking */,
 			);
 			productName = "Lateral Thinking macOS";
 			productReference = DA57C5A622E88571006C8F22 /* Lateral Thinking macOS.app */;
@@ -172,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA57C5AC22E88571006C8F22 /* ContentView.swift in Sources */,
+				DA8ECF2322EB5F1300820428 /* CardView.swift in Sources */,
 				DA57C5AA22E88571006C8F22 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,9 +414,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DA9E908922E8A6EB00299C15 /* Lateral Thinking Core */ = {
+		DA8ECF1C22EB5E5D00820428 /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = "Lateral Thinking Core";
+			productName = LateralThinking;
 		};
 		DA9E908C22E8A71B00299C15 /* CombineFeedback */ = {
 			isa = XCSwiftPackageProductDependency;

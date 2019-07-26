@@ -9,17 +9,20 @@ import Foundation
 import Combine
 import CombineFeedback
 import CombineFeedbackUI
+import LateralCoreData
+import LateralCloudKit
 
-class AppViewModel: ViewModel<AppViewModel.State, AppViewModel.Event> {
+public class AppViewModel: ViewModel<AppViewModel.State, AppViewModel.Event> {
   
-  let dataStoreContext: Context<DataStoreViewModel.State, DataStoreViewModel.Event>
-  let cardContext: Context<CardViewModel.State, CardViewModel.Event>
+  var coreDataService: CoreDataService
+  var cloudKitService: CloudKitService
   
-  public init(initial: State = State()) {
-    let vm = DataStoreViewModel()
-    let dataStoreViewModel = Context<DataStoreViewModel.State, DataStoreViewModel.Event>(state: DataStoreViewModel.State(), viewModel: vm)
-    self.dataStoreContext = dataStoreViewModel
-    self.cardContext = Context<CardViewModel.State, CardViewModel.Event>(state:CardViewModel.State(dataStoreViewModel: vm), viewModel: CardViewModel())
+  public init(initial: State = State(),
+              coreDataService: CoreDataService = CoreDataService.shared,
+                cloudKitService: CloudKitService = CloudKitService.shared
+              ) {
+    self.coreDataService = coreDataService
+    self.cloudKitService = cloudKitService
       super.init(
           initial: initial,
           feedbacks: [],
@@ -35,11 +38,11 @@ class AppViewModel: ViewModel<AppViewModel.State, AppViewModel.Event> {
     }
   }
   
-  struct State {
-    
+  public struct State {
+    public init() {}
   }
   
-  enum Event {
+  public enum Event {
     
   }
 }
