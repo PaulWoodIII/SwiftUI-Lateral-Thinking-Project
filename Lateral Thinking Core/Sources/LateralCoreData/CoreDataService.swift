@@ -69,6 +69,12 @@ public class CoreDataService: NSObject {
   @Published var allLaterals: [LateralMO] = []
   
   @Published public var allLateralTypes: [LateralType] = []
+  
+  var startupCancellable: Cancellable?
+  public override init() {
+    super.init()
+    self.startupCancellable = self.startup().replaceError(with: true).makeConnectable().connect()
+  }
 
   // MARK: - Startup
   public func startup() -> AnyPublisher<Bool, Error> {
