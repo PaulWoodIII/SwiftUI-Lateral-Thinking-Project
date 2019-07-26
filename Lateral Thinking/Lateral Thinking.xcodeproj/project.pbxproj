@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA1F6C7B22EB8921003292DE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1F6C7A22EB8921003292DE /* CoreData.framework */; };
+		DA1F6C9B22EB8B87003292DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2EB2C222E78EF9006CF023 /* Assets.xcassets */; };
 		DA210D5C22E5E2DA005A41C9 /* EntwineTest in Frameworks */ = {isa = PBXBuildFile; productRef = DA210D5B22E5E2DA005A41C9 /* EntwineTest */; };
 		DA210D5E22E5E2DA005A41C9 /* Entwine in Frameworks */ = {isa = PBXBuildFile; productRef = DA210D5D22E5E2DA005A41C9 /* Entwine */; };
 		DA2EB2BC22E78EF7006CF023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EB2BB22E78EF7006CF023 /* AppDelegate.swift */; };
-		DA2EB2BF22E78EF7006CF023 /* Lateral_Thinking_tvOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2EB2BD22E78EF7006CF023 /* Lateral_Thinking_tvOS.xcdatamodeld */; };
 		DA2EB2C122E78EF7006CF023 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EB2C022E78EF7006CF023 /* ContentView.swift */; };
-		DA2EB2C322E78EF9006CF023 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2EB2C222E78EF9006CF023 /* Assets.xcassets */; };
 		DA2EB2C622E78EF9006CF023 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2EB2C522E78EF9006CF023 /* Preview Assets.xcassets */; };
 		DA2EB2D122E78EF9006CF023 /* Lateral_Thinking_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EB2D022E78EF9006CF023 /* Lateral_Thinking_tvOSTests.swift */; };
 		DA2EB2DC22E78EF9006CF023 /* Lateral_Thinking_tvOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EB2DB22E78EF9006CF023 /* Lateral_Thinking_tvOSUITests.swift */; };
@@ -107,16 +107,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		DA2EB31E22E797E8006CF023 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DA2EB35222E79BA7006CF023 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,9 +152,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA1F6C7A22EB8921003292DE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS13.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		DA2EB2B922E78EF7006CF023 /* Lateral Thinking tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral Thinking tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2EB2BB22E78EF7006CF023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA2EB2BE22E78EF7006CF023 /* Lateral_Thinking_tvOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lateral_Thinking_tvOS.xcdatamodel; sourceTree = "<group>"; };
 		DA2EB2C022E78EF7006CF023 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA2EB2C222E78EF9006CF023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA2EB2C522E78EF9006CF023 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -229,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2EB2F022E79029006CF023 /* CloudKit.framework in Frameworks */,
+				DA1F6C7B22EB8921003292DE /* CoreData.framework in Frameworks */,
 				DA88459222EB832000A32E36 /* LateralThinking in Frameworks */,
 				DA2EB2FD22E79454006CF023 /* CombineFeedback in Frameworks */,
 				DA2EB2EC22E78F6D006CF023 /* Entwine in Frameworks */,
@@ -300,7 +291,6 @@
 				DA2EB2EE22E79027006CF023 /* Lateral Thinking tvOS.entitlements */,
 				DA2EB2C222E78EF9006CF023 /* Assets.xcassets */,
 				DA2EB2C722E78EF9006CF023 /* Info.plist */,
-				DA2EB2BD22E78EF7006CF023 /* Lateral_Thinking_tvOS.xcdatamodeld */,
 				DA2EB2C422E78EF9006CF023 /* Preview Content */,
 			);
 			path = "Lateral Thinking tvOS";
@@ -404,6 +394,7 @@
 		DA36853922E65CAF00EE2819 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DA1F6C7A22EB8921003292DE /* CoreData.framework */,
 				DA57C5C222E88F9D006C8F22 /* Lateral Thinking Core */,
 				DA2EB2F522E79051006CF023 /* CloudKit.framework */,
 				DA2EB2F222E7903D006CF023 /* CloudKit.framework */,
@@ -527,7 +518,6 @@
 				DA2EB2B522E78EF7006CF023 /* Sources */,
 				DA2EB2B622E78EF7006CF023 /* Frameworks */,
 				DA2EB2B722E78EF7006CF023 /* Resources */,
-				DA2EB31E22E797E8006CF023 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -779,6 +769,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1F6C9B22EB8B87003292DE /* Assets.xcassets in Resources */,
 				DA2EB2C622E78EF9006CF023 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -859,7 +850,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2EB2BC22E78EF7006CF023 /* AppDelegate.swift in Sources */,
-				DA2EB2BF22E78EF7006CF023 /* Lateral_Thinking_tvOS.xcdatamodeld in Sources */,
 				DA88459022EB82B600A32E36 /* CardView.swift in Sources */,
 				DA2EB2C122E78EF7006CF023 /* ContentView.swift in Sources */,
 			);
@@ -981,7 +971,7 @@
 		DA2EB2DF22E78EF9006CF023 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Lateral Thinking tvOS/Lateral Thinking tvOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -1005,7 +995,7 @@
 		DA2EB2E022E78EF9006CF023 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = "Lateral Thinking tvOS/Lateral Thinking tvOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -1653,16 +1643,6 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		DA2EB2BD22E78EF7006CF023 /* Lateral_Thinking_tvOS.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DA2EB2BE22E78EF7006CF023 /* Lateral_Thinking_tvOS.xcdatamodel */,
-			);
-			currentVersion = DA2EB2BE22E78EF7006CF023 /* Lateral_Thinking_tvOS.xcdatamodel */;
-			path = Lateral_Thinking_tvOS.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		DAFB17C822E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
