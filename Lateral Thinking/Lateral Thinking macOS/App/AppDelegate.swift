@@ -8,12 +8,15 @@
 
 import Cocoa
 import SwiftUI
+import CombineFeedbackUI
+import LateralBusinessLogic
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
   var window: NSWindow!
 
+  let syncService = SyncService.shared
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     // Insert code here to initialize your application
@@ -24,7 +27,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     window.center()
     window.setFrameAutosaveName("Main Window")
 
-    window.contentView = NSHostingView(rootView: ContentView())
+    
+    let widget = Widget(
+      viewModel: CardViewModel(),
+      render: CardView.init
+    )
+    window.contentView = NSHostingView(rootView: widget)
 
     window.makeKeyAndOrderFront(nil)
   }

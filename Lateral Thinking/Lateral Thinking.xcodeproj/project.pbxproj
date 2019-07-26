@@ -45,6 +45,9 @@
 		DA52208922EBBE4C00E0AF27 /* Lateral_Thinking_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52208822EBBE4C00E0AF27 /* Lateral_Thinking_macOSTests.swift */; };
 		DA52209422EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52209322EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift */; };
 		DA5220A222EBBFA700E0AF27 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5220A122EBBFA700E0AF27 /* CardView.swift */; };
+		DA5220A422EBC4B200E0AF27 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA5220A322EBC4B200E0AF27 /* LateralThinking */; };
+		DA5220A622EBC4C200E0AF27 /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = DA5220A522EBC4C200E0AF27 /* CombineFeedback */; };
+		DA5220A822EBC4C200E0AF27 /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA5220A722EBC4C200E0AF27 /* CombineFeedbackUI */; };
 		DA88459022EB82B600A32E36 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88458F22EB82B600A32E36 /* CardView.swift */; };
 		DA88459222EB832000A32E36 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA88459122EB832000A32E36 /* LateralThinking */; };
 		DAB7B77722E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77222E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf */; };
@@ -271,6 +274,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5220A422EBC4B200E0AF27 /* LateralThinking in Frameworks */,
+				DA5220A822EBC4C200E0AF27 /* CombineFeedbackUI in Frameworks */,
+				DA5220A622EBC4C200E0AF27 /* CombineFeedback in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,6 +739,11 @@
 			dependencies = (
 			);
 			name = "Lateral Thinking macOS";
+			packageProductDependencies = (
+				DA5220A322EBC4B200E0AF27 /* LateralThinking */,
+				DA5220A522EBC4C200E0AF27 /* CombineFeedback */,
+				DA5220A722EBC4C200E0AF27 /* CombineFeedbackUI */,
+			);
 			productName = "Lateral Thinking macOS";
 			productReference = DA52206D22EBBE4A00E0AF27 /* Lateral Thinking macOS.app */;
 			productType = "com.apple.product-type.application";
@@ -2014,6 +2025,20 @@
 		DA52205D22EBA84400E0AF27 /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LateralThinking;
+		};
+		DA5220A322EBC4B200E0AF27 /* LateralThinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LateralThinking;
+		};
+		DA5220A522EBC4C200E0AF27 /* CombineFeedback */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedback;
+		};
+		DA5220A722EBC4C200E0AF27 /* CombineFeedbackUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedbackUI;
 		};
 		DA88459122EB832000A32E36 /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;

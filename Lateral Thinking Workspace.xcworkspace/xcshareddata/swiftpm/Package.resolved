@@ -3,7 +3,7 @@
     "pins": [
       {
         "package": "CombineFeedback",
-        "repositoryURL": "https://github.com/PaulWoodIII/CombineFeedback",
+        "repositoryURL": "https://github.com/PaulWoodIII/CombineFeedback.git",
         "state": {
           "branch": "add_tvos_watchos",
           "revision": "bcfbfbd1923500dfe1dfd586a5b1576e1b888ff8",

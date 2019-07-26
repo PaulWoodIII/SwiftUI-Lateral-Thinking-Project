@@ -7,7 +7,4 @@
    <FileRef
       location = "group:Lateral Thinking/Lateral Thinking.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:Lateral Thinking macOS/Lateral Thinking macOS.xcodeproj">
-   </FileRef>
 </Workspace>

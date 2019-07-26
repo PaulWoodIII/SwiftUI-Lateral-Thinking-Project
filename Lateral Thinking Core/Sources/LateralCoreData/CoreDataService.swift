@@ -105,8 +105,11 @@ public class CoreDataService: NSObject {
   
   public func saveInitialToCoreData() -> AnyPublisher<[LateralType], Error> {
     let commands = self.initialCommands.map { (lateralType) -> LateralMO in
-      return LateralMO.create(self.persistentContainer.viewContext,
-                              lateralType: lateralType)
+      let mom = self.persistentContainer.viewContext
+      let entity = LateralMO.entity(in: mom)!
+      let lateralMO = LateralMO(entity: entity, insertInto: mom)
+      lateralMO.body = lateralType.body
+      return lateralMO
     }
     self.allLaterals = commands
     self.allLateralTypes = commands.map({ (mo) -> LateralType in
