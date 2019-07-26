@@ -12,7 +12,9 @@ import CombineFeedback
 import CombineFeedbackUI
 import LateralThinkingCore
 import LateralCloudKit
+#if !os(watchOS)
 import GameplayKit
+#endif
 
 public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> {
   
@@ -39,7 +41,9 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
     public var displayLaterals: [LateralType] = []
     public var backgroundPairing: ColorTypes.ColorPairing = ColorTypes.DarkThemes.allCases[0]
     public var serviceCancelable: Cancellable?
-    public var shuffler = GKShuffledDistribution()
+    #if !os(watchOS)
+    var shuffler = GKShuffledDistribution()
+    #endif
   }
   
   public enum Event {
@@ -50,17 +54,31 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
     case lateralPublisher(_: Cancellable)
   }
   
+  private static func nextDisplay(state: State) -> Int {
+    #if !os(watchOS)
+    var shuffler = GKShuffledDistribution()
+    return state.shuffler.nextInt()
+    #else
+    let high = UInt32(state.displayLaterals.count - 1)
+    return Int(arc4random_uniform(high))
+    #endif
+    
+  }
+  
   private static func reduce(state: State, event: Event) -> State {
     switch event {
     case .appeared:
       return state.set(\.onAppear, true)
     case .onTap:
-      let next = state.shuffler.nextInt()
+      let next = nextDisplay(state: state)
       return state.set(\.displayText, state.displayLaterals[next].body)
     case .setLaterals(let lats):
+      let copy = state
+      #if !os(watchOS)
       let random = GKShuffledDistribution(lowestValue: 0, highestValue: lats.count-1)
-      return state.set(\.shuffler, random)
-        .set(\.displayLaterals, lats)
+      copy = copy.set(\.shuffler, random)
+      #endif
+      return copy.set(\.displayLaterals, lats)
     case .error:
       return state //TODO: use Errors in a productive way in the UI
     case .lateralPublisher(let c):

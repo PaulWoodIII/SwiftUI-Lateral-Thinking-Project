@@ -26,6 +26,17 @@
 		DA337E4A22E8F3BB00A3DD3E /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA337E4922E8F3BB00A3DD3E /* LateralThinking */; };
 		DA36855322E73D1900EE2819 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA36855222E73D1900EE2819 /* TestingAppDelegate.swift */; };
 		DA36856022E7411100EE2819 /* Entwine in Frameworks */ = {isa = PBXBuildFile; productRef = DA36855F22E7411100EE2819 /* Entwine */; };
+		DA52203022EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DA52202F22EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA52203622EBA3C900E0AF27 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA52203422EBA3C900E0AF27 /* Interface.storyboard */; };
+		DA52203822EBA3CB00E0AF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA52203722EBA3CB00E0AF27 /* Assets.xcassets */; };
+		DA52203F22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA52203E22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA52204622EBA3CB00E0AF27 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52204522EBA3CB00E0AF27 /* HostingController.swift */; };
+		DA52204822EBA3CB00E0AF27 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52204722EBA3CB00E0AF27 /* ExtensionDelegate.swift */; };
+		DA52204A22EBA3CC00E0AF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA52204922EBA3CC00E0AF27 /* Assets.xcassets */; };
+		DA52204D22EBA3CC00E0AF27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA52204C22EBA3CC00E0AF27 /* Preview Assets.xcassets */; };
+		DA52205C22EBA7FE00E0AF27 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52205B22EBA7FE00E0AF27 /* CardView.swift */; };
+		DA52205E22EBA84400E0AF27 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA52205D22EBA84400E0AF27 /* LateralThinking */; };
+		DA52206022EBA84400E0AF27 /* Entwine in Frameworks */ = {isa = PBXBuildFile; productRef = DA52205F22EBA84400E0AF27 /* Entwine */; };
 		DA88459022EB82B600A32E36 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88458F22EB82B600A32E36 /* CardView.swift */; };
 		DA88459222EB832000A32E36 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA88459122EB832000A32E36 /* LateralThinking */; };
 		DAB7B77722E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77222E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf */; };
@@ -59,6 +70,20 @@
 			remoteGlobalIDString = DA2EB2B822E78EF7006CF023;
 			remoteInfo = "Lateral Thinking tvOS";
 		};
+		DA52203122EBA3C900E0AF27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA52202E22EBA3C900E0AF27;
+			remoteInfo = "Lateral Thinking watchOS WatchKit App";
+		};
+		DA52204022EBA3CB00E0AF27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA52203D22EBA3CB00E0AF27;
+			remoteInfo = "Lateral Thinking watchOS WatchKit Extension";
+		};
 		DAFB17DB22E4E379004C78E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
@@ -86,6 +111,28 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA52205222EBA3CC00E0AF27 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DA52203F22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52205622EBA3CC00E0AF27 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DA52203022EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +154,18 @@
 		DA2EB2F222E7903D006CF023 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		DA2EB2F522E79051006CF023 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		DA36855222E73D1900EE2819 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		DA52202C22EBA3C900E0AF27 /* Lateral Thinking watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral Thinking watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA52202F22EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral Thinking watchOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA52203522EBA3C900E0AF27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DA52203722EBA3CB00E0AF27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA52203922EBA3CB00E0AF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA52203E22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lateral Thinking watchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA52204522EBA3CB00E0AF27 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		DA52204722EBA3CB00E0AF27 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DA52204922EBA3CC00E0AF27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA52204C22EBA3CC00E0AF27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA52204E22EBA3CC00E0AF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA52205B22EBA7FE00E0AF27 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking watchOS WatchKit Extension/Features/CardView.swift"; sourceTree = "<group>"; };
 		DA57C5C222E88F9D006C8F22 /* Lateral Thinking Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Lateral Thinking Core"; path = "/Users/paul/projects/Lateral Thinking Project/Lateral Thinking Core"; sourceTree = "<absolute>"; };
 		DA88458F22EB82B600A32E36 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DAB7B77222E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -157,6 +216,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52203B22EBA3CB00E0AF27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA52205E22EBA84400E0AF27 /* LateralThinking in Frameworks */,
+				DA52206022EBA84400E0AF27 /* Entwine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +334,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DA52203322EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DA52203422EBA3C900E0AF27 /* Interface.storyboard */,
+				DA52203722EBA3CB00E0AF27 /* Assets.xcassets */,
+				DA52203922EBA3CB00E0AF27 /* Info.plist */,
+			);
+			path = "Lateral Thinking watchOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		DA52204222EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DA52205A22EBA7E500E0AF27 /* Features */,
+				DA52204522EBA3CB00E0AF27 /* HostingController.swift */,
+				DA52204722EBA3CB00E0AF27 /* ExtensionDelegate.swift */,
+				DA52204922EBA3CC00E0AF27 /* Assets.xcassets */,
+				DA52204E22EBA3CC00E0AF27 /* Info.plist */,
+				DA52204B22EBA3CC00E0AF27 /* Preview Content */,
+			);
+			path = "Lateral Thinking watchOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DA52204B22EBA3CC00E0AF27 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DA52204C22EBA3CC00E0AF27 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DA52205A22EBA7E500E0AF27 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DA52205B22EBA7FE00E0AF27 /* CardView.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		DAB7B77122E4F00A0091EEF3 /* Noto_Serif */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +402,8 @@
 				DA2EB2BA22E78EF7006CF023 /* Lateral Thinking tvOS */,
 				DA2EB2CF22E78EF9006CF023 /* Lateral Thinking tvOSTests */,
 				DA2EB2DA22E78EF9006CF023 /* Lateral Thinking tvOSUITests */,
+				DA52203322EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App */,
+				DA52204222EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension */,
 				DAFB17C222E4E376004C78E4 /* Products */,
 				DA36853922E65CAF00EE2819 /* Frameworks */,
 			);
@@ -309,6 +418,9 @@
 				DA2EB2B922E78EF7006CF023 /* Lateral Thinking tvOS.app */,
 				DA2EB2CC22E78EF9006CF023 /* Lateral Thinking tvOSTests.xctest */,
 				DA2EB2D722E78EF9006CF023 /* Lateral Thinking tvOSUITests.xctest */,
+				DA52202C22EBA3C900E0AF27 /* Lateral Thinking watchOS.app */,
+				DA52202F22EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App.app */,
+				DA52203E22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -428,6 +540,61 @@
 			productReference = DA2EB2D722E78EF9006CF023 /* Lateral Thinking tvOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DA52202B22EBA3C900E0AF27 /* Lateral Thinking watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA52205722EBA3CC00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking watchOS" */;
+			buildPhases = (
+				DA52202A22EBA3C900E0AF27 /* Resources */,
+				DA52205622EBA3CC00E0AF27 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA52203222EBA3C900E0AF27 /* PBXTargetDependency */,
+			);
+			name = "Lateral Thinking watchOS";
+			productName = "Lateral Thinking watchOS";
+			productReference = DA52202C22EBA3C900E0AF27 /* Lateral Thinking watchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		DA52202E22EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA52205322EBA3CC00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking watchOS WatchKit App" */;
+			buildPhases = (
+				DA52202D22EBA3C900E0AF27 /* Resources */,
+				DA52205222EBA3CC00E0AF27 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA52204122EBA3CB00E0AF27 /* PBXTargetDependency */,
+			);
+			name = "Lateral Thinking watchOS WatchKit App";
+			productName = "Lateral Thinking watchOS WatchKit App";
+			productReference = DA52202F22EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DA52203D22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA52204F22EBA3CC00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking watchOS WatchKit Extension" */;
+			buildPhases = (
+				DA52203A22EBA3CB00E0AF27 /* Sources */,
+				DA52203B22EBA3CB00E0AF27 /* Frameworks */,
+				DA52203C22EBA3CB00E0AF27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lateral Thinking watchOS WatchKit Extension";
+			packageProductDependencies = (
+				DA52205D22EBA84400E0AF27 /* LateralThinking */,
+				DA52205F22EBA84400E0AF27 /* Entwine */,
+			);
+			productName = "Lateral Thinking watchOS WatchKit Extension";
+			productReference = DA52203E22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		DAFB17C022E4E376004C78E4 /* Lateral Thinking */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAFB17EE22E4E379004C78E4 /* Build configuration list for PBXNativeTarget "Lateral Thinking" */;
@@ -513,6 +680,15 @@
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = DA2EB2B822E78EF7006CF023;
 					};
+					DA52202B22EBA3C900E0AF27 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					DA52202E22EBA3C900E0AF27 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					DA52203D22EBA3CB00E0AF27 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					DAFB17C022E4E376004C78E4 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -549,6 +725,9 @@
 				DA2EB2B822E78EF7006CF023 /* Lateral Thinking tvOS */,
 				DA2EB2CB22E78EF9006CF023 /* Lateral Thinking tvOSTests */,
 				DA2EB2D622E78EF9006CF023 /* Lateral Thinking tvOSUITests */,
+				DA52202B22EBA3C900E0AF27 /* Lateral Thinking watchOS */,
+				DA52202E22EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App */,
+				DA52203D22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -574,6 +753,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52202A22EBA3C900E0AF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52202D22EBA3C900E0AF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA52203822EBA3CB00E0AF27 /* Assets.xcassets in Resources */,
+				DA52203622EBA3C900E0AF27 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA52203C22EBA3CB00E0AF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA52204D22EBA3CC00E0AF27 /* Preview Assets.xcassets in Resources */,
+				DA52204A22EBA3CC00E0AF27 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +838,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DA52203A22EBA3CB00E0AF27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA52204622EBA3CB00E0AF27 /* HostingController.swift in Sources */,
+				DA52205C22EBA7FE00E0AF27 /* CardView.swift in Sources */,
+				DA52204822EBA3CB00E0AF27 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAFB17BD22E4E376004C78E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -676,6 +890,16 @@
 			target = DA2EB2B822E78EF7006CF023 /* Lateral Thinking tvOS */;
 			targetProxy = DA2EB2D822E78EF9006CF023 /* PBXContainerItemProxy */;
 		};
+		DA52203222EBA3C900E0AF27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA52202E22EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App */;
+			targetProxy = DA52203122EBA3C900E0AF27 /* PBXContainerItemProxy */;
+		};
+		DA52204122EBA3CB00E0AF27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA52203D22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension */;
+			targetProxy = DA52204022EBA3CB00E0AF27 /* PBXContainerItemProxy */;
+		};
 		DAFB17DC22E4E379004C78E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DAFB17C022E4E376004C78E4 /* Lateral Thinking */;
@@ -689,6 +913,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DA52203422EBA3C900E0AF27 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA52203522EBA3C900E0AF27 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		DAFB17D222E4E379004C78E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -718,11 +950,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 13.0;
-				VALID_ARCHS = arm64;
 			};
 			name = Debug;
 		};
@@ -744,11 +974,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 13.0;
-				VALID_ARCHS = arm64;
 			};
 			name = Release;
 		};
@@ -842,6 +1070,122 @@
 			};
 			name = Release;
 		};
+		DA52205022EBA3CC00E0AF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Lateral Thinking watchOS WatchKit Extension\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lateral Thinking watchOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-watchOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		DA52205122EBA3CC00E0AF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Lateral Thinking watchOS WatchKit Extension\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lateral Thinking watchOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-watchOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		DA52205422EBA3CC00E0AF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				IBSC_MODULE = Lateral_Thinking_watchOS_WatchKit_Extension;
+				INFOPLIST_FILE = "Lateral Thinking watchOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-watchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		DA52205522EBA3CC00E0AF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				IBSC_MODULE = Lateral_Thinking_watchOS_WatchKit_Extension;
+				INFOPLIST_FILE = "Lateral Thinking watchOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-watchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		DA52205822EBA3CC00E0AF27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DA52205922EBA3CC00E0AF27 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		DAFB17EC22E4E379004C78E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -897,10 +1241,8 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -952,11 +1294,9 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -1114,6 +1454,33 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DA52204F22EBA3CC00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking watchOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA52205022EBA3CC00E0AF27 /* Debug */,
+				DA52205122EBA3CC00E0AF27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA52205322EBA3CC00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking watchOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA52205422EBA3CC00E0AF27 /* Debug */,
+				DA52205522EBA3CC00E0AF27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA52205722EBA3CC00E0AF27 /* Build configuration list for PBXNativeTarget "Lateral Thinking watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA52205822EBA3CC00E0AF27 /* Debug */,
+				DA52205922EBA3CC00E0AF27 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DAFB17BC22E4E376004C78E4 /* Build configuration list for PBXProject "Lateral Thinking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1212,6 +1579,15 @@
 			productName = LateralThinking;
 		};
 		DA36855F22E7411100EE2819 /* Entwine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */;
+			productName = Entwine;
+		};
+		DA52205D22EBA84400E0AF27 /* LateralThinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LateralThinking;
+		};
+		DA52205F22EBA84400E0AF27 /* Entwine */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */;
 			productName = Entwine;
