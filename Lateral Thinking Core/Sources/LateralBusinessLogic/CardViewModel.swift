@@ -73,7 +73,7 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
       let next = nextDisplay(state: state)
       return state.set(\.displayText, state.displayLaterals[next].body)
     case .setLaterals(let lats):
-      let copy = state
+      var copy = state
       #if !os(watchOS)
       let random = GKShuffledDistribution(lowestValue: 0, highestValue: lats.count-1)
       copy = copy.set(\.shuffler, random)
