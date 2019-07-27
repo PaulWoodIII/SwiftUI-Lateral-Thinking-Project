@@ -1,8 +1,8 @@
 //
 //  CoreDataService.swift
-//  Lateral Thinking Core
+//  LateralThinking-Persistance
 //
-//  Created by Paul Wood on 7/23/19.
+//  Created by Paul Wood on 7/27/19.
 //  Copyright © 2019 Paul Wood. All rights reserved.
 //
 
@@ -11,13 +11,11 @@ import CoreData
 import Combine
 import LateralThinkingCore
 
-public class CoreDataService: NSObject {
+public let CoreDataModelName = "LateralModel"
+
+public class CoreDataService: NSObject, CoreDataServiceType {
   
   public static let shared = CoreDataService()
-  
-  public struct Error: Swift.Error, Equatable {
-    
-  }
   
   var initialCommands: [LateralType] = InitialLateralTypes.obliques
   
@@ -29,8 +27,11 @@ public class CoreDataService: NSObject {
      application to it. This property is optional since there are legitimate
      error conditions that could cause the creation of the store to fail.
      */
-    let container = NSPersistentContainer(name: "LateralModel",
-                                          managedObjectModel: LateralManagedObjectModel)
+    let bundle = Bundle(for: Self.self)
+    let modelURL = bundle.url(forResource: CoreDataModelName, withExtension: "momd")!
+    let mom = NSManagedObjectModel(contentsOf: modelURL)!
+    let container = NSPersistentContainer(name: CoreDataModelName,
+                                          managedObjectModel: mom)
     container.loadPersistentStores(completionHandler: { (storeDescription, error) in
       if let error = error as NSError? {
         // Replace this implementation with code to handle the error appropriately.
@@ -71,13 +72,17 @@ public class CoreDataService: NSObject {
   @Published public var allLateralTypes: [LateralType] = []
   
   var startupCancellable: Cancellable?
-  public override init() {
+
+  // MARK: - Init
+  required public override init() {
     super.init()
+    _ = persistentContainer
+    _ = fetchedResultsController
     self.startupCancellable = self.startup().replaceError(with: true).makeConnectable().connect()
   }
 
   // MARK: - Startup
-  public func startup() -> AnyPublisher<Bool, Error> {
+  public func startup() -> AnyPublisher<Bool, CoreDataError> {
     return checkForLaterals()
       .map{ commands in
         self.allLateralTypes = commands
@@ -85,9 +90,9 @@ public class CoreDataService: NSObject {
     }.eraseToAnyPublisher()
   }
   
-  func checkForLaterals() -> AnyPublisher<[LateralType], Error> {
+  func checkForLaterals() -> AnyPublisher<[LateralType], CoreDataError> {
     // Set the batch size to a suitable number.
-    return Future<[LateralType], Error>.init { promise in
+    return Future<[LateralType], CoreDataError>.init { promise in
       do {
         try self.fetchedResultsController.performFetch()
         if let fetched = self.fetchedResultsController.fetchedObjects as NSArray? {
@@ -106,16 +111,15 @@ public class CoreDataService: NSObject {
           promise(.success([]))
         }
       } catch {
-        promise(.failure(Error()))
+        promise(.failure(CoreDataError()))
       }
     }.eraseToAnyPublisher()
   }
   
-  public func saveInitialToCoreData() -> AnyPublisher<[LateralType], Error> {
+  public func saveInitialToCoreData() -> AnyPublisher<[LateralType], CoreDataError> {
     let commands = self.initialCommands.map { (lateralType) -> LateralMO in
       let mom = self.persistentContainer.viewContext
-      let entity = LateralMO.entity(in: mom)!
-      let lateralMO = LateralMO(entity: entity, insertInto: mom)
+      let lateralMO = LateralMO(context: mom)
       lateralMO.body = lateralType.body
       return lateralMO
     }
@@ -124,7 +128,7 @@ public class CoreDataService: NSObject {
       return LateralType(stringLiteral: mo.body!)
     })
     return Just<[LateralType]>(self.allLateralTypes)
-      .setFailureType(to: Error.self)
+      .setFailureType(to: CoreDataError.self)
       .eraseToAnyPublisher()
   }
   
@@ -132,14 +136,13 @@ public class CoreDataService: NSObject {
   
   public func create(lateralType: LateralType) {
     let mom = self.persistentContainer.viewContext
-    let entity = LateralMO.entity(in: mom)!
-    let lateralMO = LateralMO(entity: entity, insertInto: mom)
+    let lateralMO = LateralMO(context: mom)
     lateralMO.body = lateralType.body
   }
   
   // MARK: - Delete
-  public func deleteAll() -> AnyPublisher<Void, Error> {
-    return Future<Void, Error>.init { promise in
+  public func deleteAll() -> AnyPublisher<Void, CoreDataError> {
+    return Future<Void, CoreDataError>.init { promise in
       let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: LateralMO.self))
       let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
       deleteRequest.resultType = .resultTypeObjectIDs
@@ -151,21 +154,21 @@ public class CoreDataService: NSObject {
         self.allLaterals = []
         promise(.success(()))
       } catch {
-        promise(.failure(Error()))
+        promise(.failure(CoreDataError()))
       }
     }.eraseToAnyPublisher()
   }
   
   // MARK: - Core Data Saving support
-  public func saveContext () -> AnyPublisher<Void, Error> {
-    return Future<Void, Error>.init { promise in
+  public func saveContext () -> AnyPublisher<Void, CoreDataError> {
+    return Future<Void, CoreDataError>.init { promise in
       let context = self.persistentContainer.viewContext
       if context.hasChanges {
         do {
           try context.save()
           promise(.success(()))
         } catch {
-          promise(.failure(Error()))
+          promise(.failure(CoreDataError()))
         }
       }
       promise(.success(()))

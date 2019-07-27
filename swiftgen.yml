@@ -1,8 +1,0 @@
-
-input_dir: Lateral Thinking Core/Sources/LateralCoreData
-output_dir: Lateral Thinking Core/Sources/LateralCoreData
-coredata:
-  - inputs: LateralModel.xcdatamodeld
-    outputs:
-      templateName: swift4
-      output: CoreData.swift

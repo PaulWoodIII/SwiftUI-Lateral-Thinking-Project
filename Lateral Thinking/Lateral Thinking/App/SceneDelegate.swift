@@ -36,7 +36,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     if let windowScene = scene as? UIWindowScene {
       let window = UIWindow(windowScene: windowScene)
       let widget = Widget(
-        viewModel: CardViewModel(),
+        viewModel: CardViewModel(syncService: EnvironmentObjects.shared.syncService),
         render: CardView.init
       )
       window.rootViewController = UIHostingController(rootView: widget)

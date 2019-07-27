@@ -28,7 +28,6 @@ let package = Package(
         "CombineFeedback",
         "CombineFeedbackUI",
         "LateralCloudKit",
-        "LateralCoreData",
         "LateralThinkingCore",
       ],
       path: "Sources/LateralBusinessLogic"),
@@ -36,10 +35,6 @@ let package = Package(
       name: "LateralCloudKit",
       dependencies: ["LateralThinkingCore"],
       path: "Sources/LateralCloudKit"),
-    .target(
-      name: "LateralCoreData",
-      dependencies: ["LateralThinkingCore"],
-      path: "Sources/LateralCoreData"),
     .target(
       name: "LateralThinkingCore",
       dependencies: [],
@@ -51,27 +46,5 @@ let package = Package(
         "Entwine",
         "EntwineTest",
     ]),
-    .testTarget(
-      name: "LateralCoreDataTests",
-      dependencies: [
-        "LateralThinkingCore",
-        "LateralCoreData",
-        "Entwine",
-        "EntwineTest",
-    ]),
-    .testTarget(
-      name: "LateralCloudKitTests",
-      dependencies: [
-        "LateralThinkingCore",
-        "LateralCloudKit",
-        "Entwine",
-        "EntwineTest"]),
-    .testTarget(
-      name: "LateralBusinessLogicTests",
-      dependencies: [
-        "LateralThinkingCore",
-        "LateralBusinessLogic",
-        "Entwine",
-        "EntwineTest"]),
   ]
 )

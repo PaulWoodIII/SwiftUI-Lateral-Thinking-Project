@@ -64,7 +64,7 @@ public struct CardView : View {
 struct CardView_Previews : PreviewProvider {
   static var previews: some View {
     Widget(
-      viewModel: CardViewModel(),
+      viewModel: CardViewModel(syncService: EnvironmentObjects.shared.syncService),
       render: CardView.init
     )
   }

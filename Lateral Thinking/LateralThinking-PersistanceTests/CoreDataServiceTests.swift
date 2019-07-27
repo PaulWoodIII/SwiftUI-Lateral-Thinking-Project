@@ -11,8 +11,7 @@ import Combine
 import Entwine
 import EntwineTest
 import CoreData
-@testable import LateralThinkingCore
-@testable import LateralCoreData
+@testable import LateralThinking_Persistance
 
 class CoreDataServiceTests: XCTestCase {
   

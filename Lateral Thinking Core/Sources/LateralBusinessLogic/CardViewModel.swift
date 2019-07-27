@@ -18,11 +18,12 @@ import GameplayKit
 
 public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> {
   
-  public init(initial: State = State()) {
+  public init(initial: State = State(),
+              syncService: SyncService) {
       super.init(
           initial: initial,
           feedbacks: [
-            CardViewModel.monitorStore(lateralPublisher: SyncService.shared.$coalescedLaterals.eraseToAnyPublisher())
+            CardViewModel.monitorStore(lateralPublisher: syncService.$coalescedLaterals.eraseToAnyPublisher())
         ],
           scheduler: RunLoop.main,
           reducer: CardViewModel.reduce
@@ -77,7 +78,11 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
       let shuffler = GKShuffledDistribution(lowestValue: 0, highestValue: lats.count-1)
       copy = copy.set(\.shuffler, shuffler)
       #endif
-      return copy.set(\.displayLaterals, lats)
+      if lats.count > 0 {
+        return copy.set(\.displayLaterals, lats)
+      } else {
+        return copy
+      }
     case .error:
       return state //TODO: use Errors in a productive way in the UI
     case .lateralPublisher(let c):

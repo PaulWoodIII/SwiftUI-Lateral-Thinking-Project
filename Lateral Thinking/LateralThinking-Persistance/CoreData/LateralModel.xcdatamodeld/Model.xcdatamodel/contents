@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14877.5" systemVersion="19A512f" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="LateralListMO" representedClassName="LateralListMO" syncable="YES">
+    <entity name="LateralListMO" representedClassName="LateralListMO" syncable="YES" codeGenerationType="class">
         <attribute name="body" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
         <relationship name="items" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LateralMO" inverseName="lateralList" inverseEntity="LateralMO"/>
     </entity>
-    <entity name="LateralMO" representedClassName="LateralMO" syncable="YES">
+    <entity name="LateralMO" representedClassName="LateralMO" syncable="YES" codeGenerationType="class">
         <attribute name="body" optional="YES" attributeType="String"/>
         <relationship name="lateralList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LateralListMO" inverseName="items" inverseEntity="LateralListMO"/>
         <uniquenessConstraints>

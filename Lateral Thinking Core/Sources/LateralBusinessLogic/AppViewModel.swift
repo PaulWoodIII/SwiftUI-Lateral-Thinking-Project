@@ -9,17 +9,17 @@ import Foundation
 import Combine
 import CombineFeedback
 import CombineFeedbackUI
-import LateralCoreData
 import LateralCloudKit
+import LateralThinkingCore
 
 // TODO: Use this
 public class AppViewModel: ViewModel<AppViewModel.State, AppViewModel.Event> {
   
-  var coreDataService: CoreDataService
+  var coreDataService: CoreDataServiceType
   var cloudKitService: CloudKitService
   
   public init(initial: State = State(),
-              coreDataService: CoreDataService = CoreDataService.shared,
+              coreDataService: CoreDataServiceType,
                 cloudKitService: CloudKitService = CloudKitService.shared
               ) {
     self.coreDataService = coreDataService

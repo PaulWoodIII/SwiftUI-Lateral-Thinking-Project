@@ -10,28 +10,25 @@ import Combine
 import CombineFeedback
 import CombineFeedbackUI
 import LateralThinkingCore
-import LateralCoreData
 import LateralCloudKit
 
 /// handles the creation of the CoreData store and manages syncing the CoreData Store with the CloudKit Store
 /// Basically this is the Sync Service
 public class SyncService {
-  
-  public static let shared = SyncService()
-  
+    
   var monitor: Cancellable?
   
   @Published var coalescedLaterals: [LateralType] = []
   
   var coreDataCreate: (_: LateralType) -> Void
   
-  var careDataSave: () -> AnyPublisher<Void, CoreDataService.Error>
+  var careDataSave: () -> AnyPublisher<Void, CoreDataError>
   
   public init(
     cloudLaterals: AnyPublisher<[LateralType], Never> = CloudKitService.shared.$cloudLaterals.eraseToAnyPublisher(),
-    coreDataLaterals: AnyPublisher<[LateralType], Never> = CoreDataService.shared.$allLateralTypes.eraseToAnyPublisher(),
-    coreDataCreate: @escaping (_: LateralType) -> Void = CoreDataService.shared.create(lateralType:),
-    careDataSave: @escaping () -> AnyPublisher<Void, CoreDataService.Error> = CoreDataService.shared.saveContext,
+    coreDataLaterals: AnyPublisher<[LateralType], Never>,
+    coreDataCreate: @escaping (_: LateralType) -> Void,
+    careDataSave: @escaping () -> AnyPublisher<Void, CoreDataError>,
     fetchCloudLaterals: @escaping () -> AnyPublisher<[LateralType], CloudKitService.Error> = CloudKitService.shared.retrieveAllLaterals
   ) {
     self.coreDataLaterals = coreDataLaterals
@@ -71,7 +68,7 @@ public class SyncService {
           self.coreDataCreate(lat)
         }
       })
-      .setFailureType(to: CoreDataService.Error.self)
+      .setFailureType(to: CoreDataError.self)
       .flatMap({ _ in
         self.careDataSave()
       })

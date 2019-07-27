@@ -53,6 +53,16 @@
                ReferencedContainer = "container:Lateral Thinking.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DA667A0522EC8A7E000AD4E7"
+               BuildableName = "LateralThinking-PersistanceTests.xctest"
+               BlueprintName = "LateralThinking-PersistanceTests"
+               ReferencedContainer = "container:Lateral Thinking.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
