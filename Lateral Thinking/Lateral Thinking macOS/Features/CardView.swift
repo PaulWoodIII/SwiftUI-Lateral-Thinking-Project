@@ -25,16 +25,31 @@ public struct CardView : View {
   
   public var body: some View {
     ZStack {
-      Rectangle().foregroundColor(.black)
-      VStack {
-        Text(context.displayText)
-          .font(.title)
-          .foregroundColor(.white)
-          .lineLimit(nil)
-      }
-    }.tapAction {
-      self.context.send(event: .onTap)
-    }
+      Rectangle()
+        .foregroundColor(Color("Background"))
+      .tapAction { self.context.send(event: .onTap) }
+
+      Text(context.displayText)
+        .lineLimit(nil)
+        .font(.headline)
+        .foregroundColor(Color("TextColor"))
+      .tapAction { self.context.send(event: .onTap) }
+
+    }        .frame(minWidth: 500,
+               idealWidth:900,
+               maxWidth: .infinity,
+               minHeight: 300,
+               idealHeight: 500,
+               maxHeight: .infinity,
+               alignment: .center)
+      .tapAction {
+          self.context.send(event: .onTap)
+      }.gesture(
+        DragGesture().onEnded({ _ in
+          self.context.send(event: .onTap)
+        })
+    )
+    .edgesIgnoringSafeArea(.all)
   }
 }
 

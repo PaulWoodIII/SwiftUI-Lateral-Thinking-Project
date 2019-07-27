@@ -16,8 +16,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   var window: NSWindow!
 
-  let syncService = SyncService()
-
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     // Insert code here to initialize your application
     window = NSWindow(
@@ -29,7 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     
     let widget = Widget(
-      viewModel: CardViewModel(),
+      viewModel: CardViewModel(syncService: EnvironmentObjects.shared.syncService),
       render: CardView.init
     )
     window.contentView = NSHostingView(rootView: widget)

@@ -47,7 +47,6 @@
 		DA52207D22EBBE4C00E0AF27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA52207B22EBBE4C00E0AF27 /* Main.storyboard */; };
 		DA52208922EBBE4C00E0AF27 /* Lateral_Thinking_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52208822EBBE4C00E0AF27 /* Lateral_Thinking_macOSTests.swift */; };
 		DA52209422EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52209322EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift */; };
-		DA5220A222EBBFA700E0AF27 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5220A122EBBFA700E0AF27 /* CardView.swift */; };
 		DA5220A422EBC4B200E0AF27 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA5220A322EBC4B200E0AF27 /* LateralThinking */; };
 		DA5220A622EBC4C200E0AF27 /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = DA5220A522EBC4C200E0AF27 /* CombineFeedback */; };
 		DA5220A822EBC4C200E0AF27 /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA5220A722EBC4C200E0AF27 /* CombineFeedbackUI */; };
@@ -63,6 +62,7 @@
 		DAB7B77922E4F00A0091EEF3 /* NotoSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77422E4F00A0091EEF3 /* NotoSerif-Italic.ttf */; };
 		DAB7B77A22E4F00A0091EEF3 /* NotoSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77522E4F00A0091EEF3 /* NotoSerif-Bold.ttf */; };
 		DAB7B77B22E4F00A0091EEF3 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77622E4F00A0091EEF3 /* LICENSE.txt */; };
+		DAB836C822ECCADE00C0F0E2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB836C722ECCADE00C0F0E2 /* CloudKit.framework */; };
 		DAC1108322EBC75300E029E1 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1108222EBC75300E029E1 /* IntentHandler.swift */; };
 		DAC1108722EBC75300E029E1 /* Lateral Thinking Siri Intent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAC1108022EBC75300E029E1 /* Lateral Thinking Siri Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAC1108D22EBC7B300E029E1 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1108C22EBC7B300E029E1 /* LateralThinking */; };
@@ -78,7 +78,6 @@
 		DAC110B922EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
 		DAC110BA22EC725700E029E1 /* LateralIntentKit.intentdefinition in Resources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
 		DAC110BB22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
-		DAC110BC22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
 		DAC110BD22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
 		DAC110BF22EC73C300E029E1 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAC110BE22EC73C300E029E1 /* LateralThinking */; };
 		DAC110C922EC754400E029E1 /* LateralIntentKit_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC110C722EC754400E029E1 /* LateralIntentKit_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -109,6 +108,11 @@
 		DAEC1EF322ECBCA000A6C1B3 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA667A1C22EC8AAD000AD4E7 /* CoreDataService.swift */; };
 		DAEC1EF422ECBCA300A6C1B3 /* LateralModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2FA3C822EC8CDE0077B301 /* LateralModel.xcdatamodeld */; };
 		DAEC1EF522ECBCA400A6C1B3 /* LateralModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2FA3C822EC8CDE0077B301 /* LateralModel.xcdatamodeld */; };
+		DAEC1EF722ECC28F00A6C1B3 /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEC1EF622ECC28F00A6C1B3 /* EnvironmentObjects.swift */; };
+		DAEC1EF922ECC3A100A6C1B3 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAEC1EF822ECC3A100A6C1B3 /* LateralThinking */; };
+		DAEC1EFB22ECC3A600A6C1B3 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAEC1EFA22ECC3A600A6C1B3 /* LateralThinking */; };
+		DAEC1EFD22ECC62400A6C1B3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEC1EFC22ECC62400A6C1B3 /* CardView.swift */; };
+		DAEC1EFF22ECC8D800A6C1B3 /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEC1EFE22ECC8D800A6C1B3 /* EnvironmentObjects.swift */; };
 		DAFB17C522E4E376004C78E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17C422E4E376004C78E4 /* AppDelegate.swift */; };
 		DAFB17C722E4E376004C78E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17C622E4E376004C78E4 /* SceneDelegate.swift */; };
 		DAFB17CA22E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17C822E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld */; };
@@ -422,7 +426,6 @@
 		DA52208F22EBBE4C00E0AF27 /* Lateral Thinking macOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lateral Thinking macOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA52209322EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lateral_Thinking_macOSUITests.swift; sourceTree = "<group>"; };
 		DA52209522EBBE4C00E0AF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA5220A122EBBFA700E0AF27 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../Lateral Thinking macOS/Lateral Thinking macOS/Features/CardView.swift"; sourceTree = "<group>"; };
 		DA57C5C222E88F9D006C8F22 /* Lateral Thinking Core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Lateral Thinking Core"; path = "/Users/paul/projects/Lateral Thinking Project/Lateral Thinking Core"; sourceTree = "<absolute>"; };
 		DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LateralThinking_Persistance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA667A0022EC8A7E000AD4E7 /* LateralThinking_Persistance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LateralThinking_Persistance.h; sourceTree = "<group>"; };
@@ -436,6 +439,7 @@
 		DAB7B77422E4F00A0091EEF3 /* NotoSerif-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Italic.ttf"; sourceTree = "<group>"; };
 		DAB7B77522E4F00A0091EEF3 /* NotoSerif-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Bold.ttf"; sourceTree = "<group>"; };
 		DAB7B77622E4F00A0091EEF3 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		DAB836C722ECCADE00C0F0E2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		DAC1108022EBC75300E029E1 /* Lateral Thinking Siri Intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lateral Thinking Siri Intent.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC1108222EBC75300E029E1 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		DAC1108422EBC75300E029E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -461,6 +465,9 @@
 		DAEC1EE522ECBC8900A6C1B3 /* LateralThinking_Persistance_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LateralThinking_Persistance_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEC1EE722ECBC8A00A6C1B3 /* LateralThinking_Persistance_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LateralThinking_Persistance_macOS.h; sourceTree = "<group>"; };
 		DAEC1EE822ECBC8A00A6C1B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAEC1EF622ECC28F00A6C1B3 /* EnvironmentObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnvironmentObjects.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking tvOS/App Scene/EnvironmentObjects.swift"; sourceTree = "<group>"; };
+		DAEC1EFC22ECC62400A6C1B3 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		DAEC1EFE22ECC8D800A6C1B3 /* EnvironmentObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnvironmentObjects.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking macOS/App/EnvironmentObjects.swift"; sourceTree = "<group>"; };
 		DAFB17C122E4E376004C78E4 /* Lateral Thinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral Thinking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFB17C422E4E376004C78E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFB17C622E4E376004C78E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -522,6 +529,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB836C822ECCADE00C0F0E2 /* CloudKit.framework in Frameworks */,
 				DA5220A422EBC4B200E0AF27 /* LateralThinking in Frameworks */,
 				DA5220A822EBC4C200E0AF27 /* CombineFeedbackUI in Frameworks */,
 				DAEC1EEC22ECBC8A00A6C1B3 /* LateralThinking_Persistance_macOS.framework in Frameworks */,
@@ -613,6 +621,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEC1EF922ECC3A100A6C1B3 /* LateralThinking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,6 +629,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEC1EFB22ECC3A600A6C1B3 /* LateralThinking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,6 +717,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2EB2BB22E78EF7006CF023 /* AppDelegate.swift */,
+				DAEC1EF622ECC28F00A6C1B3 /* EnvironmentObjects.swift */,
 			);
 			path = "App Scene";
 			sourceTree = "<group>";
@@ -722,6 +733,7 @@
 		DA36853922E65CAF00EE2819 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DAB836C722ECCADE00C0F0E2 /* CloudKit.framework */,
 				DA1F6C7A22EB8921003292DE /* CoreData.framework */,
 				DA52206522EBBD7D00E0AF27 /* CoreData.framework */,
 				DA57C5C222E88F9D006C8F22 /* Lateral Thinking Core */,
@@ -817,6 +829,7 @@
 			children = (
 				DA52206F22EBBE4A00E0AF27 /* AppDelegate.swift */,
 				DA52207122EBBE4A00E0AF27 /* ContentView.swift */,
+				DAEC1EFE22ECC8D800A6C1B3 /* EnvironmentObjects.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -824,7 +837,7 @@
 		DA5220A022EBBF8A00E0AF27 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				DA5220A122EBBFA700E0AF27 /* CardView.swift */,
+				DAEC1EFC22ECC62400A6C1B3 /* CardView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -1466,6 +1479,9 @@
 			dependencies = (
 			);
 			name = "LateralThinking-Persistance-tvOS";
+			packageProductDependencies = (
+				DAEC1EF822ECC3A100A6C1B3 /* LateralThinking */,
+			);
 			productName = "LateralThinking-Persistance-tvOS";
 			productReference = DAEC1ED322ECBC6500A6C1B3 /* LateralThinking_Persistance_tvOS.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1484,6 +1500,9 @@
 			dependencies = (
 			);
 			name = "LateralThinking-Persistance-macOS";
+			packageProductDependencies = (
+				DAEC1EFA22ECC3A600A6C1B3 /* LateralThinking */,
+			);
 			productName = "LateralThinking-Persistance-macOS";
 			productReference = DAEC1EE522ECBC8900A6C1B3 /* LateralThinking_Persistance_macOS.framework */;
 			productType = "com.apple.product-type.framework";
@@ -1860,6 +1879,7 @@
 			files = (
 				DAC110B922EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
 				DA2EB2BC22E78EF7006CF023 /* AppDelegate.swift in Sources */,
+				DAEC1EF722ECC28F00A6C1B3 /* EnvironmentObjects.swift in Sources */,
 				DA88459022EB82B600A32E36 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1896,11 +1916,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAEC1EFF22ECC8D800A6C1B3 /* EnvironmentObjects.swift in Sources */,
 				DA52207222EBBE4A00E0AF27 /* ContentView.swift in Sources */,
 				DA52207522EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodeld in Sources */,
-				DA5220A222EBBFA700E0AF27 /* CardView.swift in Sources */,
-				DAC110BC22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
 				DA52207022EBBE4A00E0AF27 /* AppDelegate.swift in Sources */,
+				DAEC1EFD22ECC62400A6C1B3 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3600,6 +3620,14 @@
 			productName = LateralThinking;
 		};
 		DAEC1EC822ECB0F700A6C1B3 /* LateralThinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LateralThinking;
+		};
+		DAEC1EF822ECC3A100A6C1B3 /* LateralThinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LateralThinking;
+		};
+		DAEC1EFA22ECC3A600A6C1B3 /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LateralThinking;
 		};
