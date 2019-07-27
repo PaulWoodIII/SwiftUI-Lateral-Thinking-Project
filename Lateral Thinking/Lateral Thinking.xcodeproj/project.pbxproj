@@ -55,6 +55,29 @@
 		DAB7B77922E4F00A0091EEF3 /* NotoSerif-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77422E4F00A0091EEF3 /* NotoSerif-Italic.ttf */; };
 		DAB7B77A22E4F00A0091EEF3 /* NotoSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77522E4F00A0091EEF3 /* NotoSerif-Bold.ttf */; };
 		DAB7B77B22E4F00A0091EEF3 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77622E4F00A0091EEF3 /* LICENSE.txt */; };
+		DAC1108322EBC75300E029E1 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1108222EBC75300E029E1 /* IntentHandler.swift */; };
+		DAC1108722EBC75300E029E1 /* Lateral Thinking Siri Intent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAC1108022EBC75300E029E1 /* Lateral Thinking Siri Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DAC1108D22EBC7B300E029E1 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1108C22EBC7B300E029E1 /* LateralThinking */; };
+		DAC1108E22EBC7F500E029E1 /* Lateral Thinking watchOS.app in Resources */ = {isa = PBXBuildFile; fileRef = DA52202C22EBA3C900E0AF27 /* Lateral Thinking watchOS.app */; };
+		DAC1109222EBC9C000E029E1 /* LateralHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1109122EBC9C000E029E1 /* LateralHandler.swift */; };
+		DAC110A222EC71B500E029E1 /* LateralIntentKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; };
+		DAC110A922EC71B500E029E1 /* LateralIntentKit_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC110A822EC71B500E029E1 /* LateralIntentKit_iOSTests.swift */; };
+		DAC110AB22EC71B500E029E1 /* LateralIntentKit_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC1109B22EC71B500E029E1 /* LateralIntentKit_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAC110AE22EC71B500E029E1 /* LateralIntentKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; };
+		DAC110AF22EC71B500E029E1 /* LateralIntentKit_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAC110B722EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
+		DAC110B822EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
+		DAC110B922EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
+		DAC110BA22EC725700E029E1 /* LateralIntentKit.intentdefinition in Resources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
+		DAC110BB22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
+		DAC110BC22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
+		DAC110BD22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
+		DAC110BF22EC73C300E029E1 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAC110BE22EC73C300E029E1 /* LateralThinking */; };
+		DAC110C922EC754400E029E1 /* LateralIntentKit_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC110C722EC754400E029E1 /* LateralIntentKit_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAC110CC22EC754400E029E1 /* LateralIntentKit_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */; };
+		DAC110CD22EC754400E029E1 /* LateralIntentKit_watchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAC110D322EC755000E029E1 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAC110D222EC755000E029E1 /* LateralThinking */; };
+		DAC110D422EC755E00E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
 		DAFB17C522E4E376004C78E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17C422E4E376004C78E4 /* AppDelegate.swift */; };
 		DAFB17C722E4E376004C78E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17C622E4E376004C78E4 /* SceneDelegate.swift */; };
 		DAFB17CA22E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17C822E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld */; };
@@ -109,6 +132,48 @@
 			remoteGlobalIDString = DA52206C22EBBE4A00E0AF27;
 			remoteInfo = "Lateral Thinking macOS";
 		};
+		DAC1108522EBC75300E029E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC1107F22EBC75300E029E1;
+			remoteInfo = "Lateral Thinking Siri Intent";
+		};
+		DAC1108F22EBC7F500E029E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA52202B22EBA3C900E0AF27;
+			remoteInfo = "Lateral Thinking watchOS";
+		};
+		DAC110A322EC71B500E029E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC1109822EC71B500E029E1;
+			remoteInfo = "LateralIntentKit-iOS";
+		};
+		DAC110A522EC71B500E029E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFB17C022E4E376004C78E4;
+			remoteInfo = "Lateral Thinking";
+		};
+		DAC110AC22EC71B500E029E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC1109822EC71B500E029E1;
+			remoteInfo = "LateralIntentKit-iOS";
+		};
+		DAC110CA22EC754400E029E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC110C422EC754400E029E1;
+			remoteInfo = "LateralIntentKit-watchOS";
+		};
 		DAFB17DB22E4E379004C78E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
@@ -132,6 +197,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DAC110AF22EC71B500E029E1 /* LateralIntentKit_iOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +222,28 @@
 				DA52203022EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1108822EBC75300E029E1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DAC1108722EBC75300E029E1 /* Lateral Thinking Siri Intent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC110D122EC754400E029E1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DAC110CD22EC754400E029E1 /* LateralIntentKit_watchOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -216,6 +304,20 @@
 		DAB7B77422E4F00A0091EEF3 /* NotoSerif-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Italic.ttf"; sourceTree = "<group>"; };
 		DAB7B77522E4F00A0091EEF3 /* NotoSerif-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Bold.ttf"; sourceTree = "<group>"; };
 		DAB7B77622E4F00A0091EEF3 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		DAC1108022EBC75300E029E1 /* Lateral Thinking Siri Intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lateral Thinking Siri Intent.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC1108222EBC75300E029E1 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		DAC1108422EBC75300E029E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC1109122EBC9C000E029E1 /* LateralHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LateralHandler.swift; path = "../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking Siri Intent/LateralHandler.swift"; sourceTree = "<group>"; };
+		DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LateralIntentKit_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC1109B22EC71B500E029E1 /* LateralIntentKit_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LateralIntentKit_iOS.h; sourceTree = "<group>"; };
+		DAC1109C22EC71B500E029E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC110A122EC71B500E029E1 /* LateralIntentKit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LateralIntentKit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC110A822EC71B500E029E1 /* LateralIntentKit_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateralIntentKit_iOSTests.swift; sourceTree = "<group>"; };
+		DAC110AA22EC71B500E029E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = LateralIntentKit.intentdefinition; path = "../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/LateralIntentKit-Shared/LateralIntentKit.intentdefinition"; sourceTree = "<group>"; };
+		DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LateralIntentKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC110C722EC754400E029E1 /* LateralIntentKit_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LateralIntentKit_watchOS.h; sourceTree = "<group>"; };
+		DAC110C822EC754400E029E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFB17C122E4E376004C78E4 /* Lateral Thinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral Thinking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFB17C422E4E376004C78E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFB17C622E4E376004C78E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -267,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA52205E22EBA84400E0AF27 /* LateralThinking in Frameworks */,
+				DAC110CC22EC754400E029E1 /* LateralIntentKit_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +397,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC1107D22EBC75300E029E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC1108D22EBC7B300E029E1 /* LateralThinking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1109622EC71B500E029E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC110BF22EC73C300E029E1 /* LateralThinking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1109E22EC71B500E029E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC110A222EC71B500E029E1 /* LateralIntentKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC110C222EC754400E029E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC110D322EC755000E029E1 /* LateralThinking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAFB17BE22E4E376004C78E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,6 +436,7 @@
 				DA2EB2F322E7903D006CF023 /* CloudKit.framework in Frameworks */,
 				DA337E4A22E8F3BB00A3DD3E /* LateralThinking in Frameworks */,
 				DA2EB30122E7945F006CF023 /* CombineFeedback in Frameworks */,
+				DAC110AE22EC71B500E029E1 /* LateralIntentKit_iOS.framework in Frameworks */,
 				DA210D5E22E5E2DA005A41C9 /* Entwine in Frameworks */,
 				DA2EB30322E7945F006CF023 /* CombineFeedbackUI in Frameworks */,
 			);
@@ -519,10 +655,56 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		DAC1108122EBC75300E029E1 /* Lateral Thinking Siri Intent */ = {
+			isa = PBXGroup;
+			children = (
+				DAC1108222EBC75300E029E1 /* IntentHandler.swift */,
+				DAC1108422EBC75300E029E1 /* Info.plist */,
+				DAC1109122EBC9C000E029E1 /* LateralHandler.swift */,
+			);
+			path = "Lateral Thinking Siri Intent";
+			sourceTree = "<group>";
+		};
+		DAC1109322EC717900E029E1 /* LateralIntentKit-Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */,
+			);
+			path = "LateralIntentKit-Shared";
+			sourceTree = "<group>";
+		};
+		DAC1109A22EC71B500E029E1 /* LateralIntentKit-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DAC1109B22EC71B500E029E1 /* LateralIntentKit_iOS.h */,
+				DAC1109C22EC71B500E029E1 /* Info.plist */,
+			);
+			path = "LateralIntentKit-iOS";
+			sourceTree = "<group>";
+		};
+		DAC110A722EC71B500E029E1 /* LateralIntentKit-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAC110A822EC71B500E029E1 /* LateralIntentKit_iOSTests.swift */,
+				DAC110AA22EC71B500E029E1 /* Info.plist */,
+			);
+			path = "LateralIntentKit-iOSTests";
+			sourceTree = "<group>";
+		};
+		DAC110C622EC754400E029E1 /* LateralIntentKit-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				DAC110C722EC754400E029E1 /* LateralIntentKit_watchOS.h */,
+				DAC110C822EC754400E029E1 /* Info.plist */,
+			);
+			path = "LateralIntentKit-watchOS";
+			sourceTree = "<group>";
+		};
 		DAFB17B822E4E376004C78E4 = {
 			isa = PBXGroup;
 			children = (
 				DAFB17C322E4E376004C78E4 /* Lateral Thinking */,
+				DAC1108122EBC75300E029E1 /* Lateral Thinking Siri Intent */,
 				DAFB17DD22E4E379004C78E4 /* Lateral ThinkingTests */,
 				DAFB17E822E4E379004C78E4 /* Lateral ThinkingUITests */,
 				DA2EB2BA22E78EF7006CF023 /* Lateral Thinking tvOS */,
@@ -533,6 +715,10 @@
 				DA52206E22EBBE4A00E0AF27 /* Lateral Thinking macOS */,
 				DA52208722EBBE4C00E0AF27 /* Lateral Thinking macOSTests */,
 				DA52209222EBBE4C00E0AF27 /* Lateral Thinking macOSUITests */,
+				DAC1109322EC717900E029E1 /* LateralIntentKit-Shared */,
+				DAC1109A22EC71B500E029E1 /* LateralIntentKit-iOS */,
+				DAC110A722EC71B500E029E1 /* LateralIntentKit-iOSTests */,
+				DAC110C622EC754400E029E1 /* LateralIntentKit-watchOS */,
 				DAFB17C222E4E376004C78E4 /* Products */,
 				DA36853922E65CAF00EE2819 /* Frameworks */,
 			);
@@ -553,6 +739,10 @@
 				DA52206D22EBBE4A00E0AF27 /* Lateral Thinking macOS.app */,
 				DA52208422EBBE4C00E0AF27 /* Lateral Thinking macOSTests.xctest */,
 				DA52208F22EBBE4C00E0AF27 /* Lateral Thinking macOSUITests.xctest */,
+				DAC1108022EBC75300E029E1 /* Lateral Thinking Siri Intent.appex */,
+				DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */,
+				DAC110A122EC71B500E029E1 /* LateralIntentKit-iOSTests.xctest */,
+				DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -611,6 +801,25 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DAC1109422EC71B500E029E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC110AB22EC71B500E029E1 /* LateralIntentKit_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC110C022EC754400E029E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC110C922EC754400E029E1 /* LateralIntentKit_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		DA2EB2B822E78EF7006CF023 /* Lateral Thinking tvOS */ = {
@@ -713,10 +922,12 @@
 				DA52203A22EBA3CB00E0AF27 /* Sources */,
 				DA52203B22EBA3CB00E0AF27 /* Frameworks */,
 				DA52203C22EBA3CB00E0AF27 /* Resources */,
+				DAC110D122EC754400E029E1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DAC110CB22EC754400E029E1 /* PBXTargetDependency */,
 			);
 			name = "Lateral Thinking watchOS WatchKit Extension";
 			packageProductDependencies = (
@@ -784,6 +995,87 @@
 			productReference = DA52208F22EBBE4C00E0AF27 /* Lateral Thinking macOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DAC1107F22EBC75300E029E1 /* Lateral Thinking Siri Intent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC1108B22EBC75300E029E1 /* Build configuration list for PBXNativeTarget "Lateral Thinking Siri Intent" */;
+			buildPhases = (
+				DAC1107C22EBC75300E029E1 /* Sources */,
+				DAC1107D22EBC75300E029E1 /* Frameworks */,
+				DAC1107E22EBC75300E029E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lateral Thinking Siri Intent";
+			packageProductDependencies = (
+				DAC1108C22EBC7B300E029E1 /* LateralThinking */,
+			);
+			productName = "Lateral Thinking Siri Intent";
+			productReference = DAC1108022EBC75300E029E1 /* Lateral Thinking Siri Intent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DAC1109822EC71B500E029E1 /* LateralIntentKit-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC110B022EC71B500E029E1 /* Build configuration list for PBXNativeTarget "LateralIntentKit-iOS" */;
+			buildPhases = (
+				DAC1109422EC71B500E029E1 /* Headers */,
+				DAC1109522EC71B500E029E1 /* Sources */,
+				DAC1109622EC71B500E029E1 /* Frameworks */,
+				DAC1109722EC71B500E029E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LateralIntentKit-iOS";
+			packageProductDependencies = (
+				DAC110BE22EC73C300E029E1 /* LateralThinking */,
+			);
+			productName = "LateralIntentKit-iOS";
+			productReference = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DAC110A022EC71B500E029E1 /* LateralIntentKit-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC110B322EC71B500E029E1 /* Build configuration list for PBXNativeTarget "LateralIntentKit-iOSTests" */;
+			buildPhases = (
+				DAC1109D22EC71B500E029E1 /* Sources */,
+				DAC1109E22EC71B500E029E1 /* Frameworks */,
+				DAC1109F22EC71B500E029E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAC110A422EC71B500E029E1 /* PBXTargetDependency */,
+				DAC110A622EC71B500E029E1 /* PBXTargetDependency */,
+			);
+			name = "LateralIntentKit-iOSTests";
+			productName = "LateralIntentKit-iOSTests";
+			productReference = DAC110A122EC71B500E029E1 /* LateralIntentKit-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAC110C422EC754400E029E1 /* LateralIntentKit-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAC110CE22EC754400E029E1 /* Build configuration list for PBXNativeTarget "LateralIntentKit-watchOS" */;
+			buildPhases = (
+				DAC110C022EC754400E029E1 /* Headers */,
+				DAC110C122EC754400E029E1 /* Sources */,
+				DAC110C222EC754400E029E1 /* Frameworks */,
+				DAC110C322EC754400E029E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LateralIntentKit-watchOS";
+			packageProductDependencies = (
+				DAC110D222EC755000E029E1 /* LateralThinking */,
+			);
+			productName = "LateralIntentKit-watchOS";
+			productReference = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		DAFB17C022E4E376004C78E4 /* Lateral Thinking */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAFB17EE22E4E379004C78E4 /* Build configuration list for PBXNativeTarget "Lateral Thinking" */;
@@ -792,10 +1084,14 @@
 				DAFB17BE22E4E376004C78E4 /* Frameworks */,
 				DAFB17BF22E4E376004C78E4 /* Resources */,
 				DA36852122E65AA500EE2819 /* Embed Frameworks */,
+				DAC1108822EBC75300E029E1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DAC1108622EBC75300E029E1 /* PBXTargetDependency */,
+				DAC1109022EBC7F500E029E1 /* PBXTargetDependency */,
+				DAC110AD22EC71B500E029E1 /* PBXTargetDependency */,
 			);
 			name = "Lateral Thinking";
 			packageProductDependencies = (
@@ -889,6 +1185,19 @@
 						CreatedOnToolsVersion = 11.0;
 						TestTargetID = DA52206C22EBBE4A00E0AF27;
 					};
+					DAC1107F22EBC75300E029E1 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					DAC1109822EC71B500E029E1 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					DAC110A022EC71B500E029E1 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = DAFB17C022E4E376004C78E4;
+					};
+					DAC110C422EC754400E029E1 = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					DAFB17C022E4E376004C78E4 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -920,6 +1229,7 @@
 			projectRoot = "";
 			targets = (
 				DAFB17C022E4E376004C78E4 /* Lateral Thinking */,
+				DAC1107F22EBC75300E029E1 /* Lateral Thinking Siri Intent */,
 				DAFB17D922E4E379004C78E4 /* Lateral ThinkingTests */,
 				DAFB17E422E4E379004C78E4 /* Lateral ThinkingUITests */,
 				DA2EB2B822E78EF7006CF023 /* Lateral Thinking tvOS */,
@@ -931,6 +1241,9 @@
 				DA52206C22EBBE4A00E0AF27 /* Lateral Thinking macOS */,
 				DA52208322EBBE4C00E0AF27 /* Lateral Thinking macOSTests */,
 				DA52208E22EBBE4C00E0AF27 /* Lateral Thinking macOSUITests */,
+				DAC1109822EC71B500E029E1 /* LateralIntentKit-iOS */,
+				DAC110C422EC754400E029E1 /* LateralIntentKit-watchOS */,
+				DAC110A022EC71B500E029E1 /* LateralIntentKit-iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -970,6 +1283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC110BA22EC725700E029E1 /* LateralIntentKit.intentdefinition in Resources */,
 				DA52203822EBA3CB00E0AF27 /* Assets.xcassets in Resources */,
 				DA52203622EBA3C900E0AF27 /* Interface.storyboard in Resources */,
 			);
@@ -1008,11 +1322,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC1107E22EBC75300E029E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1109722EC71B500E029E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1109F22EC71B500E029E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC110C322EC754400E029E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAFB17BF22E4E376004C78E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DAFB17D422E4E379004C78E4 /* LaunchScreen.storyboard in Resources */,
+				DAC1108E22EBC7F500E029E1 /* Lateral Thinking watchOS.app in Resources */,
 				DAFB17D122E4E379004C78E4 /* Preview Assets.xcassets in Resources */,
 				DAB7B77822E4F00A0091EEF3 /* NotoSerif-Regular.ttf in Resources */,
 				DAB7B77922E4F00A0091EEF3 /* NotoSerif-Italic.ttf in Resources */,
@@ -1044,6 +1387,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC110B922EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
 				DA2EB2BC22E78EF7006CF023 /* AppDelegate.swift in Sources */,
 				DA88459022EB82B600A32E36 /* CardView.swift in Sources */,
 			);
@@ -1071,6 +1415,7 @@
 			files = (
 				DA52204622EBA3CB00E0AF27 /* HostingController.swift in Sources */,
 				DA52205C22EBA7FE00E0AF27 /* CardView.swift in Sources */,
+				DAC110BB22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
 				DA52204822EBA3CB00E0AF27 /* ExtensionDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1082,6 +1427,7 @@
 				DA52207222EBBE4A00E0AF27 /* ContentView.swift in Sources */,
 				DA52207522EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodeld in Sources */,
 				DA5220A222EBBFA700E0AF27 /* CardView.swift in Sources */,
+				DAC110BC22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
 				DA52207022EBBE4A00E0AF27 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1102,10 +1448,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAC1107C22EBC75300E029E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC110B822EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
+				DAC1109222EBC9C000E029E1 /* LateralHandler.swift in Sources */,
+				DAC1108322EBC75300E029E1 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1109522EC71B500E029E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC110BD22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC1109D22EC71B500E029E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC110A922EC71B500E029E1 /* LateralIntentKit_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC110C122EC754400E029E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC110D422EC755E00E029E1 /* LateralIntentKit.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DAFB17BD22E4E376004C78E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC110B722EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
 				DAFB17F822E4E40D004C78E4 /* MainMenuView.swift in Sources */,
 				DAFB17C522E4E376004C78E4 /* AppDelegate.swift in Sources */,
 				DAFB17C722E4E376004C78E4 /* SceneDelegate.swift in Sources */,
@@ -1163,6 +1544,36 @@
 			isa = PBXTargetDependency;
 			target = DA52206C22EBBE4A00E0AF27 /* Lateral Thinking macOS */;
 			targetProxy = DA52209022EBBE4C00E0AF27 /* PBXContainerItemProxy */;
+		};
+		DAC1108622EBC75300E029E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC1107F22EBC75300E029E1 /* Lateral Thinking Siri Intent */;
+			targetProxy = DAC1108522EBC75300E029E1 /* PBXContainerItemProxy */;
+		};
+		DAC1109022EBC7F500E029E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA52202B22EBA3C900E0AF27 /* Lateral Thinking watchOS */;
+			targetProxy = DAC1108F22EBC7F500E029E1 /* PBXContainerItemProxy */;
+		};
+		DAC110A422EC71B500E029E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC1109822EC71B500E029E1 /* LateralIntentKit-iOS */;
+			targetProxy = DAC110A322EC71B500E029E1 /* PBXContainerItemProxy */;
+		};
+		DAC110A622EC71B500E029E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAFB17C022E4E376004C78E4 /* Lateral Thinking */;
+			targetProxy = DAC110A522EC71B500E029E1 /* PBXContainerItemProxy */;
+		};
+		DAC110AD22EC71B500E029E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC1109822EC71B500E029E1 /* LateralIntentKit-iOS */;
+			targetProxy = DAC110AC22EC71B500E029E1 /* PBXContainerItemProxy */;
+		};
+		DAC110CB22EC754400E029E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC110C422EC754400E029E1 /* LateralIntentKit-watchOS */;
+			targetProxy = DAC110CA22EC754400E029E1 /* PBXContainerItemProxy */;
 		};
 		DAFB17DC22E4E379004C78E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1598,6 +2009,200 @@
 			};
 			name = Release;
 		};
+		DAC1108922EBC75300E029E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				INFOPLIST_FILE = "Lateral Thinking Siri Intent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking.Lateral-Thinking-Siri-Intent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAC1108A22EBC75300E029E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				INFOPLIST_FILE = "Lateral Thinking Siri Intent/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking.Lateral-Thinking-Siri-Intent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAC110B122EC71B500E029E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "LateralIntentKit-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.LateralIntentKit-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAC110B222EC71B500E029E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "LateralIntentKit-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.LateralIntentKit-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAC110B422EC71B500E029E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				INFOPLIST_FILE = "LateralIntentKit-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.LateralIntentKit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lateral Thinking.app/Lateral Thinking";
+			};
+			name = Debug;
+		};
+		DAC110B522EC71B500E029E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				INFOPLIST_FILE = "LateralIntentKit-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.LateralIntentKit-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lateral Thinking.app/Lateral Thinking";
+			};
+			name = Release;
+		};
+		DAC110CF22EC754400E029E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "LateralIntentKit-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.LateralIntentKit-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		DAC110D022EC754400E029E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "LateralIntentKit-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.LateralIntentKit-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
 		DAFB17EC22E4E379004C78E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1715,6 +2320,7 @@
 		DAFB17EF22E4E379004C78E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Lateral Thinking/Lateral Thinking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -1736,6 +2342,7 @@
 		DAFB17F022E4E379004C78E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Lateral Thinking/Lateral Thinking.entitlements";
 				CODE_SIGN_STYLE = Automatic;
@@ -1920,6 +2527,42 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DAC1108B22EBC75300E029E1 /* Build configuration list for PBXNativeTarget "Lateral Thinking Siri Intent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC1108922EBC75300E029E1 /* Debug */,
+				DAC1108A22EBC75300E029E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC110B022EC71B500E029E1 /* Build configuration list for PBXNativeTarget "LateralIntentKit-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC110B122EC71B500E029E1 /* Debug */,
+				DAC110B222EC71B500E029E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC110B322EC71B500E029E1 /* Build configuration list for PBXNativeTarget "LateralIntentKit-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC110B422EC71B500E029E1 /* Debug */,
+				DAC110B522EC71B500E029E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC110CE22EC754400E029E1 /* Build configuration list for PBXNativeTarget "LateralIntentKit-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAC110CF22EC754400E029E1 /* Debug */,
+				DAC110D022EC754400E029E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DAFB17BC22E4E376004C78E4 /* Build configuration list for PBXProject "Lateral Thinking" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2041,6 +2684,18 @@
 			productName = CombineFeedbackUI;
 		};
 		DA88459122EB832000A32E36 /* LateralThinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LateralThinking;
+		};
+		DAC1108C22EBC7B300E029E1 /* LateralThinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LateralThinking;
+		};
+		DAC110BE22EC73C300E029E1 /* LateralThinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LateralThinking;
+		};
+		DAC110D222EC755000E029E1 /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LateralThinking;
 		};

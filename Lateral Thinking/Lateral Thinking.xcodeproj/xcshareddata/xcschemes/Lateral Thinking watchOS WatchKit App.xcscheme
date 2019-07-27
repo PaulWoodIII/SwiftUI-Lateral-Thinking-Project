@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAFB17C022E4E376004C78E4"
-               BuildableName = "Lateral Thinking.app"
-               BlueprintName = "Lateral Thinking"
+               BlueprintIdentifier = "DA52202E22EBA3C900E0AF27"
+               BuildableName = "Lateral Thinking watchOS WatchKit App.app"
+               BlueprintName = "Lateral Thinking watchOS WatchKit App"
+               ReferencedContainer = "container:Lateral Thinking.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DA52202B22EBA3C900E0AF27"
+               BuildableName = "Lateral Thinking watchOS.app"
+               BlueprintName = "Lateral Thinking watchOS"
                ReferencedContainer = "container:Lateral Thinking.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,36 +42,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAFB17D922E4E379004C78E4"
-               BuildableName = "Lateral ThinkingTests.xctest"
-               BlueprintName = "Lateral ThinkingTests"
-               ReferencedContainer = "container:Lateral Thinking.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAFB17E422E4E379004C78E4"
-               BuildableName = "Lateral ThinkingUITests.xctest"
-               BlueprintName = "Lateral ThinkingUITests"
-               ReferencedContainer = "container:Lateral Thinking.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAC110A022EC71B500E029E1"
-               BuildableName = "LateralIntentKit-iOSTests.xctest"
-               BlueprintName = "LateralIntentKit-iOSTests"
-               ReferencedContainer = "container:Lateral Thinking.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -70,16 +54,18 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Lateral Thinking watchOS WatchKit App">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAFB17C022E4E376004C78E4"
-            BuildableName = "Lateral Thinking.app"
-            BlueprintName = "Lateral Thinking"
+            BlueprintIdentifier = "DA52202E22EBA3C900E0AF27"
+            BuildableName = "Lateral Thinking watchOS WatchKit App.app"
+            BlueprintName = "Lateral Thinking watchOS WatchKit App"
             ReferencedContainer = "container:Lateral Thinking.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -87,16 +73,27 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/Lateral Thinking watchOS WatchKit App">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAFB17C022E4E376004C78E4"
-            BuildableName = "Lateral Thinking.app"
-            BlueprintName = "Lateral Thinking"
+            BlueprintIdentifier = "DA52202E22EBA3C900E0AF27"
+            BuildableName = "Lateral Thinking watchOS WatchKit App.app"
+            BlueprintName = "Lateral Thinking watchOS WatchKit App"
             ReferencedContainer = "container:Lateral Thinking.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "DA52202E22EBA3C900E0AF27"
+            BuildableName = "Lateral Thinking watchOS WatchKit App.app"
+            BlueprintName = "Lateral Thinking watchOS WatchKit App"
+            ReferencedContainer = "container:Lateral Thinking.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

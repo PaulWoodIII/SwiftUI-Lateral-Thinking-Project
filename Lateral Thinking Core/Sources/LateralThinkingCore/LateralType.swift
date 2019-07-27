@@ -26,6 +26,14 @@ public struct LateralType: ExpressibleByStringLiteral, Identifiable, Comparable 
   }
 }
 
+extension LateralType: Equatable {
+  public static func == (lhs: LateralType, rhs: LateralType) -> Bool {
+    return lhs.body == rhs.body
+  }
+}
+
 extension LateralType: Hashable {
-  
+  public func hash(into hasher: inout Hasher) {
+    return hasher.combine(body)
+  }
 }

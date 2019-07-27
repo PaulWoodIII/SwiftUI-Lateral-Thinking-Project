@@ -32,5 +32,9 @@
 	<true/>
 	<key>NSSupportsSuddenTermination</key>
 	<true/>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>LateralIntent</string>
+	</array>
 </dict>
 </plist>

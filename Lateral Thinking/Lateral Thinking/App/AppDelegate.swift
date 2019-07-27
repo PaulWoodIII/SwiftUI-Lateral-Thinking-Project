@@ -12,7 +12,7 @@ import LateralBusinessLogic
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
-  let syncService = SyncService()
+  let syncService = SyncService.shared
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.

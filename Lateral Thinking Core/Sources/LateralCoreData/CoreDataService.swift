@@ -90,9 +90,17 @@ public class CoreDataService: NSObject {
     return Future<[LateralType], Error>.init { promise in
       do {
         try self.fetchedResultsController.performFetch()
-        if let fetched = self.fetchedResultsController.fetchedObjects {
-          self.allLaterals = fetched
-          let lateralType = fetched.map({ return LateralType(stringLiteral: $0.body!) })
+        if let fetched = self.fetchedResultsController.fetchedObjects as NSArray? {
+          let mapped = Array<LateralMO>( fetched.compactMap({ $0 as? LateralMO}) )
+          self.allLaterals = mapped
+          print(Set(mapped))
+          print(mapped)
+          let lateralType = mapped.compactMap({ lateralMO -> LateralType? in
+            guard let body = lateralMO.body else{
+              return nil
+            }
+            return LateralType(stringLiteral: body)
+          })
           promise(.success(lateralType))
         } else {
           promise(.success([]))

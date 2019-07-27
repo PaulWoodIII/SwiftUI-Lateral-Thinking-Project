@@ -35,11 +35,11 @@ public class SyncService {
     fetchCloudLaterals: @escaping () -> AnyPublisher<[LateralType], CloudKitService.Error> = CloudKitService.shared.retrieveAllLaterals
   ) {
     self.coreDataLaterals = coreDataLaterals
-    self.cloudLaterals = cloudLaterals.prepend(InitialLateralTypes.obliques).eraseToAnyPublisher()
+    self.cloudLaterals = cloudLaterals
     self.coreDataCreate = coreDataCreate
     self.careDataSave = careDataSave
     monitorServices()
-    _ = fetchCloudLaterals()
+    _ = fetchCloudLaterals().replaceError(with: []).makeConnectable().connect()
   }
   
   private  var coreDataLaterals: AnyPublisher<[LateralType], Never> {

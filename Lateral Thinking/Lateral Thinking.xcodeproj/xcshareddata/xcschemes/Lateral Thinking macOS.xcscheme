@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAFB17C022E4E376004C78E4"
-               BuildableName = "Lateral Thinking.app"
-               BlueprintName = "Lateral Thinking"
+               BlueprintIdentifier = "DA52206C22EBBE4A00E0AF27"
+               BuildableName = "Lateral Thinking macOS.app"
+               BlueprintName = "Lateral Thinking macOS"
                ReferencedContainer = "container:Lateral Thinking.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAFB17D922E4E379004C78E4"
-               BuildableName = "Lateral ThinkingTests.xctest"
-               BlueprintName = "Lateral ThinkingTests"
+               BlueprintIdentifier = "DA52208322EBBE4C00E0AF27"
+               BuildableName = "Lateral Thinking macOSTests.xctest"
+               BlueprintName = "Lateral Thinking macOSTests"
                ReferencedContainer = "container:Lateral Thinking.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,19 +42,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAFB17E422E4E379004C78E4"
-               BuildableName = "Lateral ThinkingUITests.xctest"
-               BlueprintName = "Lateral ThinkingUITests"
-               ReferencedContainer = "container:Lateral Thinking.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DAC110A022EC71B500E029E1"
-               BuildableName = "LateralIntentKit-iOSTests.xctest"
-               BlueprintName = "LateralIntentKit-iOSTests"
+               BlueprintIdentifier = "DA52208E22EBBE4C00E0AF27"
+               BuildableName = "Lateral Thinking macOSUITests.xctest"
+               BlueprintName = "Lateral Thinking macOSUITests"
                ReferencedContainer = "container:Lateral Thinking.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -74,9 +64,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAFB17C022E4E376004C78E4"
-            BuildableName = "Lateral Thinking.app"
-            BlueprintName = "Lateral Thinking"
+            BlueprintIdentifier = "DA52206C22EBBE4A00E0AF27"
+            BuildableName = "Lateral Thinking macOS.app"
+            BlueprintName = "Lateral Thinking macOS"
             ReferencedContainer = "container:Lateral Thinking.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -91,9 +81,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DAFB17C022E4E376004C78E4"
-            BuildableName = "Lateral Thinking.app"
-            BlueprintName = "Lateral Thinking"
+            BlueprintIdentifier = "DA52206C22EBBE4A00E0AF27"
+            BuildableName = "Lateral Thinking macOS.app"
+            BlueprintName = "Lateral Thinking macOS"
             ReferencedContainer = "container:Lateral Thinking.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
