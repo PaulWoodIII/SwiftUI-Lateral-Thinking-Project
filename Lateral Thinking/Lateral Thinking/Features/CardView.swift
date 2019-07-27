@@ -9,11 +9,14 @@
 import SwiftUI
 import LateralBusinessLogic
 import CombineFeedbackUI
+import IntentsUI
 
 public struct CardView : View {
   
   typealias State = CardViewModel.State
   typealias Event = CardViewModel.Event
+  
+  @SwiftUI.State var showShortcut: Bool = false
   
   private let context: Context<CardViewModel.State, CardViewModel.Event>
   
@@ -28,35 +31,61 @@ public struct CardView : View {
       Rectangle()
         .foregroundColor(Color("Background"))
         .frame(minWidth: 0,
-                   idealWidth:UIScreen.main.bounds.width,
-                   maxWidth: .infinity,
-                   minHeight: 0,
-                   idealHeight: UIScreen.main.bounds.height,
-                   maxHeight: .infinity,
-                   alignment: .center)
-      .tapAction { self.context.send(event: .onTap) }
-
+               idealWidth:UIScreen.main.bounds.width,
+               maxWidth: .infinity,
+               minHeight: 0,
+               idealHeight: UIScreen.main.bounds.height,
+               maxHeight: .infinity,
+               alignment: .center)
+        .tapAction {
+          IntentDonater.donate()
+          self.context.send(event: .onTap)
+      }.edgesIgnoringSafeArea(.all)
+      
+      
       Text(context.displayText)
         .lineLimit(nil)
         .font(.headline)
         .foregroundColor(Color("TextColor"))
-      .tapAction { self.context.send(event: .onTap) }
-
+        .tapAction {
+          IntentDonater.donate()
+          self.context.send(event: .onTap)
+      }
+      
+      Button(action: {
+        self.showShortcut.toggle()
+      }) {
+        INUIAddVoiceShortcutButtonRepresentable()
+      }.padding()
+        .frame(
+          minWidth: 0,
+          idealWidth:UIScreen.main.bounds.width,
+          maxWidth: .infinity,
+          minHeight: 0,
+          idealHeight: UIScreen.main.bounds.height,
+          maxHeight: .infinity,
+          alignment: .bottomTrailing
+      )
+      
     }.frame(minWidth: 0,
-           idealWidth:UIScreen.main.bounds.width,
-           maxWidth: .infinity,
-           minHeight: 0,
-           idealHeight: UIScreen.main.bounds.height,
-           maxHeight: .infinity,
-           alignment: .center)
+            idealWidth:UIScreen.main.bounds.width,
+            maxWidth: .infinity,
+            minHeight: 0,
+            idealHeight: UIScreen.main.bounds.height,
+            maxHeight: .infinity,
+            alignment: .center)
       .tapAction {
-          self.context.send(event: .onTap)
-      }.gesture(
-        DragGesture().onEnded({ _ in
-          self.context.send(event: .onTap)
-        })
+        IntentDonater.donate()
+        self.context.send(event: .onTap)
+    }.gesture(
+      DragGesture().onEnded({ _ in
+        IntentDonater.donate()
+        self.context.send(event: .onTap)
+      })
     )
-    .edgesIgnoringSafeArea(.all)
+    .sheet(isPresented: $showShortcut) {
+      INUIAddVoiceShortcutViewControllerRepresentable()
+    }
   }
 }
 

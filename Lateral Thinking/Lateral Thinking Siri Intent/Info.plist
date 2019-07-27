@@ -31,7 +31,6 @@
 			<key>IntentsSupported</key>
 			<array>
 				<string>LateralIntent</string>
-				<string>LateralSO</string>
 			</array>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>

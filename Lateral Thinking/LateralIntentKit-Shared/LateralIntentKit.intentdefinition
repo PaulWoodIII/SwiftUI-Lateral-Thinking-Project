@@ -49,14 +49,10 @@
 			<dict>
 				<key>list</key>
 				<dict>
-					<key>INIntentParameterCombinationSubtitle</key>
-					<string>Display a lateral from this list</string>
-					<key>INIntentParameterCombinationSubtitleID</key>
-					<string>k75J6t</string>
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Lateral from${list}</string>
+					<string>Display from ${list}</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>OP7okY</string>
 				</dict>
@@ -174,6 +170,8 @@
 				</array>
 				<key>INIntentResponseLastParameterTag</key>
 				<integer>1</integer>
+				<key>INIntentResponseOutput</key>
+				<string>body</string>
 				<key>INIntentResponseParameters</key>
 				<array>
 					<dict>
