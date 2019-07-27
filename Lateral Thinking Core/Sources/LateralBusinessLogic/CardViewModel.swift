@@ -55,12 +55,17 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
     case lateralPublisher(_: Cancellable)
   }
   
-  private static func nextDisplay(state: State) -> Int {
+  private static func nextDisplay(state: State) -> String {
+    guard state.displayLaterals.count > 0 else {
+      return ""
+    }
     #if canImport(GameplayKit)
-    return state.shuffler.nextInt()
+    let next = state.shuffler.nextInt()
+    return state.displayLaterals[next].body
     #else
     let high = UInt32(state.displayLaterals.count - 1)
-    return Int(arc4random_uniform(high))
+    let next = Int(arc4random_uniform(high))
+    return state.displayLaterals[next].body
     #endif
     
   }
@@ -71,7 +76,7 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
       return state.set(\.onAppear, true)
     case .onTap:
       let next = nextDisplay(state: state)
-      return state.set(\.displayText, state.displayLaterals[next].body)
+      return state.set(\.displayText, next)
     case .setLaterals(let lats):
       var copy = state
       #if canImport(GameplayKit)
