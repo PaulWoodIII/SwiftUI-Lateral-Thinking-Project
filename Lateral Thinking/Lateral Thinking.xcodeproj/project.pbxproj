@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA09708E22ED0D8B00CFD7FD /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA09708D22ED0D8B00CFD7FD /* IntentsUI.framework */; };
+		DA09709122ED0D8B00CFD7FD /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09709022ED0D8B00CFD7FD /* IntentViewController.swift */; };
+		DA09709422ED0D8B00CFD7FD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA09709222ED0D8B00CFD7FD /* MainInterface.storyboard */; };
+		DA09709822ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA09708C22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DA09709D22ED0DDA00CFD7FD /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA09709C22ED0DDA00CFD7FD /* LateralThinking */; };
+		DA09709F22ED0DE000CFD7FD /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = DA09709E22ED0DE000CFD7FD /* CombineFeedback */; };
+		DA0970A122ED0DE000CFD7FD /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA0970A022ED0DE000CFD7FD /* CombineFeedbackUI */; };
+		DA0970A222ED0DF200CFD7FD /* LateralIntentKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; };
+		DA0970A322ED0DF200CFD7FD /* LateralIntentKit_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA0970A822EDC7FF00CFD7FD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0970A722EDC7FF00CFD7FD /* CardView.swift */; };
+		DA0970AA22EDC88A00CFD7FD /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0970A922EDC88A00CFD7FD /* EnvironmentObjects.swift */; };
+		DA0970AB22EDC8CA00CFD7FD /* LateralThinking_Persistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; };
+		DA0970AC22EDC8CA00CFD7FD /* LateralThinking_Persistance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA0970B122EDD90700CFD7FD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2EB2F222E7903D006CF023 /* CloudKit.framework */; };
+		DA0970B222EDD91600CFD7FD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2EB2F222E7903D006CF023 /* CloudKit.framework */; };
 		DA1F6C7B22EB8921003292DE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1F6C7A22EB8921003292DE /* CoreData.framework */; };
 		DA1F6C9B22EB8B87003292DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2EB2C222E78EF9006CF023 /* Assets.xcassets */; };
 		DA210D5C22E5E2DA005A41C9 /* EntwineTest in Frameworks */ = {isa = PBXBuildFile; productRef = DA210D5B22E5E2DA005A41C9 /* EntwineTest */; };
@@ -130,6 +145,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DA09709622ED0D8B00CFD7FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA09708B22ED0D8B00CFD7FD;
+			remoteInfo = "Lateral Thinking Siri Intent UI";
+		};
+		DA0970A422ED0DF200CFD7FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC1109822EC71B500E029E1;
+			remoteInfo = "LateralIntentKit-iOS";
+		};
+		DA0970AD22EDC8CA00CFD7FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA6679FD22EC8A7E000AD4E7;
+			remoteInfo = "LateralThinking-Persistance";
+		};
 		DA2EB2CD22E78EF9006CF023 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
@@ -294,6 +330,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		DA0970A622ED0DF200CFD7FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA0970A322ED0DF200CFD7FD /* LateralIntentKit_iOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA0970AF22EDC8CA00CFD7FD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA0970AC22EDC8CA00CFD7FD /* LateralThinking_Persistance.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA36852122E65AA500EE2819 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -335,6 +393,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				DAC1108722EBC75300E029E1 /* Lateral Thinking Siri Intent.appex in Embed App Extensions */,
+				DA09709822ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +447,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA09708C22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lateral Thinking Siri Intent UI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA09708D22ED0D8B00CFD7FD /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		DA09709022ED0D8B00CFD7FD /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		DA09709322ED0D8B00CFD7FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DA09709522ED0D8B00CFD7FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA0970A722EDC7FF00CFD7FD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking Siri Intent UI/CardView.swift"; sourceTree = "<group>"; };
+		DA0970A922EDC88A00CFD7FD /* EnvironmentObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnvironmentObjects.swift; path = "../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking Siri Intent UI/EnvironmentObjects.swift"; sourceTree = "<group>"; };
+		DA0970B022EDD90000CFD7FD /* Lateral Thinking Siri Intent UI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lateral Thinking Siri Intent UI.entitlements"; sourceTree = "<group>"; };
 		DA1F6C7A22EB8921003292DE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS13.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		DA2EB2B922E78EF7006CF023 /* Lateral Thinking tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral Thinking tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2EB2BB22E78EF7006CF023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -503,6 +570,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DA09708922ED0D8B00CFD7FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0970A222ED0DF200CFD7FD /* LateralIntentKit_iOS.framework in Frameworks */,
+				DA09709D22ED0DDA00CFD7FD /* LateralThinking in Frameworks */,
+				DA0970A122ED0DE000CFD7FD /* CombineFeedbackUI in Frameworks */,
+				DA0970B122EDD90700CFD7FD /* CloudKit.framework in Frameworks */,
+				DA09709F22ED0DE000CFD7FD /* CombineFeedback in Frameworks */,
+				DA09708E22ED0D8B00CFD7FD /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA2EB2B622E78EF7006CF023 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -587,6 +667,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0970AB22EDC8CA00CFD7FD /* LateralThinking_Persistance.framework in Frameworks */,
+				DA0970B222EDD91600CFD7FD /* CloudKit.framework in Frameworks */,
 				DAC1108D22EBC7B300E029E1 /* LateralThinking in Frameworks */,
 				DAB836CE22ECE1E200C0F0E2 /* LateralIntentKit_iOS.framework in Frameworks */,
 			);
@@ -683,6 +765,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA09708F22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI */ = {
+			isa = PBXGroup;
+			children = (
+				DA0970B022EDD90000CFD7FD /* Lateral Thinking Siri Intent UI.entitlements */,
+				DA09709022ED0D8B00CFD7FD /* IntentViewController.swift */,
+				DA09709222ED0D8B00CFD7FD /* MainInterface.storyboard */,
+				DA09709522ED0D8B00CFD7FD /* Info.plist */,
+				DA0970A722EDC7FF00CFD7FD /* CardView.swift */,
+				DA0970A922EDC88A00CFD7FD /* EnvironmentObjects.swift */,
+			);
+			path = "Lateral Thinking Siri Intent UI";
+			sourceTree = "<group>";
+		};
 		DA2EB2BA22E78EF7006CF023 /* Lateral Thinking tvOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -760,6 +855,7 @@
 				DA2EB2F522E79051006CF023 /* CloudKit.framework */,
 				DA2EB2F222E7903D006CF023 /* CloudKit.framework */,
 				DA2EB2EF22E79029006CF023 /* CloudKit.framework */,
+				DA09708D22ED0D8B00CFD7FD /* IntentsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -999,6 +1095,7 @@
 			children = (
 				DAFB17C322E4E376004C78E4 /* Lateral Thinking */,
 				DAC1108122EBC75300E029E1 /* Lateral Thinking Siri Intent */,
+				DA09708F22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI */,
 				DAFB17DD22E4E379004C78E4 /* Lateral ThinkingTests */,
 				DAFB17E822E4E379004C78E4 /* Lateral ThinkingUITests */,
 				DA2EB2BA22E78EF7006CF023 /* Lateral Thinking tvOS */,
@@ -1047,6 +1144,7 @@
 				DAEC1EB922ECB02900A6C1B3 /* LateralThinking_Persistance_watchOS.framework */,
 				DAEC1ED322ECBC6500A6C1B3 /* LateralThinking_Persistance_tvOS.framework */,
 				DAEC1EE522ECBC8900A6C1B3 /* LateralThinking_Persistance_macOS.framework */,
+				DA09708C22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1159,6 +1257,30 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		DA09708B22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA09709B22ED0D8B00CFD7FD /* Build configuration list for PBXNativeTarget "Lateral Thinking Siri Intent UI" */;
+			buildPhases = (
+				DA09708822ED0D8B00CFD7FD /* Sources */,
+				DA09708922ED0D8B00CFD7FD /* Frameworks */,
+				DA09708A22ED0D8B00CFD7FD /* Resources */,
+				DA0970A622ED0DF200CFD7FD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA0970A522ED0DF200CFD7FD /* PBXTargetDependency */,
+			);
+			name = "Lateral Thinking Siri Intent UI";
+			packageProductDependencies = (
+				DA09709C22ED0DDA00CFD7FD /* LateralThinking */,
+				DA09709E22ED0DE000CFD7FD /* CombineFeedback */,
+				DA0970A022ED0DE000CFD7FD /* CombineFeedbackUI */,
+			);
+			productName = "Lateral Thinking Siri Intent UI";
+			productReference = DA09708C22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DA2EB2B822E78EF7006CF023 /* Lateral Thinking tvOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA2EB2DE22E78EF9006CF023 /* Build configuration list for PBXNativeTarget "Lateral Thinking tvOS" */;
@@ -1391,11 +1513,13 @@
 				DAC1107C22EBC75300E029E1 /* Sources */,
 				DAC1107D22EBC75300E029E1 /* Frameworks */,
 				DAC1107E22EBC75300E029E1 /* Resources */,
+				DA0970AF22EDC8CA00CFD7FD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				DAB836D122ECE1E200C0F0E2 /* PBXTargetDependency */,
+				DA0970AE22EDC8CA00CFD7FD /* PBXTargetDependency */,
 			);
 			name = "Lateral Thinking Siri Intent";
 			packageProductDependencies = (
@@ -1546,6 +1670,7 @@
 				DAC1109022EBC7F500E029E1 /* PBXTargetDependency */,
 				DAC110AD22EC71B500E029E1 /* PBXTargetDependency */,
 				DA667A1222EC8A7E000AD4E7 /* PBXTargetDependency */,
+				DA09709722ED0D8B00CFD7FD /* PBXTargetDependency */,
 			);
 			name = "Lateral Thinking";
 			packageProductDependencies = (
@@ -1608,6 +1733,9 @@
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Paul Wood";
 				TargetAttributes = {
+					DA09708B22ED0D8B00CFD7FD = {
+						CreatedOnToolsVersion = 11.0;
+					};
 					DA2EB2B822E78EF7006CF023 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -1702,6 +1830,7 @@
 			targets = (
 				DAFB17C022E4E376004C78E4 /* Lateral Thinking */,
 				DAC1107F22EBC75300E029E1 /* Lateral Thinking Siri Intent */,
+				DA09708B22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI */,
 				DAFB17D922E4E379004C78E4 /* Lateral ThinkingTests */,
 				DAFB17E422E4E379004C78E4 /* Lateral ThinkingUITests */,
 				DA2EB2B822E78EF7006CF023 /* Lateral Thinking tvOS */,
@@ -1726,6 +1855,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DA09708A22ED0D8B00CFD7FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA09709422ED0D8B00CFD7FD /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA2EB2B722E78EF7006CF023 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1895,6 +2032,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DA09708822ED0D8B00CFD7FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA0970AA22EDC88A00CFD7FD /* EnvironmentObjects.swift in Sources */,
+				DA0970A822EDC7FF00CFD7FD /* CardView.swift in Sources */,
+				DA09709122ED0D8B00CFD7FD /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DA2EB2B522E78EF7006CF023 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2078,6 +2225,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DA09709722ED0D8B00CFD7FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA09708B22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI */;
+			targetProxy = DA09709622ED0D8B00CFD7FD /* PBXContainerItemProxy */;
+		};
+		DA0970A522ED0DF200CFD7FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAC1109822EC71B500E029E1 /* LateralIntentKit-iOS */;
+			targetProxy = DA0970A422ED0DF200CFD7FD /* PBXContainerItemProxy */;
+		};
+		DA0970AE22EDC8CA00CFD7FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA6679FD22EC8A7E000AD4E7 /* LateralThinking-Persistance */;
+			targetProxy = DA0970AD22EDC8CA00CFD7FD /* PBXContainerItemProxy */;
+		};
 		DA2EB2CE22E78EF9006CF023 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DA2EB2B822E78EF7006CF023 /* Lateral Thinking tvOS */;
@@ -2196,6 +2358,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		DA09709222ED0D8B00CFD7FD /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA09709322ED0D8B00CFD7FD /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		DA52203422EBA3C900E0AF27 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2223,6 +2393,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DA09709922ED0D8B00CFD7FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Lateral Thinking Siri Intent UI/Lateral Thinking Siri Intent UI.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				INFOPLIST_FILE = "Lateral Thinking Siri Intent UI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking.Lateral-Thinking-Siri-Intent-UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA09709A22ED0D8B00CFD7FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Lateral Thinking Siri Intent UI/Lateral Thinking Siri Intent UI.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				INFOPLIST_FILE = "Lateral Thinking Siri Intent UI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking.Lateral-Thinking-Siri-Intent-UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DA2EB2DF22E78EF9006CF023 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3346,6 +3556,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DA09709B22ED0D8B00CFD7FD /* Build configuration list for PBXNativeTarget "Lateral Thinking Siri Intent UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA09709922ED0D8B00CFD7FD /* Debug */,
+				DA09709A22ED0D8B00CFD7FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DA2EB2DE22E78EF9006CF023 /* Build configuration list for PBXNativeTarget "Lateral Thinking tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3566,6 +3785,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DA09709C22ED0DDA00CFD7FD /* LateralThinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LateralThinking;
+		};
+		DA09709E22ED0DE000CFD7FD /* CombineFeedback */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedback;
+		};
+		DA0970A022ED0DE000CFD7FD /* CombineFeedbackUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedbackUI;
+		};
 		DA210D5B22E5E2DA005A41C9 /* EntwineTest */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */;
