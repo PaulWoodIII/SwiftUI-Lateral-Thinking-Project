@@ -27,15 +27,15 @@ public struct CardView : View {
     ZStack {
       Rectangle()
         .foregroundColor(Color("Background"))
-      .tapAction { self.context.send(event: .onTap) }
+      .onTapGesture { self.context.send(event: .onTap) }
 
       Text(context.displayText)
         .lineLimit(nil)
         .font(.headline)
         .foregroundColor(Color("TextColor"))
-      .tapAction { self.context.send(event: .onTap) }
+      .onTapGesture { self.context.send(event: .onTap) }
 
-    }.tapAction {
+    }.onTapGesture {
           self.context.send(event: .onTap)
       }.gesture(
         DragGesture().onEnded({ _ in

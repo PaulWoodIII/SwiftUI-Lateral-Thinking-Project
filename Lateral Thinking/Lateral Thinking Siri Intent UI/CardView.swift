@@ -36,7 +36,7 @@ public struct CardView : View {
                idealHeight: UIScreen.main.bounds.height,
                maxHeight: .infinity,
                alignment: .center)
-        .tapAction {
+        .onTapGesture {
           self.context.send(event: .onTap)
       }.edgesIgnoringSafeArea(.all)
       
@@ -45,7 +45,7 @@ public struct CardView : View {
         .lineLimit(nil)
         .font(.headline)
         .foregroundColor(Color("TextColor"))
-        .tapAction {
+        .onTapGesture {
           self.context.send(event: .onTap)
       }
     }.frame(minWidth: 0,
@@ -55,7 +55,7 @@ public struct CardView : View {
             idealHeight: UIScreen.main.bounds.height,
             maxHeight: .infinity,
             alignment: .center)
-      .tapAction {
+      .onTapGesture {
         self.context.send(event: .onTap)
     }.gesture(
       DragGesture().onEnded({ _ in

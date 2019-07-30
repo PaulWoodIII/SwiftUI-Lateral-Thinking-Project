@@ -5,6 +5,9 @@
       location = "group:../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking Core">
    </FileRef>
    <FileRef
+      location = "group:Lateral Thinking Core">
+   </FileRef>
+   <FileRef
       location = "group:Lateral Thinking/Lateral Thinking.xcodeproj">
    </FileRef>
 </Workspace>

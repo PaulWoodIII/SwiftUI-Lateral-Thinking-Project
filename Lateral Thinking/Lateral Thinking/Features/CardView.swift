@@ -37,17 +37,18 @@ public struct CardView : View {
                idealHeight: UIScreen.main.bounds.height,
                maxHeight: .infinity,
                alignment: .center)
-        .tapAction {
+        .onTapGesture {
           IntentDonater.donate()
           self.context.send(event: .onTap)
-      }.edgesIgnoringSafeArea(.all)
+        }
+      .edgesIgnoringSafeArea(.all)
       
       
       Text(context.displayText)
         .lineLimit(nil)
         .font(.headline)
         .foregroundColor(Color("TextColor"))
-        .tapAction {
+        .onTapGesture {
           IntentDonater.donate()
           self.context.send(event: .onTap)
       }
@@ -74,7 +75,7 @@ public struct CardView : View {
             idealHeight: UIScreen.main.bounds.height,
             maxHeight: .infinity,
             alignment: .center)
-      .tapAction {
+      .onTapGesture {
         IntentDonater.donate()
         self.context.send(event: .onTap)
     }.gesture(

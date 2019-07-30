@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C9CB52222F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
+		3C9CB52322F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
+		3C9CB52422F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
+		3C9CB52522F0930400E295EE /* LateralIntentKit.intentdefinition in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
+		3C9CB52622F0930400E295EE /* LateralIntentKit.intentdefinition in Resources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
+		3C9CB52722F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
+		3C9CB52822F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
+		3C9CB52922F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
+		3C9CB52A22F0930400E295EE /* LateralIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52122F0930400E295EE /* LateralIntentHandler.swift */; };
+		3C9CB52B22F0930400E295EE /* LateralIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52122F0930400E295EE /* LateralIntentHandler.swift */; };
+		3C9CB52C22F0930400E295EE /* LateralIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52122F0930400E295EE /* LateralIntentHandler.swift */; };
+		3C9CB52D22F0930400E295EE /* LateralIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52122F0930400E295EE /* LateralIntentHandler.swift */; };
+		3C9CB52E22F0930400E295EE /* LateralIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52122F0930400E295EE /* LateralIntentHandler.swift */; };
+		3C9CB52F22F0930400E295EE /* LateralIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52122F0930400E295EE /* LateralIntentHandler.swift */; };
+		3C9CB53322F0947600E295EE /* SwiftUISiriShortcutsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53022F0947600E295EE /* SwiftUISiriShortcutsButton.swift */; };
+		3C9CB53422F0947600E295EE /* IntentDonater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53122F0947600E295EE /* IntentDonater.swift */; };
+		3C9CB53522F0947600E295EE /* INUIAddVoiceShortcutViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53222F0947600E295EE /* INUIAddVoiceShortcutViewControllerRepresentable.swift */; };
+		3C9CB53722F0948E00E295EE /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53622F0948E00E295EE /* EnvironmentObjects.swift */; };
+		3C9CB53A22F0962500E295EE /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53822F0962500E295EE /* EnvironmentObjects.swift */; };
+		3C9CB53B22F0962500E295EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53922F0962500E295EE /* CardView.swift */; };
+		3C9CB53D22F0964900E295EE /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53C22F0964900E295EE /* EnvironmentObjects.swift */; };
+		3C9CB53F22F0966D00E295EE /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53E22F0966D00E295EE /* EnvironmentObjects.swift */; };
+		3C9CB54122F0967600E295EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54022F0967600E295EE /* CardView.swift */; };
+		3C9CB54322F096A100E295EE /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54222F096A100E295EE /* EnvironmentObjects.swift */; };
+		3C9CB54522F096CE00E295EE /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54422F096CE00E295EE /* CoreDataService.swift */; };
+		3C9CB54622F0975A00E295EE /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54422F096CE00E295EE /* CoreDataService.swift */; };
+		3C9CB54722F0975B00E295EE /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54422F096CE00E295EE /* CoreDataService.swift */; };
+		3C9CB54822F0975B00E295EE /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54422F096CE00E295EE /* CoreDataService.swift */; };
 		DA09708E22ED0D8B00CFD7FD /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA09708D22ED0D8B00CFD7FD /* IntentsUI.framework */; };
 		DA09709122ED0D8B00CFD7FD /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09709022ED0D8B00CFD7FD /* IntentViewController.swift */; };
 		DA09709422ED0D8B00CFD7FD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA09709222ED0D8B00CFD7FD /* MainInterface.storyboard */; };
@@ -16,8 +44,6 @@
 		DA0970A122ED0DE000CFD7FD /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA0970A022ED0DE000CFD7FD /* CombineFeedbackUI */; };
 		DA0970A222ED0DF200CFD7FD /* LateralIntentKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; };
 		DA0970A322ED0DF200CFD7FD /* LateralIntentKit_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DA0970A822EDC7FF00CFD7FD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0970A722EDC7FF00CFD7FD /* CardView.swift */; };
-		DA0970AA22EDC88A00CFD7FD /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0970A922EDC88A00CFD7FD /* EnvironmentObjects.swift */; };
 		DA0970AB22EDC8CA00CFD7FD /* LateralThinking_Persistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; };
 		DA0970AC22EDC8CA00CFD7FD /* LateralThinking_Persistance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA0970B122EDD90700CFD7FD /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2EB2F222E7903D006CF023 /* CloudKit.framework */; };
@@ -52,7 +78,6 @@
 		DA52204822EBA3CB00E0AF27 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52204722EBA3CB00E0AF27 /* ExtensionDelegate.swift */; };
 		DA52204A22EBA3CC00E0AF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA52204922EBA3CC00E0AF27 /* Assets.xcassets */; };
 		DA52204D22EBA3CC00E0AF27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA52204C22EBA3CC00E0AF27 /* Preview Assets.xcassets */; };
-		DA52205C22EBA7FE00E0AF27 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52205B22EBA7FE00E0AF27 /* CardView.swift */; };
 		DA52205E22EBA84400E0AF27 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA52205D22EBA84400E0AF27 /* LateralThinking */; };
 		DA52207022EBBE4A00E0AF27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52206F22EBBE4A00E0AF27 /* AppDelegate.swift */; };
 		DA52207222EBBE4A00E0AF27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52207122EBBE4A00E0AF27 /* ContentView.swift */; };
@@ -69,7 +94,6 @@
 		DA667A1022EC8A7E000AD4E7 /* LateralThinking_Persistance.h in Headers */ = {isa = PBXBuildFile; fileRef = DA667A0022EC8A7E000AD4E7 /* LateralThinking_Persistance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA667A1322EC8A7E000AD4E7 /* LateralThinking_Persistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; };
 		DA667A1422EC8A7E000AD4E7 /* LateralThinking_Persistance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DA667A1D22EC8AAD000AD4E7 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA667A1C22EC8AAD000AD4E7 /* CoreDataService.swift */; };
 		DA88459022EB82B600A32E36 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA88458F22EB82B600A32E36 /* CardView.swift */; };
 		DA88459222EB832000A32E36 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA88459122EB832000A32E36 /* LateralThinking */; };
 		DAB7B77722E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77222E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf */; };
@@ -78,12 +102,7 @@
 		DAB7B77A22E4F00A0091EEF3 /* NotoSerif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77522E4F00A0091EEF3 /* NotoSerif-Bold.ttf */; };
 		DAB7B77B22E4F00A0091EEF3 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DAB7B77622E4F00A0091EEF3 /* LICENSE.txt */; };
 		DAB836C822ECCADE00C0F0E2 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB836C722ECCADE00C0F0E2 /* CloudKit.framework */; };
-		DAB836CA22ECD00300C0F0E2 /* IntentDonater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB836C922ECD00300C0F0E2 /* IntentDonater.swift */; };
-		DAB836CC22ECD85C00C0F0E2 /* LateralIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB836CB22ECD85C00C0F0E2 /* LateralIntentHandler.swift */; };
-		DAB836CD22ECD85C00C0F0E2 /* LateralIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB836CB22ECD85C00C0F0E2 /* LateralIntentHandler.swift */; };
 		DAB836CE22ECE1E200C0F0E2 /* LateralIntentKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; };
-		DAB836D522ECFF6800C0F0E2 /* SwiftUISiriShortcutsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB836D422ECFF6800C0F0E2 /* SwiftUISiriShortcutsButton.swift */; };
-		DAB836D722ED023B00C0F0E2 /* INUIAddVoiceShortcutViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB836D622ED023A00C0F0E2 /* INUIAddVoiceShortcutViewControllerRepresentable.swift */; };
 		DAC1108322EBC75300E029E1 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1108222EBC75300E029E1 /* IntentHandler.swift */; };
 		DAC1108722EBC75300E029E1 /* Lateral Thinking Siri Intent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DAC1108022EBC75300E029E1 /* Lateral Thinking Siri Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAC1108D22EBC7B300E029E1 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAC1108C22EBC7B300E029E1 /* LateralThinking */; };
@@ -93,19 +112,11 @@
 		DAC110AB22EC71B500E029E1 /* LateralIntentKit_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC1109B22EC71B500E029E1 /* LateralIntentKit_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAC110AE22EC71B500E029E1 /* LateralIntentKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; };
 		DAC110AF22EC71B500E029E1 /* LateralIntentKit_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DAC110B722EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
-		DAC110B822EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
-		DAC110B922EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
-		DAC110BA22EC725700E029E1 /* LateralIntentKit.intentdefinition in Resources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
-		DAC110BB22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
-		DAC110BD22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
 		DAC110BF22EC73C300E029E1 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAC110BE22EC73C300E029E1 /* LateralThinking */; };
 		DAC110C922EC754400E029E1 /* LateralIntentKit_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC110C722EC754400E029E1 /* LateralIntentKit_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAC110CC22EC754400E029E1 /* LateralIntentKit_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */; };
 		DAC110CD22EC754400E029E1 /* LateralIntentKit_watchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAC110D322EC755000E029E1 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAC110D222EC755000E029E1 /* LateralThinking */; };
-		DAC110D422EC755E00E029E1 /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */; };
-		DAC9D64A22EC9CA400680D78 /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9D64922EC9CA400680D78 /* EnvironmentObjects.swift */; };
 		DAC9D65122EC9EB000680D78 /* LateralThinking_Persistance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DAC9D65622EC9EB600680D78 /* LateralIntentKit_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */; };
 		DAC9D65722EC9EB600680D78 /* LateralIntentKit_watchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -113,10 +124,8 @@
 		DAEC1EBD22ECB02A00A6C1B3 /* LateralThinking_Persistance_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAEC1EBB22ECB02A00A6C1B3 /* LateralThinking_Persistance_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAEC1EC022ECB02A00A6C1B3 /* LateralThinking_Persistance_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1EB922ECB02900A6C1B3 /* LateralThinking_Persistance_watchOS.framework */; };
 		DAEC1EC122ECB02A00A6C1B3 /* LateralThinking_Persistance_watchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1EB922ECB02900A6C1B3 /* LateralThinking_Persistance_watchOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DAEC1EC522ECB03C00A6C1B3 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA667A1C22EC8AAD000AD4E7 /* CoreDataService.swift */; };
 		DAEC1EC622ECB03F00A6C1B3 /* LateralModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2FA3C822EC8CDE0077B301 /* LateralModel.xcdatamodeld */; };
 		DAEC1EC922ECB0F700A6C1B3 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAEC1EC822ECB0F700A6C1B3 /* LateralThinking */; };
-		DAEC1ECC22ECB1A700A6C1B3 /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEC1ECB22ECB1A700A6C1B3 /* EnvironmentObjects.swift */; };
 		DAEC1ECD22ECB26F00A6C1B3 /* LateralThinking_Persistance_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1EB922ECB02900A6C1B3 /* LateralThinking_Persistance_watchOS.framework */; };
 		DAEC1ED722ECBC6600A6C1B3 /* LateralThinking_Persistance_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAEC1ED522ECBC6600A6C1B3 /* LateralThinking_Persistance_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAEC1EDA22ECBC6600A6C1B3 /* LateralThinking_Persistance_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1ED322ECBC6500A6C1B3 /* LateralThinking_Persistance_tvOS.framework */; };
@@ -124,15 +133,11 @@
 		DAEC1EE922ECBC8A00A6C1B3 /* LateralThinking_Persistance_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAEC1EE722ECBC8A00A6C1B3 /* LateralThinking_Persistance_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAEC1EEC22ECBC8A00A6C1B3 /* LateralThinking_Persistance_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1EE522ECBC8900A6C1B3 /* LateralThinking_Persistance_macOS.framework */; };
 		DAEC1EED22ECBC8A00A6C1B3 /* LateralThinking_Persistance_macOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1EE522ECBC8900A6C1B3 /* LateralThinking_Persistance_macOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DAEC1EF222ECBCA000A6C1B3 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA667A1C22EC8AAD000AD4E7 /* CoreDataService.swift */; };
-		DAEC1EF322ECBCA000A6C1B3 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA667A1C22EC8AAD000AD4E7 /* CoreDataService.swift */; };
 		DAEC1EF422ECBCA300A6C1B3 /* LateralModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2FA3C822EC8CDE0077B301 /* LateralModel.xcdatamodeld */; };
 		DAEC1EF522ECBCA400A6C1B3 /* LateralModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2FA3C822EC8CDE0077B301 /* LateralModel.xcdatamodeld */; };
-		DAEC1EF722ECC28F00A6C1B3 /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEC1EF622ECC28F00A6C1B3 /* EnvironmentObjects.swift */; };
 		DAEC1EF922ECC3A100A6C1B3 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAEC1EF822ECC3A100A6C1B3 /* LateralThinking */; };
 		DAEC1EFB22ECC3A600A6C1B3 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAEC1EFA22ECC3A600A6C1B3 /* LateralThinking */; };
 		DAEC1EFD22ECC62400A6C1B3 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEC1EFC22ECC62400A6C1B3 /* CardView.swift */; };
-		DAEC1EFF22ECC8D800A6C1B3 /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEC1EFE22ECC8D800A6C1B3 /* EnvironmentObjects.swift */; };
 		DAFB17C522E4E376004C78E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17C422E4E376004C78E4 /* AppDelegate.swift */; };
 		DAFB17C722E4E376004C78E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17C622E4E376004C78E4 /* SceneDelegate.swift */; };
 		DAFB17CA22E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17C822E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld */; };
@@ -447,6 +452,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C9CB51E22F0930300E295EE /* Lateral Thinking watchOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lateral Thinking watchOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		3C9CB51F22F0930300E295EE /* Lateral Thinking watchOS WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lateral Thinking watchOS WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = LateralIntentKit.intentdefinition; sourceTree = "<group>"; };
+		3C9CB52122F0930400E295EE /* LateralIntentHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LateralIntentHandler.swift; sourceTree = "<group>"; };
+		3C9CB53022F0947600E295EE /* SwiftUISiriShortcutsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUISiriShortcutsButton.swift; sourceTree = "<group>"; };
+		3C9CB53122F0947600E295EE /* IntentDonater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentDonater.swift; sourceTree = "<group>"; };
+		3C9CB53222F0947600E295EE /* INUIAddVoiceShortcutViewControllerRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INUIAddVoiceShortcutViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		3C9CB53622F0948E00E295EE /* EnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
+		3C9CB53822F0962500E295EE /* EnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
+		3C9CB53922F0962500E295EE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3C9CB53C22F0964900E295EE /* EnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
+		3C9CB53E22F0966D00E295EE /* EnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
+		3C9CB54022F0967600E295EE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		3C9CB54222F096A100E295EE /* EnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
+		3C9CB54422F096CE00E295EE /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		DA09708C22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lateral Thinking Siri Intent UI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA09708D22ED0D8B00CFD7FD /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		DA09709022ED0D8B00CFD7FD /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
@@ -487,7 +507,6 @@
 		DA52204922EBA3CC00E0AF27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA52204C22EBA3CC00E0AF27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DA52204E22EBA3CC00E0AF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA52205B22EBA7FE00E0AF27 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardView.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking watchOS WatchKit Extension/Features/CardView.swift"; sourceTree = "<group>"; };
 		DA52206322EBB0FE00E0AF27 /* Lateral Thinking watchOS WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lateral Thinking watchOS WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		DA52206522EBBD7D00E0AF27 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		DA52206D22EBBE4A00E0AF27 /* Lateral Thinking macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral Thinking macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -511,7 +530,6 @@
 		DA667A0122EC8A7E000AD4E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA667A0622EC8A7E000AD4E7 /* LateralThinking-PersistanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LateralThinking-PersistanceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA667A0F22EC8A7E000AD4E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA667A1C22EC8AAD000AD4E7 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreDataService.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/LateralThinking-Persistance/CoreData/CoreDataService.swift"; sourceTree = "<group>"; };
 		DA88458F22EB82B600A32E36 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DAB7B77222E4F00A0091EEF3 /* NotoSerif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-BoldItalic.ttf"; sourceTree = "<group>"; };
 		DAB7B77322E4F00A0091EEF3 /* NotoSerif-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Regular.ttf"; sourceTree = "<group>"; };
@@ -519,11 +537,7 @@
 		DAB7B77522E4F00A0091EEF3 /* NotoSerif-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSerif-Bold.ttf"; sourceTree = "<group>"; };
 		DAB7B77622E4F00A0091EEF3 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		DAB836C722ECCADE00C0F0E2 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
-		DAB836C922ECD00300C0F0E2 /* IntentDonater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IntentDonater.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking/Features/IntentDonater.swift"; sourceTree = "<group>"; };
-		DAB836CB22ECD85C00C0F0E2 /* LateralIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LateralIntentHandler.swift; path = "../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/LateralIntentKit-Shared/LateralIntentHandler.swift"; sourceTree = "<group>"; };
 		DAB836D322ECE6D700C0F0E2 /* Lateral Thinking Siri Intent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Lateral Thinking Siri Intent.entitlements"; sourceTree = "<group>"; };
-		DAB836D422ECFF6800C0F0E2 /* SwiftUISiriShortcutsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftUISiriShortcutsButton.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking/Features/SwiftUISiriShortcutsButton.swift"; sourceTree = "<group>"; };
-		DAB836D622ED023A00C0F0E2 /* INUIAddVoiceShortcutViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = INUIAddVoiceShortcutViewControllerRepresentable.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking/Features/INUIAddVoiceShortcutViewControllerRepresentable.swift"; sourceTree = "<group>"; };
 		DAC1108022EBC75300E029E1 /* Lateral Thinking Siri Intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lateral Thinking Siri Intent.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC1108222EBC75300E029E1 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
 		DAC1108422EBC75300E029E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -533,24 +547,19 @@
 		DAC110A122EC71B500E029E1 /* LateralIntentKit-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LateralIntentKit-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC110A822EC71B500E029E1 /* LateralIntentKit_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LateralIntentKit_iOSTests.swift; sourceTree = "<group>"; };
 		DAC110AA22EC71B500E029E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; name = LateralIntentKit.intentdefinition; path = "../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/LateralIntentKit-Shared/LateralIntentKit.intentdefinition"; sourceTree = "<group>"; };
 		DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LateralIntentKit_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC110C722EC754400E029E1 /* LateralIntentKit_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LateralIntentKit_watchOS.h; sourceTree = "<group>"; };
 		DAC110C822EC754400E029E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAC9D64922EC9CA400680D78 /* EnvironmentObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnvironmentObjects.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking/App/EnvironmentObjects.swift"; sourceTree = "<group>"; };
 		DAEC1EB922ECB02900A6C1B3 /* LateralThinking_Persistance_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LateralThinking_Persistance_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEC1EBB22ECB02A00A6C1B3 /* LateralThinking_Persistance_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LateralThinking_Persistance_watchOS.h; sourceTree = "<group>"; };
 		DAEC1EBC22ECB02A00A6C1B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAEC1ECB22ECB1A700A6C1B3 /* EnvironmentObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnvironmentObjects.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking watchOS WatchKit Extension/App/EnvironmentObjects.swift"; sourceTree = "<group>"; };
 		DAEC1ED322ECBC6500A6C1B3 /* LateralThinking_Persistance_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LateralThinking_Persistance_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEC1ED522ECBC6600A6C1B3 /* LateralThinking_Persistance_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LateralThinking_Persistance_tvOS.h; sourceTree = "<group>"; };
 		DAEC1ED622ECBC6600A6C1B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAEC1EE522ECBC8900A6C1B3 /* LateralThinking_Persistance_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LateralThinking_Persistance_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAEC1EE722ECBC8A00A6C1B3 /* LateralThinking_Persistance_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LateralThinking_Persistance_macOS.h; sourceTree = "<group>"; };
 		DAEC1EE822ECBC8A00A6C1B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAEC1EF622ECC28F00A6C1B3 /* EnvironmentObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnvironmentObjects.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking tvOS/App Scene/EnvironmentObjects.swift"; sourceTree = "<group>"; };
 		DAEC1EFC22ECC62400A6C1B3 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		DAEC1EFE22ECC8D800A6C1B3 /* EnvironmentObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EnvironmentObjects.swift; path = "../../../../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking/Lateral Thinking macOS/App/EnvironmentObjects.swift"; sourceTree = "<group>"; };
 		DAFB17C122E4E376004C78E4 /* Lateral Thinking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lateral Thinking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFB17C422E4E376004C78E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAFB17C622E4E376004C78E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -770,6 +779,8 @@
 			children = (
 				DA0970B022EDD90000CFD7FD /* Lateral Thinking Siri Intent UI.entitlements */,
 				DA09709022ED0D8B00CFD7FD /* IntentViewController.swift */,
+				3C9CB53922F0962500E295EE /* CardView.swift */,
+				3C9CB53822F0962500E295EE /* EnvironmentObjects.swift */,
 				DA09709222ED0D8B00CFD7FD /* MainInterface.storyboard */,
 				DA09709522ED0D8B00CFD7FD /* Info.plist */,
 				DA0970A722EDC7FF00CFD7FD /* CardView.swift */,
@@ -821,9 +832,9 @@
 			isa = PBXGroup;
 			children = (
 				DAFB17CB22E4E376004C78E4 /* CardView.swift */,
-				DAB836C922ECD00300C0F0E2 /* IntentDonater.swift */,
-				DAB836D422ECFF6800C0F0E2 /* SwiftUISiriShortcutsButton.swift */,
-				DAB836D622ED023A00C0F0E2 /* INUIAddVoiceShortcutViewControllerRepresentable.swift */,
+				3C9CB53122F0947600E295EE /* IntentDonater.swift */,
+				3C9CB53222F0947600E295EE /* INUIAddVoiceShortcutViewControllerRepresentable.swift */,
+				3C9CB53022F0947600E295EE /* SwiftUISiriShortcutsButton.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -832,7 +843,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2EB2BB22E78EF7006CF023 /* AppDelegate.swift */,
-				DAEC1EF622ECC28F00A6C1B3 /* EnvironmentObjects.swift */,
+				3C9CB53C22F0964900E295EE /* EnvironmentObjects.swift */,
 			);
 			path = "App Scene";
 			sourceTree = "<group>";
@@ -894,7 +905,7 @@
 		DA52205A22EBA7E500E0AF27 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				DA52205B22EBA7FE00E0AF27 /* CardView.swift */,
+				3C9CB54022F0967600E295EE /* CardView.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -945,7 +956,7 @@
 			children = (
 				DA52206F22EBBE4A00E0AF27 /* AppDelegate.swift */,
 				DA52207122EBBE4A00E0AF27 /* ContentView.swift */,
-				DAEC1EFE22ECC8D800A6C1B3 /* EnvironmentObjects.swift */,
+				3C9CB54222F096A100E295EE /* EnvironmentObjects.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -982,7 +993,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2FA3C822EC8CDE0077B301 /* LateralModel.xcdatamodeld */,
-				DA667A1C22EC8AAD000AD4E7 /* CoreDataService.swift */,
+				3C9CB54422F096CE00E295EE /* CoreDataService.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -1020,8 +1031,10 @@
 		DAC1109322EC717900E029E1 /* LateralIntentKit-Shared */ = {
 			isa = PBXGroup;
 			children = (
-				DAC110B622EC725700E029E1 /* LateralIntentKit.intentdefinition */,
-				DAB836CB22ECD85C00C0F0E2 /* LateralIntentHandler.swift */,
+				3C9CB52122F0930400E295EE /* LateralIntentHandler.swift */,
+				3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */,
+				3C9CB51E22F0930300E295EE /* Lateral Thinking watchOS-Bridging-Header.h */,
+				3C9CB51F22F0930300E295EE /* Lateral Thinking watchOS WatchKit App-Bridging-Header.h */,
 			);
 			path = "LateralIntentKit-Shared";
 			sourceTree = "<group>";
@@ -1067,7 +1080,7 @@
 			children = (
 				DA52204522EBA3CB00E0AF27 /* HostingController.swift */,
 				DA52204722EBA3CB00E0AF27 /* ExtensionDelegate.swift */,
-				DAEC1ECB22ECB1A700A6C1B3 /* EnvironmentObjects.swift */,
+				3C9CB53E22F0966D00E295EE /* EnvironmentObjects.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -1198,7 +1211,7 @@
 			children = (
 				DAFB17C422E4E376004C78E4 /* AppDelegate.swift */,
 				DAFB17C622E4E376004C78E4 /* SceneDelegate.swift */,
-				DAC9D64922EC9CA400680D78 /* EnvironmentObjects.swift */,
+				3C9CB53622F0948E00E295EE /* EnvironmentObjects.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -1749,9 +1762,11 @@
 					};
 					DA52202B22EBA3C900E0AF27 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					DA52202E22EBA3C900E0AF27 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					DA52203D22EBA3CB00E0AF27 = {
 						CreatedOnToolsVersion = 11.0;
@@ -1781,6 +1796,7 @@
 					};
 					DAC1109822EC71B500E029E1 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					DAC110A022EC71B500E029E1 = {
 						CreatedOnToolsVersion = 11.0;
@@ -1788,6 +1804,7 @@
 					};
 					DAC110C422EC754400E029E1 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					DAEC1EB822ECB02900A6C1B3 = {
 						CreatedOnToolsVersion = 11.0;
@@ -1890,6 +1907,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C9CB52522F0930400E295EE /* LateralIntentKit.intentdefinition in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1897,7 +1915,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC110BA22EC725700E029E1 /* LateralIntentKit.intentdefinition in Resources */,
+				3C9CB52622F0930400E295EE /* LateralIntentKit.intentdefinition in Resources */,
 				DA52203822EBA3CB00E0AF27 /* Assets.xcassets in Resources */,
 				DA52203622EBA3C900E0AF27 /* Interface.storyboard in Resources */,
 			);
@@ -2036,9 +2054,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA0970AA22EDC88A00CFD7FD /* EnvironmentObjects.swift in Sources */,
-				DA0970A822EDC7FF00CFD7FD /* CardView.swift in Sources */,
+				3C9CB52C22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
 				DA09709122ED0D8B00CFD7FD /* IntentViewController.swift in Sources */,
+				3C9CB53A22F0962500E295EE /* EnvironmentObjects.swift in Sources */,
+				3C9CB52422F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
+				3C9CB53B22F0962500E295EE /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2046,9 +2066,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC110B922EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
+				3C9CB53D22F0964900E295EE /* EnvironmentObjects.swift in Sources */,
 				DA2EB2BC22E78EF7006CF023 /* AppDelegate.swift in Sources */,
-				DAEC1EF722ECC28F00A6C1B3 /* EnvironmentObjects.swift in Sources */,
 				DA88459022EB82B600A32E36 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2073,11 +2092,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAEC1ECC22ECB1A700A6C1B3 /* EnvironmentObjects.swift in Sources */,
 				DA52204622EBA3CB00E0AF27 /* HostingController.swift in Sources */,
-				DA52205C22EBA7FE00E0AF27 /* CardView.swift in Sources */,
-				DAC110BB22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
 				DA52204822EBA3CB00E0AF27 /* ExtensionDelegate.swift in Sources */,
+				3C9CB52D22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
+				3C9CB52722F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
+				3C9CB54122F0967600E295EE /* CardView.swift in Sources */,
+				3C9CB53F22F0966D00E295EE /* EnvironmentObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2085,11 +2105,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAEC1EFF22ECC8D800A6C1B3 /* EnvironmentObjects.swift in Sources */,
 				DA52207222EBBE4A00E0AF27 /* ContentView.swift in Sources */,
 				DA52207522EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodeld in Sources */,
 				DA52207022EBBE4A00E0AF27 /* AppDelegate.swift in Sources */,
 				DAEC1EFD22ECC62400A6C1B3 /* CardView.swift in Sources */,
+				3C9CB54322F096A100E295EE /* EnvironmentObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2113,7 +2133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA667A1D22EC8AAD000AD4E7 /* CoreDataService.swift in Sources */,
+				3C9CB54522F096CE00E295EE /* CoreDataService.swift in Sources */,
 				DA2FA3CA22EC8CDE0077B301 /* LateralModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2130,8 +2150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC110B822EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
 				DAC1108322EBC75300E029E1 /* IntentHandler.swift in Sources */,
+				3C9CB52B22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
+				3C9CB52322F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2139,8 +2160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB836CC22ECD85C00C0F0E2 /* LateralIntentHandler.swift in Sources */,
-				DAC110BD22EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
+				3C9CB52E22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
+				3C9CB52822F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2156,8 +2177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB836CD22ECD85C00C0F0E2 /* LateralIntentHandler.swift in Sources */,
-				DAC110D422EC755E00E029E1 /* LateralIntentKit.intentdefinition in Sources */,
+				3C9CB52F22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
+				3C9CB52922F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2165,7 +2186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAEC1EC522ECB03C00A6C1B3 /* CoreDataService.swift in Sources */,
+				3C9CB54622F0975A00E295EE /* CoreDataService.swift in Sources */,
 				DAEC1EC622ECB03F00A6C1B3 /* LateralModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2174,7 +2195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAEC1EF222ECBCA000A6C1B3 /* CoreDataService.swift in Sources */,
+				3C9CB54722F0975B00E295EE /* CoreDataService.swift in Sources */,
 				DAEC1EF422ECBCA300A6C1B3 /* LateralModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2183,7 +2204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAEC1EF322ECBCA000A6C1B3 /* CoreDataService.swift in Sources */,
+				3C9CB54822F0975B00E295EE /* CoreDataService.swift in Sources */,
 				DAEC1EF522ECBCA400A6C1B3 /* LateralModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2192,16 +2213,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC110B722EC725700E029E1 /* LateralIntentKit.intentdefinition in Sources */,
 				DAFB17F822E4E40D004C78E4 /* MainMenuView.swift in Sources */,
-				DAB836CA22ECD00300C0F0E2 /* IntentDonater.swift in Sources */,
 				DAFB17C522E4E376004C78E4 /* AppDelegate.swift in Sources */,
 				DAFB17C722E4E376004C78E4 /* SceneDelegate.swift in Sources */,
 				DAFB17CA22E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld in Sources */,
-				DAC9D64A22EC9CA400680D78 /* EnvironmentObjects.swift in Sources */,
+				3C9CB52A22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
+				3C9CB53722F0948E00E295EE /* EnvironmentObjects.swift in Sources */,
+				3C9CB53522F0947600E295EE /* INUIAddVoiceShortcutViewControllerRepresentable.swift in Sources */,
 				DA2EB36D22E79C9C006CF023 /* CardView.swift in Sources */,
-				DAB836D722ED023B00C0F0E2 /* INUIAddVoiceShortcutViewControllerRepresentable.swift in Sources */,
-				DAB836D522ECFF6800C0F0E2 /* SwiftUISiriShortcutsButton.swift in Sources */,
+				3C9CB52222F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
+				3C9CB53322F0947600E295EE /* SwiftUISiriShortcutsButton.swift in Sources */,
+				3C9CB53422F0947600E295EE /* IntentDonater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2628,6 +2650,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDB4XSJTE3;
 				IBSC_MODULE = Lateral_Thinking_watchOS_WatchKit_Extension;
@@ -2640,6 +2663,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LateralIntentKit-Shared/Lateral Thinking watchOS WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.0;
@@ -2651,6 +2676,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BDB4XSJTE3;
 				IBSC_MODULE = Lateral_Thinking_watchOS_WatchKit_Extension;
@@ -2663,6 +2689,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LateralIntentKit-Shared/Lateral Thinking watchOS WatchKit App-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.0;
@@ -2672,14 +2699,22 @@
 		DA52205822EBA3CC00E0AF27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-watchOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LateralIntentKit-Shared/Lateral Thinking watchOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -2687,14 +2722,21 @@
 		DA52205922EBA3CC00E0AF27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BDB4XSJTE3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-watchOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LateralIntentKit-Shared/Lateral Thinking watchOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -2984,6 +3026,7 @@
 		DAC110B122EC71B500E029E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -3002,6 +3045,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3012,6 +3056,7 @@
 		DAC110B222EC71B500E029E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -3081,6 +3126,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -3099,6 +3145,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -3111,6 +3158,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -3770,8 +3818,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:tcldr/Entwine.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.7.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 		DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */ = {

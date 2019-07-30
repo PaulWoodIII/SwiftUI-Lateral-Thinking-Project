@@ -5,8 +5,8 @@
         "package": "CombineFeedback",
         "repositoryURL": "https://github.com/PaulWoodIII/CombineFeedback.git",
         "state": {
-          "branch": "add_tvos_watchos",
-          "revision": "bcfbfbd1923500dfe1dfd586a5b1576e1b888ff8",
+          "branch": "combined-enhancements",
+          "revision": "4fcc4a6445e7dae57a6d4b11ad5a7e573e0b667d",
           "version": null
         }
       },
@@ -14,9 +14,9 @@
         "package": "Entwine",
         "repositoryURL": "git@github.com:tcldr/Entwine.git",
         "state": {
-          "branch": null,
-          "revision": "414b359732dd5bb8461c01e372b9d3662426e85f",
-          "version": "0.6.0"
+          "branch": "master",
+          "revision": "d6b60871f28f37d9789007634bd1a34845c1b3cf",
+          "version": null
         }
       }
     ]
