@@ -18,8 +18,8 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/PaulWoodIII/CombineFeedback",
-             Package.Dependency.Requirement._branchItem("add_tvos_watchos")),
-    .package(url: "https://github.com/tcldr/Entwine", from: "0.6.0")
+             Package.Dependency.Requirement._branchItem("combined-enhancements")),
+    .package(url: "https://github.com/tcldr/Entwine", from: "0.7.0")
   ],
   targets: [
     .target(

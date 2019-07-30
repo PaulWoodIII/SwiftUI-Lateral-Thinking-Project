@@ -3771,14 +3771,14 @@
 			repositoryURL = "git@github.com:tcldr/Entwine.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.6.0;
+				minimumVersion = 0.7.0;
 			};
 		};
 		DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/PaulWoodIII/CombineFeedback.git";
 			requirement = {
-				branch = add_tvos_watchos;
+				branch = "combined-enhancements";
 				kind = branch;
 			};
 		};
