@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C021D5022FF4A2A0039EB96 /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = 3C021D4F22FF4A2A0039EB96 /* CombineFeedback */; };
+		3C021D5222FF4A2A0039EB96 /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3C021D5122FF4A2A0039EB96 /* CombineFeedbackUI */; };
+		3C021D5422FF4BC40039EB96 /* Entwine in Frameworks */ = {isa = PBXBuildFile; productRef = 3C021D5322FF4BC40039EB96 /* Entwine */; };
+		3C021D5622FF4BC40039EB96 /* EntwineTest in Frameworks */ = {isa = PBXBuildFile; productRef = 3C021D5522FF4BC40039EB96 /* EntwineTest */; };
 		3C9CB52222F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
 		3C9CB52322F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
 		3C9CB52422F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
@@ -40,8 +44,6 @@
 		DA09709422ED0D8B00CFD7FD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA09709222ED0D8B00CFD7FD /* MainInterface.storyboard */; };
 		DA09709822ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DA09708C22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DA09709D22ED0DDA00CFD7FD /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA09709C22ED0DDA00CFD7FD /* LateralThinking */; };
-		DA09709F22ED0DE000CFD7FD /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = DA09709E22ED0DE000CFD7FD /* CombineFeedback */; };
-		DA0970A122ED0DE000CFD7FD /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA0970A022ED0DE000CFD7FD /* CombineFeedbackUI */; };
 		DA0970A222ED0DF200CFD7FD /* LateralIntentKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; };
 		DA0970A322ED0DF200CFD7FD /* LateralIntentKit_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC1109922EC71B500E029E1 /* LateralIntentKit_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA0970AB22EDC8CA00CFD7FD /* LateralThinking_Persistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; };
@@ -59,10 +61,6 @@
 		DA2EB2EC22E78F6D006CF023 /* Entwine in Frameworks */ = {isa = PBXBuildFile; productRef = DA2EB2EB22E78F6D006CF023 /* Entwine */; };
 		DA2EB2F022E79029006CF023 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2EB2EF22E79029006CF023 /* CloudKit.framework */; };
 		DA2EB2F322E7903D006CF023 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2EB2F222E7903D006CF023 /* CloudKit.framework */; };
-		DA2EB2FD22E79454006CF023 /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = DA2EB2FC22E79454006CF023 /* CombineFeedback */; };
-		DA2EB2FF22E79454006CF023 /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA2EB2FE22E79454006CF023 /* CombineFeedbackUI */; };
-		DA2EB30122E7945F006CF023 /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = DA2EB30022E7945F006CF023 /* CombineFeedback */; };
-		DA2EB30322E7945F006CF023 /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA2EB30222E7945F006CF023 /* CombineFeedbackUI */; };
 		DA2EB36D22E79C9C006CF023 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17CB22E4E376004C78E4 /* CardView.swift */; };
 		DA2FA3CA22EC8CDE0077B301 /* LateralModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2FA3C822EC8CDE0077B301 /* LateralModel.xcdatamodeld */; };
 		DA2FA3CD22EC8D2B0077B301 /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FA3CC22EC8D2B0077B301 /* CoreDataServiceTests.swift */; };
@@ -88,8 +86,6 @@
 		DA52208922EBBE4C00E0AF27 /* Lateral_Thinking_macOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52208822EBBE4C00E0AF27 /* Lateral_Thinking_macOSTests.swift */; };
 		DA52209422EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52209322EBBE4C00E0AF27 /* Lateral_Thinking_macOSUITests.swift */; };
 		DA5220A422EBC4B200E0AF27 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA5220A322EBC4B200E0AF27 /* LateralThinking */; };
-		DA5220A622EBC4C200E0AF27 /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = DA5220A522EBC4C200E0AF27 /* CombineFeedback */; };
-		DA5220A822EBC4C200E0AF27 /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = DA5220A722EBC4C200E0AF27 /* CombineFeedbackUI */; };
 		DA667A0722EC8A7E000AD4E7 /* LateralThinking_Persistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; };
 		DA667A1022EC8A7E000AD4E7 /* LateralThinking_Persistance.h in Headers */ = {isa = PBXBuildFile; fileRef = DA667A0022EC8A7E000AD4E7 /* LateralThinking_Persistance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA667A1322EC8A7E000AD4E7 /* LateralThinking_Persistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; };
@@ -585,9 +581,7 @@
 			files = (
 				DA0970A222ED0DF200CFD7FD /* LateralIntentKit_iOS.framework in Frameworks */,
 				DA09709D22ED0DDA00CFD7FD /* LateralThinking in Frameworks */,
-				DA0970A122ED0DE000CFD7FD /* CombineFeedbackUI in Frameworks */,
 				DA0970B122EDD90700CFD7FD /* CloudKit.framework in Frameworks */,
-				DA09709F22ED0DE000CFD7FD /* CombineFeedback in Frameworks */,
 				DA09708E22ED0D8B00CFD7FD /* IntentsUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -600,9 +594,7 @@
 				DA1F6C7B22EB8921003292DE /* CoreData.framework in Frameworks */,
 				DAEC1EDA22ECBC6600A6C1B3 /* LateralThinking_Persistance_tvOS.framework in Frameworks */,
 				DA88459222EB832000A32E36 /* LateralThinking in Frameworks */,
-				DA2EB2FD22E79454006CF023 /* CombineFeedback in Frameworks */,
 				DA2EB2EC22E78F6D006CF023 /* Entwine in Frameworks */,
-				DA2EB2FF22E79454006CF023 /* CombineFeedbackUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,9 +628,7 @@
 			files = (
 				DAB836C822ECCADE00C0F0E2 /* CloudKit.framework in Frameworks */,
 				DA5220A422EBC4B200E0AF27 /* LateralThinking in Frameworks */,
-				DA5220A822EBC4C200E0AF27 /* CombineFeedbackUI in Frameworks */,
 				DAEC1EEC22ECBC8A00A6C1B3 /* LateralThinking_Persistance_macOS.framework in Frameworks */,
-				DA5220A622EBC4C200E0AF27 /* CombineFeedback in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +659,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA667A0722EC8A7E000AD4E7 /* LateralThinking_Persistance.framework in Frameworks */,
+				3C021D5422FF4BC40039EB96 /* Entwine in Frameworks */,
+				3C021D5622FF4BC40039EB96 /* EntwineTest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,12 +738,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2EB2F322E7903D006CF023 /* CloudKit.framework in Frameworks */,
+				3C021D5022FF4A2A0039EB96 /* CombineFeedback in Frameworks */,
 				DA337E4A22E8F3BB00A3DD3E /* LateralThinking in Frameworks */,
-				DA2EB30122E7945F006CF023 /* CombineFeedback in Frameworks */,
 				DAC110AE22EC71B500E029E1 /* LateralIntentKit_iOS.framework in Frameworks */,
+				3C021D5222FF4A2A0039EB96 /* CombineFeedbackUI in Frameworks */,
 				DA210D5E22E5E2DA005A41C9 /* Entwine in Frameworks */,
 				DA667A1322EC8A7E000AD4E7 /* LateralThinking_Persistance.framework in Frameworks */,
-				DA2EB30322E7945F006CF023 /* CombineFeedbackUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1287,8 +1279,6 @@
 			name = "Lateral Thinking Siri Intent UI";
 			packageProductDependencies = (
 				DA09709C22ED0DDA00CFD7FD /* LateralThinking */,
-				DA09709E22ED0DE000CFD7FD /* CombineFeedback */,
-				DA0970A022ED0DE000CFD7FD /* CombineFeedbackUI */,
 			);
 			productName = "Lateral Thinking Siri Intent UI";
 			productReference = DA09708C22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI.appex */;
@@ -1311,8 +1301,6 @@
 			name = "Lateral Thinking tvOS";
 			packageProductDependencies = (
 				DA2EB2EB22E78F6D006CF023 /* Entwine */,
-				DA2EB2FC22E79454006CF023 /* CombineFeedback */,
-				DA2EB2FE22E79454006CF023 /* CombineFeedbackUI */,
 				DA88459122EB832000A32E36 /* LateralThinking */,
 			);
 			productName = "Lateral Thinking tvOS";
@@ -1436,8 +1424,6 @@
 			name = "Lateral Thinking macOS";
 			packageProductDependencies = (
 				DA5220A322EBC4B200E0AF27 /* LateralThinking */,
-				DA5220A522EBC4C200E0AF27 /* CombineFeedback */,
-				DA5220A722EBC4C200E0AF27 /* CombineFeedbackUI */,
 			);
 			productName = "Lateral Thinking macOS";
 			productReference = DA52206D22EBBE4A00E0AF27 /* Lateral Thinking macOS.app */;
@@ -1515,6 +1501,10 @@
 				DA667A0B22EC8A7E000AD4E7 /* PBXTargetDependency */,
 			);
 			name = "LateralThinking-PersistanceTests";
+			packageProductDependencies = (
+				3C021D5322FF4BC40039EB96 /* Entwine */,
+				3C021D5522FF4BC40039EB96 /* EntwineTest */,
+			);
 			productName = "LateralThinking-PersistanceTests";
 			productReference = DA667A0622EC8A7E000AD4E7 /* LateralThinking-PersistanceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -1688,9 +1678,9 @@
 			name = "Lateral Thinking";
 			packageProductDependencies = (
 				DA210D5D22E5E2DA005A41C9 /* Entwine */,
-				DA2EB30022E7945F006CF023 /* CombineFeedback */,
-				DA2EB30222E7945F006CF023 /* CombineFeedbackUI */,
 				DA337E4922E8F3BB00A3DD3E /* LateralThinking */,
+				3C021D4F22FF4A2A0039EB96 /* CombineFeedback */,
+				3C021D5122FF4A2A0039EB96 /* CombineFeedbackUI */,
 			);
 			productName = "Lateral Thinking";
 			productReference = DAFB17C122E4E376004C78E4 /* Lateral Thinking.app */;
@@ -1839,7 +1829,7 @@
 			mainGroup = DAFB17B822E4E376004C78E4;
 			packageReferences = (
 				DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */,
-				DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */,
+				3C021D4E22FF4A2A0039EB96 /* XCRemoteSwiftPackageReference "CombineFeedback" */,
 			);
 			productRefGroup = DAFB17C222E4E376004C78E4 /* Products */;
 			projectDirPath = "";
@@ -3814,6 +3804,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3C021D4E22FF4A2A0039EB96 /* XCRemoteSwiftPackageReference "CombineFeedback" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sergdort/CombineFeedback";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:tcldr/Entwine.git";
@@ -3822,30 +3820,32 @@
 				kind = branch;
 			};
 		};
-		DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/PaulWoodIII/CombineFeedback.git";
-			requirement = {
-				branch = "combined-enhancements";
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3C021D4F22FF4A2A0039EB96 /* CombineFeedback */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C021D4E22FF4A2A0039EB96 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedback;
+		};
+		3C021D5122FF4A2A0039EB96 /* CombineFeedbackUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C021D4E22FF4A2A0039EB96 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedbackUI;
+		};
+		3C021D5322FF4BC40039EB96 /* Entwine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */;
+			productName = Entwine;
+		};
+		3C021D5522FF4BC40039EB96 /* EntwineTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */;
+			productName = EntwineTest;
+		};
 		DA09709C22ED0DDA00CFD7FD /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LateralThinking;
-		};
-		DA09709E22ED0DE000CFD7FD /* CombineFeedback */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
-			productName = CombineFeedback;
-		};
-		DA0970A022ED0DE000CFD7FD /* CombineFeedbackUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
-			productName = CombineFeedbackUI;
 		};
 		DA210D5B22E5E2DA005A41C9 /* EntwineTest */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -3861,26 +3861,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */;
 			productName = Entwine;
-		};
-		DA2EB2FC22E79454006CF023 /* CombineFeedback */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
-			productName = CombineFeedback;
-		};
-		DA2EB2FE22E79454006CF023 /* CombineFeedbackUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
-			productName = CombineFeedbackUI;
-		};
-		DA2EB30022E7945F006CF023 /* CombineFeedback */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
-			productName = CombineFeedback;
-		};
-		DA2EB30222E7945F006CF023 /* CombineFeedbackUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
-			productName = CombineFeedbackUI;
 		};
 		DA2FA3CE22EC8D500077B301 /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -3902,16 +3882,6 @@
 		DA5220A322EBC4B200E0AF27 /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LateralThinking;
-		};
-		DA5220A522EBC4C200E0AF27 /* CombineFeedback */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
-			productName = CombineFeedback;
-		};
-		DA5220A722EBC4C200E0AF27 /* CombineFeedbackUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DA2EB2F722E79442006CF023 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
-			productName = CombineFeedbackUI;
 		};
 		DA88459122EB832000A32E36 /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;

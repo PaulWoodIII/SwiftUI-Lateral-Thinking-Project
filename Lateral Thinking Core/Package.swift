@@ -17,9 +17,9 @@ let package = Package(
       targets: ["LateralBusinessLogic"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/PaulWoodIII/CombineFeedback",
-             Package.Dependency.Requirement._branchItem("combined-enhancements")),
-    .package(url: "https://github.com/tcldr/Entwine",  Package.Dependency.Requirement._branchItem("master"))
+    .package(url: "https://github.com/sergdort/CombineFeedback",
+             Package.Dependency.Requirement._branchItem("master")),
+    .package(url: "https://github.com/tcldr/Entwine",  Package.Dependency.Requirement._exactItem(Version(0, 7, 0)))
   ],
   targets: [
     .target(

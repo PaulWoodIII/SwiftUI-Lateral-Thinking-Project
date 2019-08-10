@@ -16,13 +16,17 @@ import LateralCloudKit
 /// Basically this is the Sync Service
 public class SyncService {
     
-  var monitor: Cancellable?
+  private var monitor: Cancellable?
+  private var fetchCloud: Cancellable?
   
   @Published var coalescedLaterals: [LateralType] = []
+  public func coalescedLateralsPublisher() -> AnyPublisher<[LateralType], Never> {
+    return self.$coalescedLaterals.share().eraseToAnyPublisher()
+  }
   
-  var coreDataCreate: (_: LateralType) -> Void
+  private var coreDataCreate: (_: LateralType) -> Void
   
-  var careDataSave: () -> AnyPublisher<Void, CoreDataError>
+  private var careDataSave: () -> AnyPublisher<Void, CoreDataError>
   
   public init(
     cloudLaterals: AnyPublisher<[LateralType], Never> = CloudKitService.shared.$cloudLaterals.eraseToAnyPublisher(),
@@ -36,10 +40,10 @@ public class SyncService {
     self.coreDataCreate = coreDataCreate
     self.careDataSave = careDataSave
     monitorServices()
-    _ = fetchCloudLaterals().replaceError(with: []).makeConnectable().connect()
+    fetchCloud = fetchCloudLaterals().replaceError(with: []).makeConnectable().connect()
   }
   
-  private  var coreDataLaterals: AnyPublisher<[LateralType], Never> {
+  private var coreDataLaterals: AnyPublisher<[LateralType], Never> {
     didSet {
       monitorServices()
     }
@@ -69,6 +73,7 @@ public class SyncService {
         }
       })
       .setFailureType(to: CoreDataError.self)
+      .receive(on: RunLoop.main)
       .flatMap({ _ in
         self.careDataSave()
       })

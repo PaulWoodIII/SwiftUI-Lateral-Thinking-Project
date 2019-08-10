@@ -19,11 +19,11 @@ import GameplayKit
 public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> {
   
   public init(initial: State = State(),
-              syncService: SyncService) {
+              lateralPublisher: AnyPublisher<[LateralType], Never>) {
       super.init(
           initial: initial,
           feedbacks: [
-            CardViewModel.monitorStore(lateralPublisher: syncService.$coalescedLaterals.eraseToAnyPublisher())
+            CardViewModel.monitorStore(lateralPublisher: lateralPublisher)
         ],
           scheduler: RunLoop.main,
           reducer: CardViewModel.reduce
@@ -71,12 +71,17 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
   }
   
   private static func reduce(state: State, event: Event) -> State {
+    
+    func onTap(state: State) -> State {
+      let next = nextDisplay(state: state)
+      return state.set(\.displayText, next)
+    }
+    
     switch event {
     case .appeared:
       return state.set(\.onAppear, true)
     case .onTap:
-      let next = nextDisplay(state: state)
-      return state.set(\.displayText, next)
+      return onTap(state: state)
     case .setLaterals(let lats):
       var copy = state
       #if canImport(GameplayKit)
@@ -84,15 +89,14 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
       copy = copy.set(\.shuffler, shuffler)
       #endif
       if lats.count > 0 {
-        return copy.set(\.displayLaterals, lats)
-      } else {
-        return copy
+        copy = copy.set(\.displayLaterals, lats)
+        return onTap(state: copy)
       }
+      return copy
     case .error:
       return state //TODO: use Errors in a productive way in the UI
     case .lateralPublisher(let c):
       return state.set(\.serviceCancelable, c)
-
     }
   }
   

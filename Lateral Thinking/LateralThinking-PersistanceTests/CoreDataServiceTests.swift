@@ -11,6 +11,7 @@ import Combine
 import Entwine
 import EntwineTest
 import CoreData
+import LateralThinkingCore
 @testable import LateralThinking_Persistance
 
 class CoreDataServiceTests: XCTestCase {
@@ -23,7 +24,6 @@ class CoreDataServiceTests: XCTestCase {
     sut = CoreDataService()
     sut.persistentContainer = TestPersistentContainer().persistentContainer
     
-    // schedules a subscription at 200, to be cancelled at 900
     let results = testScheduler.start {
       self.sut
         .checkForLaterals()
@@ -46,13 +46,14 @@ class CoreDataServiceTests: XCTestCase {
     sut.persistentContainer = testContainer.persistentContainer
     let moc = testContainer.persistentContainer.viewContext
     
-    _ = LateralMO.create(moc, lateralType: InitialLateralTypes.obliques[0])
+    let mo = LateralMO(context: moc)
+    mo.body = InitialLateralTypes.obliques[0].body
     try! sut.persistentContainer.viewContext.save()
     
     let results = testScheduler.start {
       self.sut
         .checkForLaterals()
-        .map{return $0.count > 0}
+        .map{return $0.count == 1}
     }
     
     XCTAssertEqual(results.recordedOutput, [
@@ -70,15 +71,15 @@ class CoreDataServiceTests: XCTestCase {
     sut.persistentContainer = testContainer.persistentContainer
     
     // schedules a subscription at 200, to be cancelled at 900
-    let results: TestableSubscriber<Bool, CoreDataService.Error> = testScheduler.start {
+    let results: TestableSubscriber<Bool, CoreDataError> = testScheduler.start {
       self.sut.startup()
     }
-    let expected: TestSequence<Bool, CoreDataService.Error> = [
+    let expected: TestSequence<Bool, CoreDataError> = [
       (200, .subscription),
       (200, .input(true)),
       (200, .completion(.finished)),
     ]
-    let res: TestSequence<Bool, CoreDataService.Error> = results.recordedOutput
+    let res: TestSequence<Bool, CoreDataError> = results.recordedOutput
     XCTAssertEqual(res, expected)
   }
   
@@ -89,14 +90,14 @@ class CoreDataServiceTests: XCTestCase {
     let testContainer = TestPersistentContainer()
     sut.persistentContainer = testContainer.persistentContainer
     let testLateral = InitialLateralTypes.obliques[1]
-    _ = LateralMO.create(testContainer.persistentContainer.viewContext,
-                         lateralType: testLateral)
+    let mo = LateralMO(context: testContainer.persistentContainer.viewContext)
+    mo.body = testLateral.body
     try! sut.persistentContainer.viewContext.save()
     
     /*TestableSubscriber<[Command], Never>*/
-    let _: TestableSubscriber<Void, CoreDataService.Error> = testScheduler.start { () -> AnyPublisher<Void, CoreDataService.Error> in
+    let _: TestableSubscriber<Void, CoreDataError> = testScheduler.start { () -> AnyPublisher<Void, CoreDataError> in
       
-      let startupToDelete: AnyPublisher<Void, CoreDataService.Error> =
+      let startupToDelete: AnyPublisher<Void, CoreDataError> =
         self.sut.startup().map { _ in
           XCTAssertEqual(self.sut.allLaterals.count, 1)
           XCTAssertNotNil(self.sut.allLaterals.first?.body ?? nil)
@@ -127,7 +128,7 @@ class CoreDataServiceTests: XCTestCase {
             .map({ lats in
               return lats.count
 //              return lats.map({ return $0.body })
-            }).setFailureType(to: CoreDataService.Error.self)
+            }).setFailureType(to: CoreDataError.self)
       }
     }
         
@@ -137,7 +138,7 @@ class CoreDataServiceTests: XCTestCase {
 //        return lat.body
 //      }
     
-    let expected: TestSequence<Int, CoreDataService.Error> = [
+    let expected: TestSequence<Int, CoreDataError> = [
       (200, .subscription),
       (200, .input(114)),
 //      (200, .input(allLaterals)),
@@ -154,15 +155,15 @@ class CoreDataServiceTests: XCTestCase {
     
     let results = testScheduler.start {
       self.sut.startup()
-        .flatMap({ _ -> AnyPublisher<Bool, CoreDataService.Error> in
+        .flatMap({ _ -> AnyPublisher<Bool, CoreDataError> in
           self.sut.create(lateralType: testLateral)
           return Just(true)
-            .setFailureType(to: CoreDataService.Error.self)
+            .setFailureType(to: CoreDataError.self)
             .eraseToAnyPublisher()
         })
     }
     
-    let expected: TestSequence<Bool, CoreDataService.Error> = [
+    let expected: TestSequence<Bool, CoreDataError> = [
       (200, .subscription),
       (200, .input(true)),
       (200, .completion(.finished)),
@@ -181,12 +182,14 @@ class CoreDataServiceTests: XCTestCase {
   
 }
 
-
 /// Just a Holder for a persistentContainer that is lazily loaded
 class TestPersistentContainer {
   lazy var persistentContainer: NSPersistentContainer = {
+    let bundle = Bundle(for: CoreDataService.self)
+    let modelURL = bundle.url(forResource: CoreDataModelName, withExtension: "momd")!
+    let mom = NSManagedObjectModel(contentsOf: modelURL)!
     let container = NSPersistentContainer(name: "LateralModel",
-                                          managedObjectModel: LateralManagedObjectModel)
+                                          managedObjectModel: mom)
     let description = container.persistentStoreDescriptions.first!
     description.url = URL(fileURLWithPath: "/dev/null")
     try! container.persistentStoreCoordinator

@@ -22,6 +22,6 @@ public protocol CoreDataServiceType: NSObjectProtocol {
   
   func deleteAll() -> AnyPublisher<Void, CoreDataError>
   
-  func saveContext() -> AnyPublisher<Void, CoreDataError>
+  func saveViewContext() -> AnyPublisher<Void, CoreDataError>
   
 }

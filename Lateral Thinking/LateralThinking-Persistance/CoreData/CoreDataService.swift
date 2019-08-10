@@ -160,7 +160,7 @@ public class CoreDataService: NSObject, CoreDataServiceType {
   }
   
   // MARK: - Core Data Saving support
-  public func saveContext () -> AnyPublisher<Void, CoreDataError> {
+  public func saveViewContext () -> AnyPublisher<Void, CoreDataError> {
     return Future<Void, CoreDataError>.init { promise in
       let context = self.persistentContainer.viewContext
       if context.hasChanges {

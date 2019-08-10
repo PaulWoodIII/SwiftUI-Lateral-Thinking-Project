@@ -20,7 +20,7 @@ class IntentCardHostingView: UIHostingController<ContentType> {
   
   convenience init() {
     let widget = Widget(
-      viewModel: CardViewModel(syncService: EnvironmentObjects.shared.syncService),
+      viewModel: CardViewModel(lateralPublisher: EnvironmentObjects.shared.syncService.coalescedLateralsPublisher()),
       render: CardView.init
     )
     self.init(rootView: widget)

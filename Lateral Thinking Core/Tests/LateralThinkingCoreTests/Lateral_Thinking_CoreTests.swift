@@ -3,9 +3,7 @@ import XCTest
 
 final class Lateral_Thinking_CoreTests: XCTestCase {
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
+      let l: LateralType = "Can init using a String"
     }
 
     static var allTests = [

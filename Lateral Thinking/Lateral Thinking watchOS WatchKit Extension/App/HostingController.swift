@@ -16,7 +16,7 @@ typealias ContentView = Widget<CardViewModel.State, CardViewModel.Event, CardVie
 class HostingController: WKHostingController<ContentView> {
   override var body: ContentView {
     let widget = Widget(
-      viewModel: CardViewModel(syncService: EnvironmentObjects.shared.syncService),
+      viewModel: CardViewModel(lateralPublisher: EnvironmentObjects.shared.syncService.coalescedLateralsPublisher()),
       render: CardView.init
     )
     return widget
