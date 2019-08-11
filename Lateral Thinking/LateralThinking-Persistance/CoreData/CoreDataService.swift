@@ -17,39 +17,16 @@ public class CoreDataService: NSObject, CoreDataServiceType {
   
   public static let shared = CoreDataService()
   
-  var initialCommands: [LateralType] = InitialLateralTypes.obliques
-  
   // injectable Container Service for test to use in memeory stores
-  lazy var persistentContainer: NSPersistentContainer = {
-    /*
-     The persistent container for the application. This implementation
-     creates and returns a container, having loaded the store for the
-     application to it. This property is optional since there are legitimate
-     error conditions that could cause the creation of the store to fail.
-     */
-    let bundle = Bundle(for: Self.self)
-    let modelURL = bundle.url(forResource: CoreDataModelName, withExtension: "momd")!
-    let mom = NSManagedObjectModel(contentsOf: modelURL)!
-    let container = NSPersistentContainer(name: CoreDataModelName,
-                                          managedObjectModel: mom)
-    container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-      if let error = error as NSError? {
-        // Replace this implementation with code to handle the error appropriately.
-        // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        
-        /*
-         Typical reasons for an error here include:
-         * The parent directory does not exist, cannot be created, or disallows writing.
-         * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-         * The device is out of space.
-         * The store could not be migrated to the current model version.
-         Check the error message to determine what the actual problem was.
-         */
-        fatalError("Unresolved error \(error), \(error.userInfo)")
-      }
-    })
-    return container
-  }()
+  let persistentContainer: NSPersistentContainer
+  
+  // MARK: - Init
+  required public init(persistentContainer: NSPersistentContainer = AppPersistentContainerBuilder.persistentContainer ) {
+    self.persistentContainer = persistentContainer
+    super.init()
+    _ = fetchedResultsController
+    self.startupCancellable = self.startup().replaceError(with: true).makeConnectable().connect()
+  }
   
   lazy private var fetchedResultsController: NSFetchedResultsController<LateralMO> = {
     let sort = NSSortDescriptor(key: "body", ascending: true)
@@ -67,19 +44,13 @@ public class CoreDataService: NSObject, CoreDataServiceType {
     return controller
   }()
   
+  var initialCommands: [LateralType] = InitialLateralTypes.obliques
+  
   @Published var allLaterals: [LateralMO] = []
   
   @Published public var allLateralTypes: [LateralType] = []
   
   var startupCancellable: Cancellable?
-
-  // MARK: - Init
-  required public override init() {
-    super.init()
-    _ = persistentContainer
-    _ = fetchedResultsController
-    self.startupCancellable = self.startup().replaceError(with: true).makeConnectable().connect()
-  }
 
   // MARK: - Startup
   public func startup() -> AnyPublisher<Bool, CoreDataError> {

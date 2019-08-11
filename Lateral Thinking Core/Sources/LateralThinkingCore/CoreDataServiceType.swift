@@ -7,12 +7,13 @@
 
 import Foundation
 import Combine
+import CoreData
 
 public protocol CoreDataServiceType: NSObjectProtocol {
   
   var allLateralTypes: [LateralThinkingCore.LateralType] { get set }
   
-  init()
+  init(persistentContainer: NSPersistentContainer)
   
   func startup() -> AnyPublisher<Bool, CoreDataError>
   

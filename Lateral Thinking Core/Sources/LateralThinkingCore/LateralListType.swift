@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SwiftUI
+import CoreData
 
 /// Value Type of a Lateral List, used by Core Data and CloudKit Services to display
 public struct LateralListType: Identifiable {

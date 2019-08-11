@@ -11,6 +11,7 @@
 		3C021D5222FF4A2A0039EB96 /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3C021D5122FF4A2A0039EB96 /* CombineFeedbackUI */; };
 		3C021D5422FF4BC40039EB96 /* Entwine in Frameworks */ = {isa = PBXBuildFile; productRef = 3C021D5322FF4BC40039EB96 /* Entwine */; };
 		3C021D5622FF4BC40039EB96 /* EntwineTest in Frameworks */ = {isa = PBXBuildFile; productRef = 3C021D5522FF4BC40039EB96 /* EntwineTest */; };
+		3C021D5822FF6B280039EB96 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C021D5722FF6B280039EB96 /* main.swift */; };
 		3C9CB52222F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
 		3C9CB52322F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
 		3C9CB52422F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */; };
@@ -39,6 +40,16 @@
 		3C9CB54622F0975A00E295EE /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54422F096CE00E295EE /* CoreDataService.swift */; };
 		3C9CB54722F0975B00E295EE /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54422F096CE00E295EE /* CoreDataService.swift */; };
 		3C9CB54822F0975B00E295EE /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54422F096CE00E295EE /* CoreDataService.swift */; };
+		3CA3067622FF723400FCF66C /* AppPersistentContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */; };
+		3CA3067822FF73EC00FCF66C /* TestPersistentContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3067722FF73EC00FCF66C /* TestPersistentContainerBuilder.swift */; };
+		3CA3067C22FF915E00FCF66C /* LateralMO+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3067B22FF915E00FCF66C /* LateralMO+ext.swift */; };
+		3CA3067E22FF93F000FCF66C /* TypeMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3067D22FF93F000FCF66C /* TypeMappable.swift */; };
+		3CA3067F22FF93F000FCF66C /* TypeMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3067D22FF93F000FCF66C /* TypeMappable.swift */; };
+		3CA3068022FF93F000FCF66C /* TypeMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3067D22FF93F000FCF66C /* TypeMappable.swift */; };
+		3CA3068122FF93F000FCF66C /* TypeMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3067D22FF93F000FCF66C /* TypeMappable.swift */; };
+		3CCA7B7822FF6FCD005403B2 /* AppPersistentContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */; };
+		3CDA727122FF71300095F546 /* AppPersistentContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */; };
+		3CDA727222FF71300095F546 /* AppPersistentContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */; };
 		DA09708E22ED0D8B00CFD7FD /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA09708D22ED0D8B00CFD7FD /* IntentsUI.framework */; };
 		DA09709122ED0D8B00CFD7FD /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09709022ED0D8B00CFD7FD /* IntentViewController.swift */; };
 		DA09709422ED0D8B00CFD7FD /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA09709222ED0D8B00CFD7FD /* MainInterface.storyboard */; };
@@ -448,6 +459,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C021D5722FF6B280039EB96 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3C9CB51E22F0930300E295EE /* Lateral Thinking watchOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lateral Thinking watchOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		3C9CB51F22F0930300E295EE /* Lateral Thinking watchOS WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lateral Thinking watchOS WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
 		3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = LateralIntentKit.intentdefinition; sourceTree = "<group>"; };
@@ -463,6 +475,10 @@
 		3C9CB54022F0967600E295EE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3C9CB54222F096A100E295EE /* EnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
 		3C9CB54422F096CE00E295EE /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		3CA3067722FF73EC00FCF66C /* TestPersistentContainerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPersistentContainerBuilder.swift; sourceTree = "<group>"; };
+		3CA3067B22FF915E00FCF66C /* LateralMO+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LateralMO+ext.swift"; sourceTree = "<group>"; };
+		3CA3067D22FF93F000FCF66C /* TypeMappable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeMappable.swift; sourceTree = "<group>"; };
+		3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPersistentContainerBuilder.swift; sourceTree = "<group>"; };
 		DA09708C22ED0D8B00CFD7FD /* Lateral Thinking Siri Intent UI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lateral Thinking Siri Intent UI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA09708D22ED0D8B00CFD7FD /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
 		DA09709022ED0D8B00CFD7FD /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
@@ -977,6 +993,7 @@
 				DA2FA3CC22EC8D2B0077B301 /* CoreDataServiceTests.swift */,
 				DA667A0F22EC8A7E000AD4E7 /* Info.plist */,
 				DA2FA3CB22EC8D2A0077B301 /* LateralThinking-PersistanceTests-Bridging-Header.h */,
+				3CA3067722FF73EC00FCF66C /* TestPersistentContainerBuilder.swift */,
 			);
 			path = "LateralThinking-PersistanceTests";
 			sourceTree = "<group>";
@@ -986,6 +1003,9 @@
 			children = (
 				DA2FA3C822EC8CDE0077B301 /* LateralModel.xcdatamodeld */,
 				3C9CB54422F096CE00E295EE /* CoreDataService.swift */,
+				3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */,
+				3CA3067B22FF915E00FCF66C /* LateralMO+ext.swift */,
+				3CA3067D22FF93F000FCF66C /* TypeMappable.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -1158,6 +1178,7 @@
 			isa = PBXGroup;
 			children = (
 				DA2EB2F122E79038006CF023 /* Lateral Thinking.entitlements */,
+				3C021D5722FF6B280039EB96 /* main.swift */,
 				DAFB17FB22E4E4BD004C78E4 /* App */,
 				DAB7B77C22E4F00F0091EEF3 /* Fonts */,
 				DA2EB36C22E79C8B006CF023 /* Features */,
@@ -2123,8 +2144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCA7B7822FF6FCD005403B2 /* AppPersistentContainerBuilder.swift in Sources */,
 				3C9CB54522F096CE00E295EE /* CoreDataService.swift in Sources */,
 				DA2FA3CA22EC8CDE0077B301 /* LateralModel.xcdatamodeld in Sources */,
+				3CA3067E22FF93F000FCF66C /* TypeMappable.swift in Sources */,
+				3CA3067C22FF915E00FCF66C /* LateralMO+ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2132,6 +2156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA3067822FF73EC00FCF66C /* TestPersistentContainerBuilder.swift in Sources */,
 				DA2FA3CD22EC8D2B0077B301 /* CoreDataServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2176,6 +2201,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA3067622FF723400FCF66C /* AppPersistentContainerBuilder.swift in Sources */,
+				3CA3067F22FF93F000FCF66C /* TypeMappable.swift in Sources */,
 				3C9CB54622F0975A00E295EE /* CoreDataService.swift in Sources */,
 				DAEC1EC622ECB03F00A6C1B3 /* LateralModel.xcdatamodeld in Sources */,
 			);
@@ -2185,6 +2212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CDA727122FF71300095F546 /* AppPersistentContainerBuilder.swift in Sources */,
+				3CA3068022FF93F000FCF66C /* TypeMappable.swift in Sources */,
 				3C9CB54722F0975B00E295EE /* CoreDataService.swift in Sources */,
 				DAEC1EF422ECBCA300A6C1B3 /* LateralModel.xcdatamodeld in Sources */,
 			);
@@ -2194,6 +2223,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CDA727222FF71300095F546 /* AppPersistentContainerBuilder.swift in Sources */,
+				3CA3068122FF93F000FCF66C /* TypeMappable.swift in Sources */,
 				3C9CB54822F0975B00E295EE /* CoreDataService.swift in Sources */,
 				DAEC1EF522ECBCA400A6C1B3 /* LateralModel.xcdatamodeld in Sources */,
 			);
@@ -2205,6 +2236,7 @@
 			files = (
 				DAFB17F822E4E40D004C78E4 /* MainMenuView.swift in Sources */,
 				DAFB17C522E4E376004C78E4 /* AppDelegate.swift in Sources */,
+				3C021D5822FF6B280039EB96 /* main.swift in Sources */,
 				DAFB17C722E4E376004C78E4 /* SceneDelegate.swift in Sources */,
 				DAFB17CA22E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld in Sources */,
 				3C9CB52A22F0930400E295EE /* LateralIntentHandler.swift in Sources */,

@@ -20,10 +20,9 @@ class CoreDataServiceTests: XCTestCase {
   
   func testIsEmptyOnInit() {
     let testScheduler = TestScheduler(initialClock: 0)
-    
-    sut = CoreDataService()
-    sut.persistentContainer = TestPersistentContainer().persistentContainer
-    
+    let testContainer = TestPersistentContainer()
+    sut = CoreDataService(persistentContainer: testContainer.persistentContainer)
+
     let results = testScheduler.start {
       self.sut
         .checkForLaterals()
@@ -40,10 +39,8 @@ class CoreDataServiceTests: XCTestCase {
   func testIsLoadsFromDiskWhenStartup() {
     
     let testScheduler = TestScheduler(initialClock: 0)
-    
-    sut = CoreDataService()
     let testContainer = TestPersistentContainer()
-    sut.persistentContainer = testContainer.persistentContainer
+    sut = CoreDataService(persistentContainer: testContainer.persistentContainer)
     let moc = testContainer.persistentContainer.viewContext
     
     let mo = LateralMO(context: moc)
@@ -66,9 +63,8 @@ class CoreDataServiceTests: XCTestCase {
   func testInitialCommandsAdded() {
     let testScheduler = TestScheduler(initialClock: 0)
     
-    sut = CoreDataService()
     let testContainer = TestPersistentContainer()
-    sut.persistentContainer = testContainer.persistentContainer
+    sut = CoreDataService(persistentContainer: testContainer.persistentContainer)
     
     // schedules a subscription at 200, to be cancelled at 900
     let results: TestableSubscriber<Bool, CoreDataError> = testScheduler.start {
@@ -88,7 +84,7 @@ class CoreDataServiceTests: XCTestCase {
     
     sut = CoreDataService()
     let testContainer = TestPersistentContainer()
-    sut.persistentContainer = testContainer.persistentContainer
+    sut = CoreDataService(persistentContainer: testContainer.persistentContainer)
     let testLateral = InitialLateralTypes.obliques[1]
     let mo = LateralMO(context: testContainer.persistentContainer.viewContext)
     mo.body = testLateral.body
@@ -113,12 +109,13 @@ class CoreDataServiceTests: XCTestCase {
     XCTAssertEqual(sut.allLaterals.count, 0)
   }
   
+  // TODO: Update to check all laterals
   func testSaveInitialToCoreData() {
     let testScheduler = TestScheduler(initialClock: 0)
     sut = CoreDataService()
     let testContainer = TestPersistentContainer()
-    sut.persistentContainer = testContainer.persistentContainer
-    let sorter = NSSortDescriptor(key: "body", ascending: true)
+    sut = CoreDataService(persistentContainer: testContainer.persistentContainer)
+    //let sorter = NSSortDescriptor(key: "body", ascending: true)
     let results = testScheduler.start {
       self.sut.startup()
         .flatMap({ _ in
@@ -127,21 +124,20 @@ class CoreDataServiceTests: XCTestCase {
           self.sut.$allLateralTypes
             .map({ lats in
               return lats.count
-//              return lats.map({ return $0.body })
+              //return lats.map({ return $0.body })
             }).setFailureType(to: CoreDataError.self)
       }
     }
-        
-//    let allLaterals = InitialLateralTypes.obliques
-//      .sorted()
-//      .map { lat -> String in
-//        return lat.body
-//      }
+    //let allLaterals = InitialLateralTypes.obliques
+    //  .sorted()
+    //  .map { lat -> String in
+    //    return lat.body
+    //  }
     
     let expected: TestSequence<Int, CoreDataError> = [
       (200, .subscription),
       (200, .input(114)),
-//      (200, .input(allLaterals)),
+      //(200, .input(allLaterals)),
     ]
     XCTAssertEqual(results.recordedOutput, expected)
   }
@@ -150,7 +146,7 @@ class CoreDataServiceTests: XCTestCase {
     let testScheduler = TestScheduler(initialClock: 0)
     sut = CoreDataService()
     let testContainer = TestPersistentContainer()
-    sut.persistentContainer = testContainer.persistentContainer
+    sut = CoreDataService(persistentContainer: testContainer.persistentContainer)
     let testLateral = InitialLateralTypes.obliques[2]
     
     let results = testScheduler.start {
@@ -181,28 +177,3 @@ class CoreDataServiceTests: XCTestCase {
   ]
   
 }
-
-/// Just a Holder for a persistentContainer that is lazily loaded
-class TestPersistentContainer {
-  lazy var persistentContainer: NSPersistentContainer = {
-    let bundle = Bundle(for: CoreDataService.self)
-    let modelURL = bundle.url(forResource: CoreDataModelName, withExtension: "momd")!
-    let mom = NSManagedObjectModel(contentsOf: modelURL)!
-    let container = NSPersistentContainer(name: "LateralModel",
-                                          managedObjectModel: mom)
-    let description = container.persistentStoreDescriptions.first!
-    description.url = URL(fileURLWithPath: "/dev/null")
-    try! container.persistentStoreCoordinator
-      .destroyPersistentStore(at: URL(fileURLWithPath: "/dev/null"),
-                              ofType: NSSQLiteStoreType,
-                              options: [:])
-    container.loadPersistentStores(completionHandler: { (storeDescription, error) in
-      if let error = error as NSError? {
-        fatalError("Unresolved error \(error), \(error.userInfo)")
-      }
-    })
-    
-    return container
-  }()
-}
-

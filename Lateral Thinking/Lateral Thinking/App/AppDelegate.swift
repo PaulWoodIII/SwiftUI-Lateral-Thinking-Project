@@ -10,7 +10,6 @@ import UIKit
 import LateralBusinessLogic
 import LateralThinking_Persistance
 
-@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
   let environmentObjects = EnvironmentObjects()
