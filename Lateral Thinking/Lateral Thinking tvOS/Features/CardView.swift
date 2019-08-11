@@ -25,14 +25,17 @@ public struct CardView : View {
   
   public var body: some View {
     ZStack {
-      Rectangle().foregroundColor(.black)
-      VStack {
-        Text(context.displayText)
-          .font(.title)
-          .foregroundColor(.white)
-          .lineLimit(nil)
-      }
-    }.tapAction {
+        Button(action: {
+          self.context.send(event: .onTap)
+        }){
+          Rectangle().foregroundColor(Color.clear)
+        }
+      Text(context.displayText)
+        .font(.title)
+        .foregroundColor(.white)
+        .lineLimit(nil)
+    }
+    .onTapGesture {
       self.context.send(event: .onTap)
     }
   }
@@ -42,7 +45,7 @@ public struct CardView : View {
 struct CardView_Previews : PreviewProvider {
   static var previews: some View {
     Widget(
-      viewModel: CardViewModel(syncService: EnvironmentObjects.shared.syncService),
+      viewModel: CardViewModel(lateralPublisher: EnvironmentObjects.shared.syncService.coalescedLateralsPublisher()),
       render: CardView.init
     )
   }

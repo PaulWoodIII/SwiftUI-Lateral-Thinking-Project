@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Use a UIHostingController as window root view controller
     let window = UIWindow(frame: UIScreen.main.bounds)
     let widget = Widget(
-      viewModel: CardViewModel(syncService: EnvironmentObjects.shared.syncService),
+      viewModel: CardViewModel(lateralPublisher: EnvironmentObjects.shared.syncService.coalescedLateralsPublisher()),
       render: CardView.init
     )
     window.rootViewController = UIHostingController(rootView: widget)

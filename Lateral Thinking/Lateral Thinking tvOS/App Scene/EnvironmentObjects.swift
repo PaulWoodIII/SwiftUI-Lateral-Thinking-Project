@@ -27,7 +27,7 @@ class EnvironmentObjects {
       cloudLaterals:cloudKitService.$cloudLaterals.eraseToAnyPublisher(),
       coreDataLaterals: coreDataService.$allLateralTypes.eraseToAnyPublisher(),
       coreDataCreate: coreDataService.create(lateralType:),
-      careDataSave: coreDataService.saveContext,
+      careDataSave: coreDataService.saveViewContext,
       fetchCloudLaterals: cloudKitService.retrieveAllLaterals
     )
     self.coreDataService = coreDataService
