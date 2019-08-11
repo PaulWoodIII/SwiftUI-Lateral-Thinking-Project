@@ -47,6 +47,9 @@
 		3CA3067F22FF93F000FCF66C /* TypeMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3067D22FF93F000FCF66C /* TypeMappable.swift */; };
 		3CA3068022FF93F000FCF66C /* TypeMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3067D22FF93F000FCF66C /* TypeMappable.swift */; };
 		3CA3068122FF93F000FCF66C /* TypeMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA3067D22FF93F000FCF66C /* TypeMappable.swift */; };
+		3CA3068322FFA09700FCF66C /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = 3CA3068222FFA09700FCF66C /* LateralThinking */; };
+		3CA3068522FFA0C400FCF66C /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = 3CA3068422FFA0C400FCF66C /* CombineFeedback */; };
+		3CA3068722FFA0C400FCF66C /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CA3068622FFA0C400FCF66C /* CombineFeedbackUI */; };
 		3CCA7B7822FF6FCD005403B2 /* AppPersistentContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */; };
 		3CDA727122FF71300095F546 /* AppPersistentContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */; };
 		3CDA727222FF71300095F546 /* AppPersistentContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */; };
@@ -71,7 +74,6 @@
 		DA2EB2DC22E78EF9006CF023 /* Lateral_Thinking_tvOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2EB2DB22E78EF9006CF023 /* Lateral_Thinking_tvOSUITests.swift */; };
 		DA2EB2EC22E78F6D006CF023 /* Entwine in Frameworks */ = {isa = PBXBuildFile; productRef = DA2EB2EB22E78F6D006CF023 /* Entwine */; };
 		DA2EB2F022E79029006CF023 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2EB2EF22E79029006CF023 /* CloudKit.framework */; };
-		DA2EB2F322E7903D006CF023 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2EB2F222E7903D006CF023 /* CloudKit.framework */; };
 		DA2EB36D22E79C9C006CF023 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17CB22E4E376004C78E4 /* CardView.swift */; };
 		DA2FA3CA22EC8CDE0077B301 /* LateralModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2FA3C822EC8CDE0077B301 /* LateralModel.xcdatamodeld */; };
 		DA2FA3CD22EC8D2B0077B301 /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2FA3CC22EC8D2B0077B301 /* CoreDataServiceTests.swift */; };
@@ -674,8 +676,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA3068322FFA09700FCF66C /* LateralThinking in Frameworks */,
+				3CA3068722FFA0C400FCF66C /* CombineFeedbackUI in Frameworks */,
 				DA667A0722EC8A7E000AD4E7 /* LateralThinking_Persistance.framework in Frameworks */,
 				3C021D5422FF4BC40039EB96 /* Entwine in Frameworks */,
+				3CA3068522FFA0C400FCF66C /* CombineFeedback in Frameworks */,
 				3C021D5622FF4BC40039EB96 /* EntwineTest in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -753,7 +758,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2EB2F322E7903D006CF023 /* CloudKit.framework in Frameworks */,
 				3C021D5022FF4A2A0039EB96 /* CombineFeedback in Frameworks */,
 				DA337E4A22E8F3BB00A3DD3E /* LateralThinking in Frameworks */,
 				DAC110AE22EC71B500E029E1 /* LateralIntentKit_iOS.framework in Frameworks */,
@@ -1525,6 +1529,9 @@
 			packageProductDependencies = (
 				3C021D5322FF4BC40039EB96 /* Entwine */,
 				3C021D5522FF4BC40039EB96 /* EntwineTest */,
+				3CA3068222FFA09700FCF66C /* LateralThinking */,
+				3CA3068422FFA0C400FCF66C /* CombineFeedback */,
+				3CA3068622FFA0C400FCF66C /* CombineFeedbackUI */,
 			);
 			productName = "LateralThinking-PersistanceTests";
 			productReference = DA667A0622EC8A7E000AD4E7 /* LateralThinking-PersistanceTests.xctest */;
@@ -3874,6 +3881,20 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */;
 			productName = EntwineTest;
+		};
+		3CA3068222FFA09700FCF66C /* LateralThinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LateralThinking;
+		};
+		3CA3068422FFA0C400FCF66C /* CombineFeedback */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C021D4E22FF4A2A0039EB96 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedback;
+		};
+		3CA3068622FFA0C400FCF66C /* CombineFeedbackUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C021D4E22FF4A2A0039EB96 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedbackUI;
 		};
 		DA09709C22ED0DDA00CFD7FD /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;

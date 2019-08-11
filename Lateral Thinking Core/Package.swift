@@ -46,5 +46,13 @@ let package = Package(
         "Entwine",
         "EntwineTest",
     ]),
+    .testTarget(
+      name: "LateralBusinessLogicTests",
+      dependencies: [
+        "LateralBusinessLogic",
+        "LateralThinkingCore",
+        "Entwine",
+        "EntwineTest",
+    ]),
   ]
 )

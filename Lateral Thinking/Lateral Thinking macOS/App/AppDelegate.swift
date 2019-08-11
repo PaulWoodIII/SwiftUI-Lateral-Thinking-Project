@@ -27,7 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     
     let widget = Widget(
-      viewModel: CardViewModel(syncService: EnvironmentObjects.shared.syncService),
+      viewModel: CardViewModel(lateralPublisher: EnvironmentObjects.shared.syncService.coalescedLateralsPublisher()),
       render: CardView.init
     )
     window.contentView = NSHostingView(rootView: widget)

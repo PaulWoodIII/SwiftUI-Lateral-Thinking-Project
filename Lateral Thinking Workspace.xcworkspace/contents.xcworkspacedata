@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:TestPlan.xctestplan">
+      location = "group:Lateral Thinking.xctestplan">
    </FileRef>
    <FileRef
       location = "group:../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking Core">

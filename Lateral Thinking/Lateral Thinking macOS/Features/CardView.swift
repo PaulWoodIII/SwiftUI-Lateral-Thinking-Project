@@ -27,13 +27,13 @@ public struct CardView : View {
     ZStack {
       Rectangle()
         .foregroundColor(Color("Background"))
-      .tapAction { self.context.send(event: .onTap) }
+        .onTapGesture { self.context.send(event: .onTap) }
 
       Text(context.displayText)
         .lineLimit(nil)
         .font(.headline)
         .foregroundColor(Color("TextColor"))
-      .tapAction { self.context.send(event: .onTap) }
+        .onTapGesture { self.context.send(event: .onTap) }
 
     }        .frame(minWidth: 500,
                idealWidth:900,
@@ -42,7 +42,7 @@ public struct CardView : View {
                idealHeight: 500,
                maxHeight: .infinity,
                alignment: .center)
-      .tapAction {
+      .onTapGesture {
           self.context.send(event: .onTap)
       }.gesture(
         DragGesture().onEnded({ _ in
@@ -57,7 +57,7 @@ public struct CardView : View {
 struct CardView_Previews : PreviewProvider {
   static var previews: some View {
     Widget(
-      viewModel: CardViewModel(syncService: EnvironmentObjects.shared.syncService),
+      viewModel: CardViewModel(lateralPublisher: EnvironmentObjects.shared.syncService.coalescedLateralsPublisher()),
       render: CardView.init
     )
   }
