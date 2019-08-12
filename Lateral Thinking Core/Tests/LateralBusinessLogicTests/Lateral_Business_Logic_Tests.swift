@@ -23,12 +23,12 @@ final class Lateral_Business_Logic_Tests: XCTestCase {
     var value: State?
     _ = sut.state.sink(receiveValue: { value = $0})
     testScheduler.advance()
-    XCTAssertEqual(value, initialState)
+    XCTAssertEqual(value, initialState, "returns initial state")
     lateralPublisher.send([testLateral])
     testScheduler.advance()
     let stateWithOutTestLateral = State().set(\.displayLaterals, [testLateral])
       .set(\.displayText, testString)
-    XCTAssertEqual(value, stateWithOutTestLateral)
+    XCTAssertEqual(value, stateWithOutTestLateral,  "returns display laterals set and sets the display lateral")
   }
   
   static var allTests = [
