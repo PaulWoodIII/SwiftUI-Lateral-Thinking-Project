@@ -30,8 +30,21 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
       )
   }
   
-  public struct State: Builder {
-    
+  public init<S: Scheduler>(initial: State = State(),
+              lateralPublisher: AnyPublisher<[LateralType], Never>,
+              scheduler: S) {
+      super.init(
+          initial: initial,
+          feedbacks: [
+            CardViewModel.monitorStore(lateralPublisher: lateralPublisher)
+        ],
+          scheduler: scheduler,
+          reducer: CardViewModel.reduce
+      )
+  }
+  
+  
+  public struct State: Builder, Equatable {
     /// we need a public inititializer since Swift hides the default init as internal
     public init() {
       
@@ -41,10 +54,25 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
     public var displayText: String = "Tap"
     public var displayLaterals: [LateralType] = []
     public var backgroundPairing: ColorTypes.ColorPairing = ColorTypes.DarkThemes.allCases[0]
-    public var serviceCancelable: Cancellable?
     #if canImport(GameplayKit)
     var shuffler = GKShuffledDistribution()
     #endif
+    
+    public func isEqual(_ rhs: CardViewModel.State) -> Bool {
+      return
+        self.onAppear == rhs.onAppear &&
+        self.displayText == rhs.displayText &&
+        self.displayLaterals == rhs.displayLaterals &&
+          self.backgroundPairing == rhs.backgroundPairing
+    }
+    
+    public static func == (lhs: CardViewModel.State, rhs: CardViewModel.State) -> Bool {
+      return
+        lhs.onAppear == rhs.onAppear &&
+        lhs.displayText == rhs.displayText &&
+        lhs.displayLaterals == rhs.displayLaterals &&
+        lhs.backgroundPairing == rhs.backgroundPairing
+    }
   }
   
   public enum Event {
@@ -52,7 +80,6 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
     case onTap
     case setLaterals(_: [LateralType])
     case error
-    case lateralPublisher(_: Cancellable)
   }
   
   private static func nextDisplay(state: State) -> String {
@@ -95,26 +122,21 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
       return copy
     case .error:
       return state //TODO: use Errors in a productive way in the UI
-    case .lateralPublisher(let c):
-      return state.set(\.serviceCancelable, c)
+
     }
   }
   
   static func monitorStore(lateralPublisher: AnyPublisher<[LateralType], Never> ) -> Feedback<State, Event> {
-    return Feedback(predicate: { (state: State) -> Bool in
-      return state.serviceCancelable == nil
-    }, effects: { (state: CardViewModel.State) -> AnyPublisher<Event, Never> in
-      let monitor = lateralPublisher
-        .removeDuplicates()
-        .compactMap { lats -> Event? in
-          guard lats.count > 0 else {
-            return nil
-          }
-          return Event.setLaterals(lats)
-      }
-      let serviceObservable = monitor.makeConnectable().connect()
-      return monitor.prepend(Event.lateralPublisher(serviceObservable)).eraseToAnyPublisher()
-    })
+    return Feedback<State, Event> { (statePublisher: AnyPublisher<State, Never>) -> AnyPublisher<Event, Never> in
+      return lateralPublisher
+      .print()
+      .compactMap { lats -> Event? in
+        guard lats.count > 0 else {
+          return nil
+        }
+        return Event.setLaterals(lats)
+      }.eraseToAnyPublisher()
+    }
   }
   
 }

@@ -29,7 +29,10 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:../Lateral Thinking.xctestplan"
+            reference = "container:../Lateral Thinking Core.xctestplan">
+         </TestPlanReference>
+         <TestPlanReference
+            reference = "container:../LateralThinkingiOS.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>

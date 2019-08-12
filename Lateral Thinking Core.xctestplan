@@ -1,0 +1,32 @@
+{
+  "configurations" : [
+    {
+      "id" : "96B249D7-796D-4355-827F-C223C2958088",
+      "name" : "Default",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:..\/Lateral Thinking Core",
+        "identifier" : "LateralBusinessLogicTests",
+        "name" : "LateralBusinessLogicTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/Lateral Thinking Core",
+        "identifier" : "LateralThinkingCoreTests",
+        "name" : "LateralThinkingCoreTests"
+      }
+    }
+  ],
+  "version" : 1
+}

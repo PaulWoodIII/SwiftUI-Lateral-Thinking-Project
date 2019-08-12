@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Lateral Thinking.xctestplan">
+      location = "group:LateralThinkingiOS.xctestplan">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/paulwood/projects/SwiftUI-Lateral-Thinking-Project/Lateral Thinking Core.xctestplan">
    </FileRef>
    <FileRef
       location = "group:../../../../System/Volumes/Data/Users/paul/projects/Lateral Thinking Project/Lateral Thinking Core">

@@ -1,31 +1,15 @@
 {
   "configurations" : [
     {
-      "id" : "96B249D7-796D-4355-827F-C223C2958088",
-      "name" : "Default",
+      "id" : "36870CBE-3AA1-4028-94C9-D32D9FFB457D",
+      "name" : "Configuration 1",
       "options" : {
 
-      }
-    },
-    {
-      "id" : "5F335089-F1EF-4A47-B00B-D395CF52FDFF",
-      "name" : "Address Sanitizer",
-      "options" : {
-        "addressSanitizer" : {
-          "enabled" : true
-        }
-      }
-    },
-    {
-      "id" : "152EECBD-C08A-4DAC-8FC5-B98801703951",
-      "name" : "Thread Sanitizer",
-      "options" : {
-        "threadSanitizerEnabled" : true
       }
     }
   ],
   "defaultOptions" : {
-    "codeCoverage" : false
+
   },
   "testTargets" : [
     {
@@ -36,6 +20,7 @@
       }
     },
     {
+      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:Lateral Thinking.xcodeproj",
         "identifier" : "DAFB17E422E4E379004C78E4",
@@ -54,34 +39,6 @@
         "containerPath" : "container:Lateral Thinking.xcodeproj",
         "identifier" : "DA667A0522EC8A7E000AD4E7",
         "name" : "LateralThinking-PersistanceTests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:Lateral Thinking.xcodeproj",
-        "identifier" : "DA52208322EBBE4C00E0AF27",
-        "name" : "Lateral Thinking macOSTests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:Lateral Thinking.xcodeproj",
-        "identifier" : "DA52208E22EBBE4C00E0AF27",
-        "name" : "Lateral Thinking macOSUITests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:Lateral Thinking.xcodeproj",
-        "identifier" : "DA2EB2CB22E78EF9006CF023",
-        "name" : "Lateral Thinking tvOSTests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:Lateral Thinking.xcodeproj",
-        "identifier" : "DA2EB2D622E78EF9006CF023",
-        "name" : "Lateral Thinking tvOSUITests"
       }
     },
     {
