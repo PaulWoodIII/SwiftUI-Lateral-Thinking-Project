@@ -11,7 +11,6 @@ import SwiftUI
 public extension Color {
   init(hex: String, alpha: Double = 1) {
     let scanner = Scanner(string: hex)
-    scanner.scanLocation = 0
     var rgbValue: UInt64 = 0
     scanner.scanHexInt64(&rgbValue)
     

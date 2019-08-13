@@ -24,7 +24,9 @@ class IntentDonater {
                                     response: nil)
     interaction.donate { error in
       // handle Error
-      print(error)
+      if let error = error {
+        print(error)
+      }
     }
   }
 }

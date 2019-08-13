@@ -50,7 +50,6 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
       
     }
     
-    public var onAppear: Bool = false
     public var displayText: String = "Tap"
     public var displayLaterals: [LateralType] = []
     public var backgroundPairing: ColorTypes.ColorPairing = ColorTypes.DarkThemes.allCases[0]
@@ -60,7 +59,6 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
     
     public func isEqual(_ rhs: CardViewModel.State) -> Bool {
       return
-        self.onAppear == rhs.onAppear &&
         self.displayText == rhs.displayText &&
         self.displayLaterals == rhs.displayLaterals &&
           self.backgroundPairing == rhs.backgroundPairing
@@ -68,7 +66,6 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
     
     public static func == (lhs: CardViewModel.State, rhs: CardViewModel.State) -> Bool {
       return
-        lhs.onAppear == rhs.onAppear &&
         lhs.displayText == rhs.displayText &&
         lhs.displayLaterals == rhs.displayLaterals &&
         lhs.backgroundPairing == rhs.backgroundPairing
@@ -76,10 +73,8 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
   }
   
   public enum Event {
-    case appeared
     case onTap
     case setLaterals(_: [LateralType])
-    case error
   }
   
   private static func nextDisplay(state: State) -> String {
@@ -94,10 +89,9 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
     let next = Int(arc4random_uniform(high))
     return state.displayLaterals[next].body
     #endif
-    
   }
   
-  private static func reduce(state: State, event: Event) -> State {
+  public static func reduce(state: State, event: Event) -> State {
     
     func onTap(state: State) -> State {
       let next = nextDisplay(state: state)
@@ -105,8 +99,6 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
     }
     
     switch event {
-    case .appeared:
-      return state.set(\.onAppear, true)
     case .onTap:
       return onTap(state: state)
     case .setLaterals(let lats):
@@ -120,16 +112,12 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
         return onTap(state: copy)
       }
       return copy
-    case .error:
-      return state //TODO: use Errors in a productive way in the UI
-
     }
   }
   
   static func monitorStore(lateralPublisher: AnyPublisher<[LateralType], Never> ) -> Feedback<State, Event> {
     return Feedback<State, Event> { (statePublisher: AnyPublisher<State, Never>) -> AnyPublisher<Event, Never> in
       return lateralPublisher
-      .print()
       .compactMap { lats -> Event? in
         guard lats.count > 0 else {
           return nil

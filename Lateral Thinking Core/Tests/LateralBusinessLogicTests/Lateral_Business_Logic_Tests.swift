@@ -4,6 +4,7 @@ import CombineFeedback
 import Entwine
 import EntwineTest
 import LateralThinkingCore
+import GameplayKit
 @testable import LateralBusinessLogic
 
 final class Lateral_Business_Logic_Tests: XCTestCase {
@@ -26,9 +27,18 @@ final class Lateral_Business_Logic_Tests: XCTestCase {
     XCTAssertEqual(value, initialState, "returns initial state")
     lateralPublisher.send([testLateral])
     testScheduler.advance()
-    let stateWithOutTestLateral = State().set(\.displayLaterals, [testLateral])
+    let stateWithTestLateral = State().set(\.displayLaterals, [testLateral])
       .set(\.displayText, testString)
-    XCTAssertEqual(value, stateWithOutTestLateral,  "returns display laterals set and sets the display lateral")
+    XCTAssertEqual(value, stateWithTestLateral,  "returns display laterals set and sets the display lateral")
+  }
+  
+  func testTap() {
+    let test1Lateral: LateralType = "A Test1 Lateral"
+    let test2Lateral: LateralType = "A Test2 Lateral"
+    let stateWithTestLateral = State().set(\.displayLaterals, [test1Lateral, test2Lateral])
+      .set(\.shuffler, GKShuffledDistribution(lowestValue: 0, highestValue: 0))
+    let afterTap = CardViewModel.reduce(state: stateWithTestLateral, event: .onTap)
+    XCTAssertEqual(afterTap.displayText, test1Lateral.body)
   }
   
   static var allTests = [

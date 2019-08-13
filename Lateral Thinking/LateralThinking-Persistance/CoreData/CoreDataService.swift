@@ -69,8 +69,6 @@ public class CoreDataService: NSObject, CoreDataServiceType {
         if let fetched = self.fetchedResultsController.fetchedObjects as NSArray? {
           let mapped = Array<LateralMO>( fetched.compactMap({ $0 as? LateralMO}) )
           self.allLaterals = mapped
-          print(Set(mapped))
-          print(mapped)
           let lateralType = mapped.compactMap({ lateralMO -> LateralType? in
             guard let body = lateralMO.body else{
               return nil
