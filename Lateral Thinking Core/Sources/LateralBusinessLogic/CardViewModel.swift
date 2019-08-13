@@ -50,7 +50,7 @@ public class CardViewModel: ViewModel<CardViewModel.State, CardViewModel.Event> 
       
     }
     
-    public var displayText: String = "Tap"
+    public var displayText: String = ""
     public var displayLaterals: [LateralType] = []
     public var backgroundPairing: ColorTypes.ColorPairing = ColorTypes.DarkThemes.allCases[0]
     #if canImport(GameplayKit)
