@@ -34,7 +34,7 @@ class Lateral_Thinking_tvOSUITests: XCTestCase {
 
     func testLaunchPerformance() {
         // This measures how long it takes to launch your application from the home screen.
-        measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
+              measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
             XCUIApplication().launch()
         }
     }

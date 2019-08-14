@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import LateralThinkingCore
 import LateralBusinessLogic
 import CombineFeedbackUI
 
@@ -25,19 +26,18 @@ public struct CardView : View {
   
   public var body: some View {
     ZStack {
-        Button(action: {
-          self.context.send(event: .onTap)
-        }){
-          Rectangle().foregroundColor(Color.clear)
-        }
       Text(context.displayText)
         .font(.title)
-        .foregroundColor(.white)
         .lineLimit(nil)
-    }
-    .onTapGesture {
-      self.context.send(event: .onTap)
-    }
+        .background(
+          RoundedRectangle(cornerRadius: 60)
+            .foregroundColor(Color.clear)
+            .accessibility(addTraits: .isButton)
+            .focusable(true, onFocusChange: { foc in
+              self.context.send(event: .onTap)
+            })
+            .onPlayPauseCommand{ self.context.send(event: .onTap)}
+      )}
   }
 }
 
@@ -45,7 +45,7 @@ public struct CardView : View {
 struct CardView_Previews : PreviewProvider {
   static var previews: some View {
     Widget(
-      viewModel: CardViewModel(lateralPublisher: EnvironmentObjects.shared.syncService.coalescedLateralsPublisher()),
+      viewModel: CardViewModel(lateralPublisher: InitialLateralTypes.published),
       render: CardView.init
     )
   }

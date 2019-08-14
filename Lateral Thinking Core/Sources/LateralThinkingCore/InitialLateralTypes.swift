@@ -7,9 +7,14 @@
 //
 
 import Foundation
-
+import Combine 
 ///the initial dataset the app will use if CloudKit hase not yet loaded data from the public database
 public struct InitialLateralTypes {
+  
+  public static let published: AnyPublisher<[LateralType], Never> = {
+    return Just(InitialLateralTypes.obliques).eraseToAnyPublisher()
+  }()
+  
   public static let obliques: [LateralType] = [
   "Abandon normal instruments",
   "Accept advice",
