@@ -11,7 +11,9 @@ import CoreData
 
 public protocol CoreDataServiceType: NSObjectProtocol {
   
-  var allLateralTypes: [LateralThinkingCore.LateralType] { get set }
+  var allLateralTypes: Array<LateralThinkingCore.LateralType> { get }
+  
+  //var allLateralTypesPublisher: AnyPublisher<Array<LateralType>, Never> { get }
   
   init(persistentContainer: NSPersistentContainer)
   

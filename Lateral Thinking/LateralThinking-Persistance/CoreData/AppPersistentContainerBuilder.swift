@@ -7,8 +7,12 @@
 //
 
 import CoreData
+import LateralThinkingCore
 
 public class AppPersistentContainerBuilder {
+  
+  static let sqliteFileName = "lateralThinkingAppGroup.sqlite"
+  
   public static var persistentContainer: NSPersistentContainer {
     /*
      The persistent container for the application. This implementation
@@ -21,6 +25,9 @@ public class AppPersistentContainerBuilder {
     let mom = NSManagedObjectModel(contentsOf: modelURL)!
     let container = NSPersistentContainer(name: CoreDataModelName,
                                           managedObjectModel: mom)
+    let persistentStoreDescription = container.persistentStoreDescriptions.first
+    //let fileLocation = FileManager.applicationGroupDocumentDirectory.appendingPathComponent(sqliteFileName)
+    //try addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: fileLocation, options: options)
     container.loadPersistentStores(completionHandler: { (storeDescription, error) in
       if let error = error as NSError? {
         // Replace this implementation with code to handle the error appropriately.

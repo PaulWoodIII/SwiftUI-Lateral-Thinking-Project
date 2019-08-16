@@ -8,10 +8,23 @@
 
 import Foundation
 import Intents
+import LateralThinkingCore
+import LateralBusinessLogic
+import CombineFeedbackUI
 
 public class LateralIntentHandler: NSObject, LateralIntentHandling {
+  
+  private let context: Context<CardViewModel.State, CardViewModel.Event> = {
+    //let cdTypes = IntentEnvironmentObjects.shared.coreDataService.allLateralTypesPublisher
+    let cdTypes = InitialLateralTypes.published
+    return Context(state: CardViewModel.State(),
+                   viewModel: CardViewModel(lateralPublisher:cdTypes))
+  }()
+  
   public func handle(intent: LateralIntent, completion: @escaping (LateralIntentResponse) -> Void) {
-    let response = LateralIntentResponse.success(body: "Response Yay!")
+    context.send(event: .onTap)
+    let body = context.displayText
+    let response = LateralIntentResponse.success(body: body)
     completion(response)
   }
   

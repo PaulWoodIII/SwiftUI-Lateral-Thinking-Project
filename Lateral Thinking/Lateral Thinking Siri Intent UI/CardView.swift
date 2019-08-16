@@ -7,7 +7,7 @@
 //
 
 import SwiftUI
-
+import LateralThinkingCore
 import LateralBusinessLogic
 import CombineFeedbackUI
 import IntentsUI

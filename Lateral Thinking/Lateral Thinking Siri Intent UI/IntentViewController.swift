@@ -7,31 +7,27 @@
 //
 
 import IntentsUI
+import LateralThinkingCore
 import LateralBusinessLogic
+import Combine
 import CombineFeedbackUI
 import SwiftUI
 
-typealias State = CardViewModel.State
-typealias Event = CardViewModel.Event
-typealias ContentType = Widget<State, Event, CardView>
-
 // MARK: - IntentCardHostingView
-class IntentCardHostingView: UIHostingController<ContentType> {
+class IntentCardHostingView: UIHostingController<Widget<CardViewModel.State, CardViewModel.Event, CardView>>, INUIHostedViewControlling {
+
+  var laterals: PassthroughSubject<[LateralType], Never>!
   
   convenience init() {
+    let laterals = PassthroughSubject<[LateralType], Never>()
     let widget = Widget(
-      viewModel: CardViewModel(lateralPublisher: EnvironmentObjects.shared.syncService.coalescedLateralsPublisher()),
+      viewModel: CardViewModel(lateralPublisher: laterals.eraseToAnyPublisher()),
       render: CardView.init
     )
+    defer{
+      self.laterals = laterals
+    }
     self.init(rootView: widget)
-  }
-}
-
-// MARK: - INUIHostedViewControlling
-class IntentViewController: UIViewController, INUIHostedViewControlling {
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
   }
   
   func configureView(for parameters: Set<INParameter>,
@@ -40,11 +36,12 @@ class IntentViewController: UIViewController, INUIHostedViewControlling {
                      context: INUIHostedViewContext,
                      completion: @escaping (Bool, Set<INParameter>, CGSize) -> Void) {
     // Do configuration here, including preparing views and calculating a desired size for presentation.
+    //laterals.append(INIntera)
     completion(true, parameters, self.desiredSize)
   }
   
   var desiredSize: CGSize {
     return self.extensionContext!.hostedViewMaximumAllowedSize
   }
-  
 }
+

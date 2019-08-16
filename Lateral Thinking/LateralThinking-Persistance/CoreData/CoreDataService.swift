@@ -48,7 +48,7 @@ public class CoreDataService: NSObject, CoreDataServiceType {
   
   @Published var allLaterals: [LateralMO] = []
   
-  @Published public var allLateralTypes: [LateralType] = []
+  @Published public private(set) var allLateralTypes: Array<LateralType> = []
   
   var startupCancellable: Cancellable?
 

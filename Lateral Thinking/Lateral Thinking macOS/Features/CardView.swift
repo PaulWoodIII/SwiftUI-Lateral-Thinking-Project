@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import LateralThinkingCore
 import LateralBusinessLogic
 import CombineFeedbackUI
 
@@ -57,7 +58,7 @@ public struct CardView : View {
 struct CardView_Previews : PreviewProvider {
   static var previews: some View {
     Widget(
-      viewModel: CardViewModel(lateralPublisher: EnvironmentObjects.shared.syncService.coalescedLateralsPublisher()),
+      viewModel: CardViewModel(lateralPublisher: InitialLateralTypes.published),
       render: CardView.init
     )
   }
