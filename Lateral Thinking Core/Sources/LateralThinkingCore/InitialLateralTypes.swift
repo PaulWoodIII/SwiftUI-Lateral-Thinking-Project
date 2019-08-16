@@ -12,7 +12,9 @@ import Combine
 public struct InitialLateralTypes {
   
   public static let published: AnyPublisher<[LateralType], Never> = {
-    return Just(InitialLateralTypes.obliques).eraseToAnyPublisher()
+    return Deferred {
+      Just(InitialLateralTypes.obliques)
+    }.eraseToAnyPublisher()
   }()
   
   public static let obliques: [LateralType] = [
