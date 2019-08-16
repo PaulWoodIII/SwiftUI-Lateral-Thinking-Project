@@ -168,7 +168,6 @@
 		DAFB17C722E4E376004C78E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17C622E4E376004C78E4 /* SceneDelegate.swift */; };
 		DAFB17CA22E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17C822E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld */; };
 		DAFB17CE22E4E379004C78E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFB17CD22E4E379004C78E4 /* Assets.xcassets */; };
-		DAFB17D122E4E379004C78E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFB17D022E4E379004C78E4 /* Preview Assets.xcassets */; };
 		DAFB17D422E4E379004C78E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFB17D222E4E379004C78E4 /* LaunchScreen.storyboard */; };
 		DAFB17DF22E4E379004C78E4 /* Lateral_ThinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17DE22E4E379004C78E4 /* Lateral_ThinkingTests.swift */; };
 		DAFB17EA22E4E379004C78E4 /* Lateral_ThinkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFB17E922E4E379004C78E4 /* Lateral_ThinkingUITests.swift */; };
@@ -632,7 +631,6 @@
 		DAFB17C922E4E376004C78E4 /* Lateral_Thinking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lateral_Thinking.xcdatamodel; sourceTree = "<group>"; };
 		DAFB17CB22E4E376004C78E4 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DAFB17CD22E4E379004C78E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DAFB17D022E4E379004C78E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAFB17D322E4E379004C78E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAFB17D522E4E379004C78E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAFB17DA22E4E379004C78E4 /* Lateral ThinkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lateral ThinkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1256,7 +1254,6 @@
 		DAFB17CF22E4E379004C78E4 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DAFB17D022E4E379004C78E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -2106,7 +2103,6 @@
 			files = (
 				DAFB17D422E4E379004C78E4 /* LaunchScreen.storyboard in Resources */,
 				DAC1108E22EBC7F500E029E1 /* Lateral Thinking watchOS.app in Resources */,
-				DAFB17D122E4E379004C78E4 /* Preview Assets.xcassets in Resources */,
 				DAB7B77822E4F00A0091EEF3 /* NotoSerif-Regular.ttf in Resources */,
 				DAB7B77922E4F00A0091EEF3 /* NotoSerif-Italic.ttf in Resources */,
 				DAFB17CE22E4E379004C78E4 /* Assets.xcassets in Resources */,
