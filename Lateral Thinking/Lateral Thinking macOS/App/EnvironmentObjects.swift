@@ -13,8 +13,8 @@ import LateralThinkingCore
 import LateralBusinessLogic
 import LateralThinking_Persistance_macOS
 
-class EnvironmentObjects {
-  static let shared = EnvironmentObjects()
+class MacOSEnvironmentObjects {
+  static let shared = MacOSEnvironmentObjects()
   
   let coreDataService: CoreDataServiceType
   let cloudKitService: CloudKitService

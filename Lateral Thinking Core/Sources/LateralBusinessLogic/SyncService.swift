@@ -29,11 +29,11 @@ public class SyncService {
   private var careDataSave: () -> AnyPublisher<Void, CoreDataError>
   
   public init(
-    cloudLaterals: AnyPublisher<[LateralType], Never> = CloudKitService.shared.$cloudLaterals.eraseToAnyPublisher(),
+    cloudLaterals: AnyPublisher<ArrayHolder<LateralType>, Never>,
     coreDataLaterals: AnyPublisher<[LateralType], Never>,
     coreDataCreate: @escaping (_: LateralType) -> Void,
     careDataSave: @escaping () -> AnyPublisher<Void, CoreDataError>,
-    fetchCloudLaterals: @escaping () -> AnyPublisher<[LateralType], CloudKitService.Error> = CloudKitService.shared.retrieveAllLaterals
+    fetchCloudLaterals: @escaping () -> AnyPublisher<[LateralType], CloudKitServiceError>
   ) {
     self.coreDataLaterals = coreDataLaterals
     self.cloudLaterals = cloudLaterals
@@ -49,7 +49,7 @@ public class SyncService {
     }
   }
   
-  private var cloudLaterals: AnyPublisher<[LateralType], Never> {
+  private var cloudLaterals: AnyPublisher<ArrayHolder<LateralType>, Never> {
     didSet {
       monitorServices()
     }
@@ -62,9 +62,9 @@ public class SyncService {
     }
     monitor = Publishers.CombineLatest(coreDataLaterals, cloudLaterals)
       .map({ (cdLats, cloudLats) -> [LateralType] in
-        let all = Set(self.coalescedLaterals).union(cdLats).union(cloudLats)
+        let all = Set(self.coalescedLaterals).union(cdLats).union(cloudLats.array)
         self.coalescedLaterals = Array(all)
-        let toUpdate = Set(cloudLats).subtracting(cdLats)
+        let toUpdate = Set(cloudLats.array).subtracting(cdLats)
         return Array(toUpdate)
       })
       .map({ (lats) in

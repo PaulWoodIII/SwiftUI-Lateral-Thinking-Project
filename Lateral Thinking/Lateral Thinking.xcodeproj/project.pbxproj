@@ -12,12 +12,12 @@
 		3C021D5422FF4BC40039EB96 /* Entwine in Frameworks */ = {isa = PBXBuildFile; productRef = 3C021D5322FF4BC40039EB96 /* Entwine */; };
 		3C021D5622FF4BC40039EB96 /* EntwineTest in Frameworks */ = {isa = PBXBuildFile; productRef = 3C021D5522FF4BC40039EB96 /* EntwineTest */; };
 		3C021D5822FF6B280039EB96 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C021D5722FF6B280039EB96 /* main.swift */; };
-		3C5A89AF2305AFA700D3B208 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* Environment.swift */; };
-		3C5A89B02305AFA800D3B208 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* Environment.swift */; };
-		3C5A89B12305B3A100D3B208 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* Environment.swift */; };
-		3C5A89B22305B3A600D3B208 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* Environment.swift */; };
-		3C5A89B32305B3A600D3B208 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* Environment.swift */; };
-		3C5A89B42305B3A700D3B208 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* Environment.swift */; };
+		3C5A89AF2305AFA700D3B208 /* IntentEnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* IntentEnvironmentObjects.swift */; };
+		3C5A89B02305AFA800D3B208 /* IntentEnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* IntentEnvironmentObjects.swift */; };
+		3C5A89B12305B3A100D3B208 /* IntentEnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* IntentEnvironmentObjects.swift */; };
+		3C5A89B22305B3A600D3B208 /* IntentEnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* IntentEnvironmentObjects.swift */; };
+		3C5A89B32305B3A600D3B208 /* IntentEnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* IntentEnvironmentObjects.swift */; };
+		3C5A89B42305B3A700D3B208 /* IntentEnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5A89AD2305AF4C00D3B208 /* IntentEnvironmentObjects.swift */; };
 		3C5A89B52305CCB600D3B208 /* LateralThinking_Persistance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; };
 		3C5A89B62305CCB600D3B208 /* LateralThinking_Persistance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3C5A89BB2305CCDE00D3B208 /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = 3C5A89BA2305CCDE00D3B208 /* CombineFeedback */; };
@@ -46,11 +46,10 @@
 		3C9CB53322F0947600E295EE /* SwiftUISiriShortcutsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53022F0947600E295EE /* SwiftUISiriShortcutsButton.swift */; };
 		3C9CB53422F0947600E295EE /* IntentDonater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53122F0947600E295EE /* IntentDonater.swift */; };
 		3C9CB53522F0947600E295EE /* INUIAddVoiceShortcutViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53222F0947600E295EE /* INUIAddVoiceShortcutViewControllerRepresentable.swift */; };
-		3C9CB53722F0948E00E295EE /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53622F0948E00E295EE /* EnvironmentObjects.swift */; };
+		3C9CB53722F0948E00E295EE /* iPhoneOSEnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53622F0948E00E295EE /* iPhoneOSEnvironmentObjects.swift */; };
 		3C9CB53A22F0962500E295EE /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53822F0962500E295EE /* EnvironmentObjects.swift */; };
 		3C9CB53B22F0962500E295EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53922F0962500E295EE /* CardView.swift */; };
 		3C9CB53D22F0964900E295EE /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53C22F0964900E295EE /* EnvironmentObjects.swift */; };
-		3C9CB53F22F0966D00E295EE /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53E22F0966D00E295EE /* EnvironmentObjects.swift */; };
 		3C9CB54122F0967600E295EE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54022F0967600E295EE /* CardView.swift */; };
 		3C9CB54322F096A100E295EE /* EnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54222F096A100E295EE /* EnvironmentObjects.swift */; };
 		3C9CB54522F096CE00E295EE /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB54422F096CE00E295EE /* CoreDataService.swift */; };
@@ -67,6 +66,12 @@
 		3CA3068322FFA09700FCF66C /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = 3CA3068222FFA09700FCF66C /* LateralThinking */; };
 		3CA3068522FFA0C400FCF66C /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = 3CA3068422FFA0C400FCF66C /* CombineFeedback */; };
 		3CA3068722FFA0C400FCF66C /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CA3068622FFA0C400FCF66C /* CombineFeedbackUI */; };
+		3CBA17D2230775E800DE211B /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = 3CBA17D1230775E800DE211B /* LateralThinking */; };
+		3CBA17D4230775ED00DE211B /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = 3CBA17D3230775ED00DE211B /* CombineFeedback */; };
+		3CBA17D6230775F100DE211B /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CBA17D5230775F100DE211B /* CombineFeedbackUI */; };
+		3CBA17E023099DED00DE211B /* WatchOSEnvironmentObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9CB53E22F0966D00E295EE /* WatchOSEnvironmentObjects.swift */; };
+		3CCA422E23073B3800702753 /* CombineFeedback in Frameworks */ = {isa = PBXBuildFile; productRef = 3CCA422D23073B3800702753 /* CombineFeedback */; };
+		3CCA423023073B3800702753 /* CombineFeedbackUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3CCA422F23073B3800702753 /* CombineFeedbackUI */; };
 		3CCA7B7822FF6FCD005403B2 /* AppPersistentContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */; };
 		3CDA727122FF71300095F546 /* AppPersistentContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */; };
 		3CDA727222FF71300095F546 /* AppPersistentContainerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA7B7722FF6FCD005403B2 /* AppPersistentContainerBuilder.swift */; };
@@ -106,7 +111,6 @@
 		DA52204822EBA3CB00E0AF27 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52204722EBA3CB00E0AF27 /* ExtensionDelegate.swift */; };
 		DA52204A22EBA3CC00E0AF27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA52204922EBA3CC00E0AF27 /* Assets.xcassets */; };
 		DA52204D22EBA3CC00E0AF27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA52204C22EBA3CC00E0AF27 /* Preview Assets.xcassets */; };
-		DA52205E22EBA84400E0AF27 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DA52205D22EBA84400E0AF27 /* LateralThinking */; };
 		DA52207022EBBE4A00E0AF27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52206F22EBBE4A00E0AF27 /* AppDelegate.swift */; };
 		DA52207222EBBE4A00E0AF27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA52207122EBBE4A00E0AF27 /* ContentView.swift */; };
 		DA52207522EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA52207322EBBE4A00E0AF27 /* Lateral_Thinking_macOS.xcdatamodeld */; };
@@ -141,18 +145,13 @@
 		DAC110BF22EC73C300E029E1 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAC110BE22EC73C300E029E1 /* LateralThinking */; };
 		DAC110C922EC754400E029E1 /* LateralIntentKit_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAC110C722EC754400E029E1 /* LateralIntentKit_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAC110CC22EC754400E029E1 /* LateralIntentKit_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */; };
-		DAC110CD22EC754400E029E1 /* LateralIntentKit_watchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAC110CD22EC754400E029E1 /* LateralIntentKit_watchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAC110D322EC755000E029E1 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAC110D222EC755000E029E1 /* LateralThinking */; };
-		DAC9D65122EC9EB000680D78 /* LateralThinking_Persistance.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6679FE22EC8A7E000AD4E7 /* LateralThinking_Persistance.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DAC9D65622EC9EB600680D78 /* LateralIntentKit_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */; };
-		DAC9D65722EC9EB600680D78 /* LateralIntentKit_watchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAC110C522EC754400E029E1 /* LateralIntentKit_watchOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DAC9D65B22EC9EFC00680D78 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAC9D65A22EC9EFC00680D78 /* LateralThinking */; };
 		DAEC1EBD22ECB02A00A6C1B3 /* LateralThinking_Persistance_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAEC1EBB22ECB02A00A6C1B3 /* LateralThinking_Persistance_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAEC1EC022ECB02A00A6C1B3 /* LateralThinking_Persistance_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1EB922ECB02900A6C1B3 /* LateralThinking_Persistance_watchOS.framework */; };
-		DAEC1EC122ECB02A00A6C1B3 /* LateralThinking_Persistance_watchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1EB922ECB02900A6C1B3 /* LateralThinking_Persistance_watchOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAEC1EC122ECB02A00A6C1B3 /* LateralThinking_Persistance_watchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1EB922ECB02900A6C1B3 /* LateralThinking_Persistance_watchOS.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DAEC1EC622ECB03F00A6C1B3 /* LateralModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA2FA3C822EC8CDE0077B301 /* LateralModel.xcdatamodeld */; };
 		DAEC1EC922ECB0F700A6C1B3 /* LateralThinking in Frameworks */ = {isa = PBXBuildFile; productRef = DAEC1EC822ECB0F700A6C1B3 /* LateralThinking */; };
-		DAEC1ECD22ECB26F00A6C1B3 /* LateralThinking_Persistance_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1EB922ECB02900A6C1B3 /* LateralThinking_Persistance_watchOS.framework */; };
 		DAEC1ED722ECBC6600A6C1B3 /* LateralThinking_Persistance_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAEC1ED522ECBC6600A6C1B3 /* LateralThinking_Persistance_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAEC1EDA22ECBC6600A6C1B3 /* LateralThinking_Persistance_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1ED322ECBC6500A6C1B3 /* LateralThinking_Persistance_tvOS.framework */; };
 		DAEC1EDB22ECBC6600A6C1B3 /* LateralThinking_Persistance_tvOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DAEC1ED322ECBC6500A6C1B3 /* LateralThinking_Persistance_tvOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -315,34 +314,6 @@
 			remoteGlobalIDString = DAC1109822EC71B500E029E1;
 			remoteInfo = "LateralIntentKit-iOS";
 		};
-		DAC110CA22EC754400E029E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DAC110C422EC754400E029E1;
-			remoteInfo = "LateralIntentKit-watchOS";
-		};
-		DAC9D65222EC9EB000680D78 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA6679FD22EC8A7E000AD4E7;
-			remoteInfo = "LateralThinking-Persistance";
-		};
-		DAC9D65822EC9EB600680D78 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DAC110C422EC754400E029E1;
-			remoteInfo = "LateralIntentKit-watchOS";
-		};
-		DAEC1EBE22ECB02A00A6C1B3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DAEC1EB822ECB02900A6C1B3;
-			remoteInfo = "LateralThinking-Persistance-watchOS";
-		};
 		DAEC1ED822ECBC6600A6C1B3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
@@ -476,18 +447,6 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DAC9D65522EC9EB000680D78 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DAC9D65122EC9EB000680D78 /* LateralThinking_Persistance.framework in Embed Frameworks */,
-				DAC9D65722EC9EB600680D78 /* LateralIntentKit_watchOS.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DAEC1EDF22ECBC6600A6C1B3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,7 +473,7 @@
 
 /* Begin PBXFileReference section */
 		3C021D5722FF6B280039EB96 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		3C5A89AD2305AF4C00D3B208 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		3C5A89AD2305AF4C00D3B208 /* IntentEnvironmentObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentEnvironmentObjects.swift; sourceTree = "<group>"; };
 		3C9CB51E22F0930300E295EE /* Lateral Thinking watchOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lateral Thinking watchOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		3C9CB51F22F0930300E295EE /* Lateral Thinking watchOS WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lateral Thinking watchOS WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
 		3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.intentdefinition; path = LateralIntentKit.intentdefinition; sourceTree = "<group>"; };
@@ -522,11 +481,11 @@
 		3C9CB53022F0947600E295EE /* SwiftUISiriShortcutsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftUISiriShortcutsButton.swift; sourceTree = "<group>"; };
 		3C9CB53122F0947600E295EE /* IntentDonater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntentDonater.swift; sourceTree = "<group>"; };
 		3C9CB53222F0947600E295EE /* INUIAddVoiceShortcutViewControllerRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INUIAddVoiceShortcutViewControllerRepresentable.swift; sourceTree = "<group>"; };
-		3C9CB53622F0948E00E295EE /* EnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
+		3C9CB53622F0948E00E295EE /* iPhoneOSEnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneOSEnvironmentObjects.swift; sourceTree = "<group>"; };
 		3C9CB53822F0962500E295EE /* EnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
 		3C9CB53922F0962500E295EE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3C9CB53C22F0964900E295EE /* EnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
-		3C9CB53E22F0966D00E295EE /* EnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
+		3C9CB53E22F0966D00E295EE /* WatchOSEnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchOSEnvironmentObjects.swift; sourceTree = "<group>"; };
 		3C9CB54022F0967600E295EE /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		3C9CB54222F096A100E295EE /* EnvironmentObjects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentObjects.swift; sourceTree = "<group>"; };
 		3C9CB54422F096CE00E295EE /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
@@ -684,7 +643,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA52205E22EBA84400E0AF27 /* LateralThinking in Frameworks */,
+				3CBA17D4230775ED00DE211B /* CombineFeedback in Frameworks */,
+				3CBA17D2230775E800DE211B /* LateralThinking in Frameworks */,
+				3CBA17D6230775F100DE211B /* CombineFeedbackUI in Frameworks */,
 				DAEC1EC022ECB02A00A6C1B3 /* LateralThinking_Persistance_watchOS.framework in Frameworks */,
 				DAC110CC22EC754400E029E1 /* LateralIntentKit_watchOS.framework in Frameworks */,
 			);
@@ -695,8 +656,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB836C822ECCADE00C0F0E2 /* CloudKit.framework in Frameworks */,
+				3CCA422E23073B3800702753 /* CombineFeedback in Frameworks */,
 				DA5220A422EBC4B200E0AF27 /* LateralThinking in Frameworks */,
 				DAEC1EEC22ECBC8A00A6C1B3 /* LateralThinking_Persistance_macOS.framework in Frameworks */,
+				3CCA423023073B3800702753 /* CombineFeedbackUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,9 +743,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAEC1ECD22ECB26F00A6C1B3 /* LateralThinking_Persistance_watchOS.framework in Frameworks */,
-				DAC9D65B22EC9EFC00680D78 /* LateralThinking in Frameworks */,
-				DAC9D65622EC9EB600680D78 /* LateralIntentKit_watchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,9 +776,9 @@
 			files = (
 				3C021D5022FF4A2A0039EB96 /* CombineFeedback in Frameworks */,
 				DA337E4A22E8F3BB00A3DD3E /* LateralThinking in Frameworks */,
-				DAC110AE22EC71B500E029E1 /* LateralIntentKit_iOS.framework in Frameworks */,
 				3C021D5222FF4A2A0039EB96 /* CombineFeedbackUI in Frameworks */,
 				DA210D5E22E5E2DA005A41C9 /* Entwine in Frameworks */,
+				DAC110AE22EC71B500E029E1 /* LateralIntentKit_iOS.framework in Frameworks */,
 				DA667A1322EC8A7E000AD4E7 /* LateralThinking_Persistance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1101,7 +1061,7 @@
 		DAC1109322EC717900E029E1 /* LateralIntentKit-Shared */ = {
 			isa = PBXGroup;
 			children = (
-				3C5A89AD2305AF4C00D3B208 /* Environment.swift */,
+				3C5A89AD2305AF4C00D3B208 /* IntentEnvironmentObjects.swift */,
 				3C9CB52122F0930400E295EE /* LateralIntentHandler.swift */,
 				3C9CB52022F0930400E295EE /* LateralIntentKit.intentdefinition */,
 				3C9CB51E22F0930300E295EE /* Lateral Thinking watchOS-Bridging-Header.h */,
@@ -1151,7 +1111,7 @@
 			children = (
 				DA52204522EBA3CB00E0AF27 /* HostingController.swift */,
 				DA52204722EBA3CB00E0AF27 /* ExtensionDelegate.swift */,
-				3C9CB53E22F0966D00E295EE /* EnvironmentObjects.swift */,
+				3C9CB53E22F0966D00E295EE /* WatchOSEnvironmentObjects.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -1282,7 +1242,7 @@
 			children = (
 				DAFB17C422E4E376004C78E4 /* AppDelegate.swift */,
 				DAFB17C622E4E376004C78E4 /* SceneDelegate.swift */,
-				3C9CB53622F0948E00E295EE /* EnvironmentObjects.swift */,
+				3C9CB53622F0948E00E295EE /* iPhoneOSEnvironmentObjects.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -1446,18 +1406,14 @@
 				DA52202D22EBA3C900E0AF27 /* Resources */,
 				DA52205222EBA3CC00E0AF27 /* Embed App Extensions */,
 				DAC9D65422EC9EB000680D78 /* Frameworks */,
-				DAC9D65522EC9EB000680D78 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				DA52204122EBA3CB00E0AF27 /* PBXTargetDependency */,
-				DAC9D65322EC9EB000680D78 /* PBXTargetDependency */,
-				DAC9D65922EC9EB600680D78 /* PBXTargetDependency */,
 			);
 			name = "Lateral Thinking watchOS WatchKit App";
 			packageProductDependencies = (
-				DAC9D65A22EC9EFC00680D78 /* LateralThinking */,
 			);
 			productName = "Lateral Thinking watchOS WatchKit App";
 			productReference = DA52202F22EBA3C900E0AF27 /* Lateral Thinking watchOS WatchKit App.app */;
@@ -1475,12 +1431,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				DAC110CB22EC754400E029E1 /* PBXTargetDependency */,
-				DAEC1EBF22ECB02A00A6C1B3 /* PBXTargetDependency */,
 			);
 			name = "Lateral Thinking watchOS WatchKit Extension";
 			packageProductDependencies = (
-				DA52205D22EBA84400E0AF27 /* LateralThinking */,
+				3CBA17D1230775E800DE211B /* LateralThinking */,
+				3CBA17D3230775ED00DE211B /* CombineFeedback */,
+				3CBA17D5230775F100DE211B /* CombineFeedbackUI */,
 			);
 			productName = "Lateral Thinking watchOS WatchKit Extension";
 			productReference = DA52203E22EBA3CB00E0AF27 /* Lateral Thinking watchOS WatchKit Extension.appex */;
@@ -1503,6 +1459,8 @@
 			name = "Lateral Thinking macOS";
 			packageProductDependencies = (
 				DA5220A322EBC4B200E0AF27 /* LateralThinking */,
+				3CCA422D23073B3800702753 /* CombineFeedback */,
+				3CCA422F23073B3800702753 /* CombineFeedbackUI */,
 			);
 			productName = "Lateral Thinking macOS";
 			productReference = DA52206D22EBBE4A00E0AF27 /* Lateral Thinking macOS.app */;
@@ -2134,7 +2092,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C9CB52C22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
-				3C5A89B42305B3A700D3B208 /* Environment.swift in Sources */,
+				3C5A89B42305B3A700D3B208 /* IntentEnvironmentObjects.swift in Sources */,
 				DA09709122ED0D8B00CFD7FD /* IntentViewController.swift in Sources */,
 				3C9CB53A22F0962500E295EE /* EnvironmentObjects.swift in Sources */,
 				3C9CB52422F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
@@ -2173,12 +2131,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA52204622EBA3CB00E0AF27 /* HostingController.swift in Sources */,
+				3CBA17E023099DED00DE211B /* WatchOSEnvironmentObjects.swift in Sources */,
 				DA52204822EBA3CB00E0AF27 /* ExtensionDelegate.swift in Sources */,
 				3C9CB52D22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
-				3C5A89B12305B3A100D3B208 /* Environment.swift in Sources */,
+				3C5A89B12305B3A100D3B208 /* IntentEnvironmentObjects.swift in Sources */,
 				3C9CB52722F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
 				3C9CB54122F0967600E295EE /* CardView.swift in Sources */,
-				3C9CB53F22F0966D00E295EE /* EnvironmentObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2236,7 +2194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC1108322EBC75300E029E1 /* IntentHandler.swift in Sources */,
-				3C5A89B32305B3A600D3B208 /* Environment.swift in Sources */,
+				3C5A89B32305B3A600D3B208 /* IntentEnvironmentObjects.swift in Sources */,
 				3C9CB52B22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
 				3C9CB52322F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
 			);
@@ -2247,7 +2205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C9CB52E22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
-				3C5A89AF2305AFA700D3B208 /* Environment.swift in Sources */,
+				3C5A89AF2305AFA700D3B208 /* IntentEnvironmentObjects.swift in Sources */,
 				3C9CB52822F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2265,7 +2223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C9CB52F22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
-				3C5A89B02305AFA800D3B208 /* Environment.swift in Sources */,
+				3C5A89B02305AFA800D3B208 /* IntentEnvironmentObjects.swift in Sources */,
 				3C9CB52922F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2316,9 +2274,9 @@
 				DAFB17C722E4E376004C78E4 /* SceneDelegate.swift in Sources */,
 				DAFB17CA22E4E376004C78E4 /* Lateral_Thinking.xcdatamodeld in Sources */,
 				3C9CB52A22F0930400E295EE /* LateralIntentHandler.swift in Sources */,
-				3C9CB53722F0948E00E295EE /* EnvironmentObjects.swift in Sources */,
+				3C9CB53722F0948E00E295EE /* iPhoneOSEnvironmentObjects.swift in Sources */,
 				3C9CB53522F0947600E295EE /* INUIAddVoiceShortcutViewControllerRepresentable.swift in Sources */,
-				3C5A89B22305B3A600D3B208 /* Environment.swift in Sources */,
+				3C5A89B22305B3A600D3B208 /* IntentEnvironmentObjects.swift in Sources */,
 				DA2EB36D22E79C9C006CF023 /* CardView.swift in Sources */,
 				3C9CB52222F0930400E295EE /* LateralIntentKit.intentdefinition in Sources */,
 				3C9CB53322F0947600E295EE /* SwiftUISiriShortcutsButton.swift in Sources */,
@@ -2445,26 +2403,6 @@
 			isa = PBXTargetDependency;
 			target = DAC1109822EC71B500E029E1 /* LateralIntentKit-iOS */;
 			targetProxy = DAC110AC22EC71B500E029E1 /* PBXContainerItemProxy */;
-		};
-		DAC110CB22EC754400E029E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DAC110C422EC754400E029E1 /* LateralIntentKit-watchOS */;
-			targetProxy = DAC110CA22EC754400E029E1 /* PBXContainerItemProxy */;
-		};
-		DAC9D65322EC9EB000680D78 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA6679FD22EC8A7E000AD4E7 /* LateralThinking-Persistance */;
-			targetProxy = DAC9D65222EC9EB000680D78 /* PBXContainerItemProxy */;
-		};
-		DAC9D65922EC9EB600680D78 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DAC110C422EC754400E029E1 /* LateralIntentKit-watchOS */;
-			targetProxy = DAC9D65822EC9EB600680D78 /* PBXContainerItemProxy */;
-		};
-		DAEC1EBF22ECB02A00A6C1B3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DAEC1EB822ECB02900A6C1B3 /* LateralThinking-Persistance-watchOS */;
-			targetProxy = DAEC1EBE22ECB02A00A6C1B3 /* PBXContainerItemProxy */;
 		};
 		DAEC1ED922ECBC6600A6C1B3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2738,6 +2676,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Lateral Thinking watchOS WatchKit Extension\"/Preview\\ Content";
 				DEVELOPMENT_TEAM = BDB4XSJTE3;
 				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = "Lateral Thinking watchOS WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2748,6 +2687,7 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 6.0;
@@ -2822,6 +2762,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-watchOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "LateralIntentKit-Shared/Lateral Thinking watchOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -2845,6 +2786,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-watchOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "LateralIntentKit-Shared/Lateral Thinking watchOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
@@ -2872,6 +2814,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
+				VALIDATE_WORKSPACE = YES_ERROR;
 			};
 			name = Debug;
 		};
@@ -2897,6 +2840,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
+				VALIDATE_WORKSPACE = YES_ERROR;
 			};
 			name = Release;
 		};
@@ -3627,6 +3571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -4000,6 +3945,30 @@
 			package = 3C021D4E22FF4A2A0039EB96 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
 			productName = CombineFeedbackUI;
 		};
+		3CBA17D1230775E800DE211B /* LateralThinking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LateralThinking;
+		};
+		3CBA17D3230775ED00DE211B /* CombineFeedback */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C021D4E22FF4A2A0039EB96 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedback;
+		};
+		3CBA17D5230775F100DE211B /* CombineFeedbackUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C021D4E22FF4A2A0039EB96 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedbackUI;
+		};
+		3CCA422D23073B3800702753 /* CombineFeedback */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C021D4E22FF4A2A0039EB96 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedback;
+		};
+		3CCA422F23073B3800702753 /* CombineFeedbackUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3C021D4E22FF4A2A0039EB96 /* XCRemoteSwiftPackageReference "CombineFeedback" */;
+			productName = CombineFeedbackUI;
+		};
 		DA09709C22ED0DDA00CFD7FD /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LateralThinking;
@@ -4032,10 +4001,6 @@
 			package = DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */;
 			productName = Entwine;
 		};
-		DA52205D22EBA84400E0AF27 /* LateralThinking */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = LateralThinking;
-		};
 		DA5220A322EBC4B200E0AF27 /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LateralThinking;
@@ -4053,10 +4018,6 @@
 			productName = LateralThinking;
 		};
 		DAC110D222EC755000E029E1 /* LateralThinking */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = LateralThinking;
-		};
-		DAC9D65A22EC9EFC00680D78 /* LateralThinking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LateralThinking;
 		};

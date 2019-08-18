@@ -11,7 +11,6 @@ import Combine
 import CloudKit
 import LateralThinkingCore
 
-
 extension CKContainer {
   static let lateralThinkingShared = CKContainer(identifier: "iCloud.com.paulwoodiii.lateralthinking")
 }
@@ -53,21 +52,17 @@ public class CloudKitService {
   
   public static let shared = CloudKitService()
   
-  public enum Error: Swift.Error {
-    case error
-  }
-  
   static let container: CKContainer = CKContainer.lateralThinkingShared
   
-  @Published public var cloudLaterals: [LateralType] = []
+  @Published public var cloudLaterals: ArrayHolder<LateralType> = ArrayHolder<LateralType>(array: [])
   
   public func cloudKitAvailable() -> Bool {
     //TODO check for connectivity and cloudkit access
     return true
   }
   
-  public func retrieveAllLaterals() -> AnyPublisher<[LateralType], Error> {
-    return Deferred { () -> AnyPublisher<[LateralType], Error> in
+  public func retrieveAllLaterals() -> AnyPublisher<[LateralType], CloudKitServiceError> {
+    return Deferred { () -> AnyPublisher<[LateralType], CloudKitServiceError> in
       return Future { promise in
         let query = CKQuery(recordType: LateralCloud, predicate: NSPredicate(value: true))
         CloudKitService.container.publicCloudDatabase
@@ -83,7 +78,7 @@ public class CloudKitService {
                         }
                         return nil
                       }
-                      self.cloudLaterals = types
+                      self.cloudLaterals = ArrayHolder(array: types)
                       return promise(.success(types))
                     }
                     return promise(.success([]))

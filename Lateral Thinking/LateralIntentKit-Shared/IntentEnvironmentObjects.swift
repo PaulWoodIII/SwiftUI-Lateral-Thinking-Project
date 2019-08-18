@@ -1,5 +1,5 @@
 //
-//  Environment.swift
+//  IntentEnvironmentObjects.swift
 //  Lateral Thinking
 //
 //  Created by Paul Wood on 8/15/19.

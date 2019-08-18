@@ -24,25 +24,17 @@ public struct CardView : View {
   @Environment(\.sizeCategory) var sizeCategory: ContentSizeCategory
   
   public var body: some View {
-    ZStack {
-      Rectangle()
-        .foregroundColor(Color("Background"))
-      .onTapGesture { self.context.send(event: .onTap) }
-
-      Text(context.displayText)
-        .lineLimit(nil)
-        .font(.headline)
-        .foregroundColor(Color("TextColor"))
-      .onTapGesture { self.context.send(event: .onTap) }
-
-    }.onTapGesture {
-          self.context.send(event: .onTap)
-      }.gesture(
-        DragGesture().onEnded({ _ in
-          self.context.send(event: .onTap)
-        })
-    )
-    .edgesIgnoringSafeArea(.all)
+    GeometryReader{ content in
+      Button(action: {
+        self.context.send(event: .onTap)
+      }){
+        Text(self.context.displayText)
+          .lineLimit(nil)
+          .font(.headline)
+          .edgesIgnoringSafeArea(.all)
+          .frame(width: content.size.width, height: content.size.height)
+      }.buttonStyle(PlainButtonStyle())
+    }
   }
 }
 
@@ -50,7 +42,7 @@ public struct CardView : View {
 struct CardView_Previews : PreviewProvider {
   static var previews: some View {
     Widget(
-      viewModel: CardViewModel(lateralPublisher: EnvironmentObjects.shared.syncService.coalescedLateralsPublisher()),
+      viewModel: CardViewModel(lateralPublisher: WatchOSEnvironmentObjects.shared.syncService.coalescedLateralsPublisher()),
       render: CardView.init
     )
   }

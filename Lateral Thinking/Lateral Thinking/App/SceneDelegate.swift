@@ -35,7 +35,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // Use a UIHostingController as window root view controller
     if let windowScene = scene as? UIWindowScene {
       let window = UIWindow(windowScene: windowScene)
-      let publisher = EnvironmentObjects.shared.syncService.coalescedLateralsPublisher()
+      let publisher = iPhoneOSEnvironmentObjects.shared.syncService.coalescedLateralsPublisher()
       let widget = Widget(
         viewModel: CardViewModel(lateralPublisher: publisher),
         render: CardView.init

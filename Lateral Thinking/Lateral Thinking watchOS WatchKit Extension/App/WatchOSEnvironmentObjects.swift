@@ -1,6 +1,6 @@
 //
 //  EnvironmentObjects.swift
-//  Lateral Thinking
+//  Lateral Thinking watchOS WatchKit Extension
 //
 //  Created by Paul Wood on 7/27/19.
 //  Copyright © 2019 Paul Wood. All rights reserved.
@@ -11,10 +11,10 @@ import Combine
 import LateralCloudKit
 import LateralThinkingCore
 import LateralBusinessLogic
-import LateralThinking_Persistance
+import LateralThinking_Persistance_watchOS
 
-class EnvironmentObjects {
-  static let shared = EnvironmentObjects()
+class WatchOSEnvironmentObjects {
+  static let shared = WatchOSEnvironmentObjects()
   
   let coreDataService: CoreDataServiceType
   let cloudKitService: CloudKitService
