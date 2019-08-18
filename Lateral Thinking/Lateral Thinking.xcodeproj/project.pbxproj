@@ -2839,6 +2839,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking-macOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 5.0;
 				VALIDATE_WORKSPACE = YES_ERROR;
 			};
@@ -3571,7 +3572,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.paulwoodiii.Lateral-Thinking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_OPTIMIZATION_LEVEL = "-Osize";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
