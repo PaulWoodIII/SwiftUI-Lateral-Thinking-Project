@@ -284,13 +284,6 @@
 			remoteGlobalIDString = DAC1107F22EBC75300E029E1;
 			remoteInfo = "Lateral Thinking Siri Intent";
 		};
-		DAC1108F22EBC7F500E029E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA52202B22EBA3C900E0AF27;
-			remoteInfo = "Lateral Thinking watchOS";
-		};
 		DAC110A322EC71B500E029E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DAFB17B922E4E376004C78E4 /* Project object */;
@@ -1716,7 +1709,6 @@
 			);
 			dependencies = (
 				DAC1108622EBC75300E029E1 /* PBXTargetDependency */,
-				DAC1109022EBC7F500E029E1 /* PBXTargetDependency */,
 				DAC110AD22EC71B500E029E1 /* PBXTargetDependency */,
 				DA667A1222EC8A7E000AD4E7 /* PBXTargetDependency */,
 				DA09709722ED0D8B00CFD7FD /* PBXTargetDependency */,
@@ -2379,11 +2371,6 @@
 			isa = PBXTargetDependency;
 			target = DAC1107F22EBC75300E029E1 /* Lateral Thinking Siri Intent */;
 			targetProxy = DAC1108522EBC75300E029E1 /* PBXContainerItemProxy */;
-		};
-		DAC1109022EBC7F500E029E1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA52202B22EBA3C900E0AF27 /* Lateral Thinking watchOS */;
-			targetProxy = DAC1108F22EBC7F500E029E1 /* PBXContainerItemProxy */;
 		};
 		DAC110A422EC71B500E029E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
