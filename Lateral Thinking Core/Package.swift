@@ -19,7 +19,7 @@ let package = Package(
   dependencies: [
     .package(url: "https://github.com/sergdort/CombineFeedback",
              Package.Dependency.Requirement._branchItem("master")),
-    .package(url: "https://github.com/tcldr/Entwine",  Package.Dependency.Requirement._exactItem(Version(0, 7, 0)))
+    .package(url: "https://github.com/tcldr/Entwine", from: "0.7.0")
   ],
   targets: [
     .target(

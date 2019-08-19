@@ -3865,8 +3865,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sergdort/CombineFeedback";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.7.0;
 			};
 		};
 		DA210D5A22E5E2DA005A41C9 /* XCRemoteSwiftPackageReference "Entwine" */ = {
